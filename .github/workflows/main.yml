@@ -1,0 +1,25 @@
+# TODO: deploy to Web server
+name: deploy
+
+on:
+  push:
+    branches:
+      - master  # set a branch to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with: # checkout with submodules (not yet required)
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.74.2'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
