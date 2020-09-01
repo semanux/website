@@ -1,6 +1,7 @@
-
 # Website of the Semanux Project
 Under construction!
+
+Using [Hugo](https://gohugo.io/)!
 
 ## Third Party Content
 - <https://github.com/feathericons/feather>
