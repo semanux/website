@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Trigger Web Site Update
+      - name: Push
         run: |
           git clone https://action:${{ secrets.ACCESS_TOKEN }}@github.com/semanux/website.git
           cd website
