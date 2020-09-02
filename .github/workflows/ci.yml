@@ -1,4 +1,4 @@
-name: deploy
+name: ci
 
 on:
   push:
@@ -28,8 +28,8 @@ jobs:
         uses: burnett01/rsync-deployments@4.1
         with:
           switches: -avzr --delete
-          path: public
-          remote_path: /httpdocs
+          path: /public
+          remote_path: /httpdocs/
           remote_host: ${{ secrets.DEPLOY_HOST }}
           remote_user: ${{ secrets.DEPLOY_USER }}
           remote_key: ${{ secrets.DEPLOY_KEY }}
