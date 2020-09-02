@@ -33,3 +33,4 @@ jobs:
           source: "public"
           target: "/httpdocs/"
           strip_components: 1 # remove the "public" super directory
+          rm: true # remove target directory before copying
