@@ -1,16 +1,16 @@
-# TODO: deploy to Web server
 name: deploy
 
 on:
   push:
     branches:
-      - master  # set a branch to deploy
+      - main  # source files for hugo
 
 jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
         with: # checkout with submodules (not yet required)
           submodules: true
           fetch-depth: 0
@@ -23,3 +23,11 @@ jobs:
 
       - name: Build
         run: hugo --minify
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: public
+          force: true
+          directory: public
