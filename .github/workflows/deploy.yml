@@ -24,10 +24,12 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Push
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: public
-          force: true
-          directory: public
+      - name: Trigger Web Site Update
+        run: |
+          git clone https://action:${{ secrets.ACCESS_TOKEN }}@github.com/semanux/website.git
+          cd website
+          git checkout public
+          git config --global user.email "action@github.com"
+          git config --global user.name "action"
+          git commit -m 'deploy' --allow-empty
+          git push origin public
