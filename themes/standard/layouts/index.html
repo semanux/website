@@ -1,9 +1,17 @@
 {{ define "main" }}
-<h1 class="title">{{ .Site.Title }}</h1>
+<div class="page">
 
+<div class="logo">
+    <img src="/logo.png" alt="Semanux. Making the Web an inclusive experience.">
+</div>
+
+<div class="flyers">
 <ul>
-    <li><a href="/semanux_en.pdf">Flyer in English</a></li>
-    <li><a href="/semanux_de.pdf">Flyer in German</a></li>
+    <li><a href="/semanux_en.pdf"><i data-feather="download" aria-hidden="true"></i>Infoletter (English)</a></li>
+    <li><a href="/semanux_de.pdf"><i data-feather="download" aria-hidden="true"></i>Infobrief (German)</a></li>
 </ul>
+</div>
+
+</div> <!-- page -->
 
 {{ end }}
