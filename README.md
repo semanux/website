@@ -1,4 +1,6 @@
 # Website of the Semanux Project
+:point_right: <https://semanux.com>
+
 Using [Hugo](https://gohugo.io/)!
 
 ## Third Party Content
