@@ -1,11 +1,9 @@
 # Website of the Semanux Project
-Under construction!
-
 Using [Hugo](https://gohugo.io/)!
 
 ## Third Party Content
-- <https://github.com/feathericons/feather>
-- Font: (Paratype PT Sans Free Font License)[https://www.fontsquirrel.com/fonts/pt-sans]
+- Icons: [Feather Icons](https://github.com/feathericons/feather)
+- Font: [Paratype PT Sans Free Font License](https://www.fontsquirrel.com/fonts/pt-sans)
 
 ## Tutorials
 - <https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/>
