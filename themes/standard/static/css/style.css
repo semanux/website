@@ -68,6 +68,16 @@ body {
 	margin: auto;
 }
 
+.content {
+	max-width: 600px;
+	text-align: center;
+	margin: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	animation: fadein 1.5s ease;
+}
+
 .footer {
 	margin: auto;
 	text-align: center;

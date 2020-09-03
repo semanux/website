@@ -2,7 +2,11 @@
 <div class="page">
 
 <div class="logo">
-    <img src="/logo.png" alt="Semanux. Making the Web an inclusive experience.">
+    <img src="{{.Resources.GetMatch "logo*.png"}}" alt="Semanux. Making the Web an inclusive experience.">
+</div>
+
+<div class="content">
+{{.Content}}
 </div>
 
 <div class="flyers">

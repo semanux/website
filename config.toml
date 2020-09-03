@@ -1,5 +1,18 @@
-baseURL = "http://example.org/"
+baseURL = "https://semanux.com/"
 languageCode = "en-us"
 title = "Semanux"
 theme = "standard"
 ignoreFiles = [ "\\.gitkeep$" ] # does not work yet (https://github.com/gohugoio/hugo/issues/4874)
+
+defaultContentLanguage = "en"
+# defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+  [languages.de]
+    languageName = "German"
+    languageCode = "de-de"
+    weight = 2

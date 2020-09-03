@@ -1,0 +1,1 @@
+We believe that the Web should be inclusive, such that all people can make use of it. This helps individuals to participate conveniently in the digital society and let people integrate into the workforce of a company without costly software changes.
