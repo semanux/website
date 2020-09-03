@@ -3,6 +3,10 @@
 
 Using [Hugo](https://gohugo.io/)!
 
+## TODO
+- Page for open source licenses (theme for pages necessary)
+- Localization (at least minimal)
+
 ## Third Party Content
 - Icons: [Feather Icons](https://github.com/feathericons/feather)
 - Font: [Paratype PT Sans Free Font](https://www.fontsquirrel.com/fonts/pt-sans)
