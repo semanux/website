@@ -4,8 +4,8 @@
 Using [Hugo](https://gohugo.io/)!
 
 ## TODO
-- Page for open source licenses (theme for pages necessary)
-- Localization (at least minimal)
+- Maybe use Jekyll instead? Hugo is strange.
+- Localization of image alt texts
 
 ## Third Party Content
 - Icons: [Feather Icons](https://github.com/feathericons/feather)
@@ -15,3 +15,7 @@ Using [Hugo](https://gohugo.io/)!
 - <https://retrolog.io/blog/creating-a-hugo-theme-from-scratch/>
 - <https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-1-managing-content-translation/>
 - <https://regisphilibert.com/blog/2018/08/hugo-multilingual-part-2-i18n-string-localization/>
+- <https://zwbetz.com/make-a-hugo-blog-from-scratch>
+
+## Issues
+- One has to write content in all available languages: <https://github.com/gohugoio/hugo/issues/5612>

@@ -4,7 +4,7 @@ title = "Semanux"
 theme = "standard"
 ignoreFiles = [ "\\.gitkeep$" ] # does not work yet (https://github.com/gohugoio/hugo/issues/4874)
 
-defaultContentLanguage = "en"
+DefaultContentLanguage = "en"
 # defaultContentLanguageInSubdir = true
 
 [languages]
