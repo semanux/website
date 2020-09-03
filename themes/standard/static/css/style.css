@@ -81,6 +81,10 @@ body {
 	color: #4E6B5F;
 }
 
+.footer a {
+	color: #4E6B5F;
+}
+
 .logo {
 	padding-top: 64px;
 	padding-bottom: 32px;
@@ -114,7 +118,7 @@ body {
 	background-color: #FFFAC8;
 	border-radius: 10px;
 	text-decoration: none;
-	border: 1px solid black;
+	border: 1px solid #CCAE5E;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
