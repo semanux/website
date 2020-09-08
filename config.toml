@@ -16,3 +16,9 @@ DefaultContentLanguage = "en"
     languageName = "German"
     languageCode = "de-de"
     weight = 2
+
+# Allow HTML in markdown files
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

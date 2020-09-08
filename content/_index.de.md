@@ -1,5 +1,3 @@
 ---
 draft: false
 ---
-
-Wir glauben, dass das Web allen Menschen zugänglich sein sollte. Auf diese Weise können alle an der digitalen Gesellschaft teilhaben und sich ohne kostspielige Software-Änderungen in die Belegschaft eines Unternehmens integrieren.
