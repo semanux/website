@@ -1,7 +1,6 @@
 baseURL = "https://semanux.com/"
 languageCode = "en-us"
 title = "Semanux"
-theme = "standard"
 ignoreFiles = [ "\\.gitkeep$" ] # does not work yet (https://github.com/gohugoio/hugo/issues/4874)
 
 DefaultContentLanguage = "en"

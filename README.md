@@ -6,9 +6,6 @@ Using [Hugo](https://gohugo.io/)!
 ## TODO
 - Localization of image alt texts
 
-## Files
-- Styling: [themes/standard/assets/main.scss](themes/standard/assets/main.scss)
-
 ## Third Party Content
 - Icons: [Feather Icons](https://github.com/feathericons/feather)
 - Font: [Paratype PT Sans Free Font](https://www.fontsquirrel.com/fonts/pt-sans)
