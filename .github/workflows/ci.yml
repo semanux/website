@@ -32,5 +32,5 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           source: "public"
           target: "/httpdocs/"
-          strip_components: 1 # remove the "public" super directory
-          rm: true # remove target directory before copying
+          strip_components: 1 # ignore the "public" super directory when copying
+          rm: true # remove the target directory before copying
