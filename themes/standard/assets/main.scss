@@ -92,23 +92,22 @@ body {
 			display: inline-block;
 			padding: 1rem;
 			animation: fadein 3s ease;
+
+			a {
+				padding: 0.5rem;
+				color: black;
+				background-color: $bright-yellow;
+				border-radius: $border-radius;
+				text-decoration: none;
+				border: 1px solid $dark-yellow;
+				box-shadow: $box-shadow;
+
+				&:hover {
+					background-color: $dark-yellow;
+					text-decoration: underline;
+				}
+			}
 		}
-	}
-}
-
-/* buttons */
-a[role="button"] {
-	padding: 0.5rem;
-	color: black;
-	background-color: $bright-yellow;
-	border-radius: $border-radius;
-	text-decoration: none;
-	border: 1px solid $dark-yellow;
-	box-shadow: $box-shadow;
-
-	&:hover {
-		background-color: $dark-yellow;
-		text-decoration: underline;
 	}
 }
 
