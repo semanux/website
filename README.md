@@ -4,8 +4,10 @@
 Using [Hugo](https://gohugo.io/)!
 
 ## TODO
-- Maybe use Jekyll instead? Hugo is strange.
 - Localization of image alt texts
+
+## Files
+- Styling: [themes/standard/assets/main.scss](themes/standard/assets/main.scss)
 
 ## Third Party Content
 - Icons: [Feather Icons](https://github.com/feathericons/feather)
@@ -18,4 +20,4 @@ Using [Hugo](https://gohugo.io/)!
 - <https://zwbetz.com/make-a-hugo-blog-from-scratch>
 
 ## Issues
-- One has to write content in all available languages: <https://github.com/gohugoio/hugo/issues/5612>
+- One has to write content in all available languages, cannot fallback to default language yet: <https://github.com/gohugoio/hugo/issues/5612>

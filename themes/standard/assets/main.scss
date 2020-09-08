@@ -1,0 +1,118 @@
+/* includes */
+@import '_font';
+
+/* definitions */
+$background-color: rgb(188,234,228);
+$background-gradient: linear-gradient(0deg, rgba(188,234,228,1) 0%, rgba(222,232,230,1) 100%);
+$bright-yellow: #FFFAC8;
+$dark-yellow: #CCAE5E;
+$dark-cyan: #4E6B5F;
+$box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$border-radius: 10px;
+
+/* animations */
+@keyframes fadein {
+	from { opacity: 0; transform: translateY(20px);}
+	to   { opacity: 1; transform: translateY(0px);}
+}
+
+/* ######### */
+/* selectors */
+/* ######### */
+
+body {
+	font-family: $sans-fonts;
+	padding: 0;
+	margin: 0;
+	background: $background-color;
+	background: $background-gradient;
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	min-width: 220px;
+	overflow-x: hidden;
+}
+
+.page {
+	max-width: 1024px;
+	margin: auto;
+}
+
+.content {
+	max-width: 600px;
+	text-align: center;
+	margin: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	animation: fadein 1.5s ease;
+}
+
+.footer {
+	margin: auto;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	z-index: -999;
+	margin: auto;
+	margin-bottom: 1rem;
+	left: 0;
+	right: 0;
+	color: $dark-cyan;
+
+	a {
+		color: $dark-cyan;
+	}
+}
+
+
+.logo {
+	padding-top: 64px;
+	padding-bottom: 32px;
+
+	img {
+		width: 80%;
+		max-width: 512px;
+		margin: auto;
+		display: block;
+		animation: fadein 1s ease;
+	}
+}
+
+.flyers {
+
+	ul {
+		text-align: center;
+		list-style-type: none;
+		vertical-align: bottom;
+		padding: 0;
+
+		li {
+			padding: 0;
+			display: inline-block;
+			padding: 1rem;
+			animation: fadein 3s ease;
+		}
+	}
+}
+
+/* buttons */
+a[role="button"] {
+	padding: 0.5rem;
+	color: black;
+	background-color: $bright-yellow;
+	border-radius: $border-radius;
+	text-decoration: none;
+	border: 1px solid $dark-yellow;
+	box-shadow: $box-shadow;
+
+	&:hover {
+		background-color: $dark-yellow;
+		text-decoration: underline;
+	}
+}
+
+.feather {
+	vertical-align: bottom;
+	height: 1.2rem;
+}
