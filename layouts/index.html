@@ -2,7 +2,12 @@
 <div class="page">
 
 <div class="logo">
-     <a href="{{.Site.BaseURL | relLangURL }}"><img src="{{.Resources.GetMatch "logo*.png"}}" alt="Semanux. Making the Web inclusive."></a>
+    <a href="{{.Site.BaseURL | relLangURL }}">
+    {{ with .Resources.GetMatch "logo*.png" }}
+        {{ $image := . }}
+        <img src="{{ .RelPermalink }}" alt="Semanux. Making the Web inclusive.">
+    {{ end }}
+    </a>
 </div> <!-- logo -->
 
 <div class="content">
