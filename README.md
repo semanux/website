@@ -4,7 +4,7 @@
 Using [Hugo](https://gohugo.io/)!
 
 ## TODO
-- Localization of image alt texts (necessary to understand ```resources``` in Hugo)
+- Test menu structure
 
 ## Third Party Content
 - Icons: [Feather Icons](https://github.com/feathericons/feather)

@@ -3,16 +3,15 @@
 
 <div class="logo">
     <a href="{{.Site.BaseURL | relLangURL }}">
-    {{ with .Resources.GetMatch "logo*.png" }}
+    {{ with .Resources.GetMatch "logo" }}
         {{ $image := . }}
-        <img src="{{ .RelPermalink }}" alt="Semanux. Making the Web inclusive.">
+        <img src="{{ .RelPermalink }}" alt="{{ .Params.alt }}">
     {{ end }}
     </a>
 </div> <!-- logo -->
 
 <div class="content">
 {{ T "welcome" }}
-{{.Content}}
 </div> <!-- content -->
 
 <div class="flyers">
