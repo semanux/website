@@ -33,12 +33,16 @@ body {
 	overflow-x: hidden;
 }
 
+a {
+	color: $dark-cyan;
+}
+
 .page {
 	max-width: 1024px;
 	margin: auto;
 }
 
-.text {
+.content {
 	max-width: 600px;
 	text-align: center;
 	margin: auto;
@@ -59,12 +63,7 @@ body {
 	left: 0;
 	right: 0;
 	color: $dark-cyan;
-
-	a {
-		color: $dark-cyan;
-	}
 }
-
 
 .logo {
 	padding-top: 64px;
