@@ -1,0 +1,4 @@
+---
+title: Redirect
+layout: redirect
+---
