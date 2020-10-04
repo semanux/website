@@ -57,11 +57,8 @@ a {
 .footer {
 	margin: auto;
 	text-align: center;
-	position: fixed;
-	bottom: 0;
-	z-index: -999;
 	margin: auto;
-	margin-bottom: 1rem;
+	margin-top: 2rem;
 	left: 0;
 	right: 0;
 	color: $dark-cyan;
@@ -110,7 +107,7 @@ a {
 	}
 }
 
-.gazetheweb {
+.links {
 	margin-top: 1rem;
 	display: block;
 	border-radius: $border-radius;
