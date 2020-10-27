@@ -1,7 +1,5 @@
 - id: welcome
   translation: "Wir glauben, dass das Web allen Menschen zugänglich sein sollte. Auf diese Weise können alle an der digitalen Gesellschaft teilhaben und sich ohne kostspielige Software-Änderungen in die Belegschaft eines Unternehmens integrieren."
-- id: cofounder
-  translation: "Wir suchen nach einer Person mit betriebswirtschaflicher Kompetenz:"
 - id: link-title
   translation: "Entdecke die Arbeiten und Projekte unserer Teammitglieder!"
 - id: link-homepage-raphael
