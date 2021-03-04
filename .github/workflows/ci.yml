@@ -14,6 +14,7 @@ jobs:
         with: # checkout with submodules (not yet required)
           submodules: true
           fetch-depth: 0
+          ref: main
 
       - name: Setup
         uses: peaceiris/actions-hugo@v2
