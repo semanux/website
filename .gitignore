@@ -1,4 +1,4 @@
-_gen
-public
-resources
 .DS_Store
+.bundle
+vendor
+_site
