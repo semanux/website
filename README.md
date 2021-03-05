@@ -13,9 +13,15 @@ New Website using Jekyll 4. Under construction.
 7. `bundle install --path vendor`
 8. `bundle exec jekyll serve`
 
+## Third-party content
+- jekyll-polyglot <https://github.com/untra/polyglot>
+- jekyll-assets <https://github.com/envygeeks/jekyll-assets>
+- jekyll-minifier <https://github.com/digitalsparky/jekyll-minifier>
+- Inter Font <https://rsms.me/inter/>
+- Feather Icons <https://github.com/feathericons/feather>
+
 ## TODO
-- Inter font + feather icons
 - Make header / navbar
 - Decide about sections
 - Imprint page
-- Check whether minifier actually works
+- Check whether minifier actually works (seems to work no more :( )

@@ -54,6 +54,6 @@ sass:
 # Polyglot settings
 languages: ["en", "de"]
 default_lang: "en"
-exclude_from_localization: ["assets", "css"]
+exclude_from_localization: ["static, css"]
 parallel_localization: false # must be false for Windows
 lang_from_path: true
