@@ -1,0 +1,3 @@
+environment: production
+url: "https://semanux.com"
+parallel_localization: true # polyglot setting

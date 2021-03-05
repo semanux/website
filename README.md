@@ -12,3 +12,10 @@ New Website using Jekyll 4. Under construction.
 6. `cd semanux-website`
 7. `bundle install --path vendor`
 8. `bundle exec jekyll serve`
+
+## TODO
+- Inter font + feather icons
+- Make header / navbar
+- Decide about sections
+- Imprint page
+- Check whether minifier actually works

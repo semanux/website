@@ -1,0 +1,25 @@
+<button onclick='topFunction()' id='scroll-top' title='{{ site.data.misc.scroll-top }}'><i class='fa fa-angle-double-up'></i>
+</button>
+
+<script  type='text/javascript'>
+
+//Get the button
+var btn = document.getElementById('scroll-top');
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		btn.style.display = 'block';
+	} else {
+		btn.style.display = 'none';
+	}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+</script>

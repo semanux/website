@@ -1,0 +1,59 @@
+environment: development
+
+# Where things are
+source:          .
+destination:     ./_site
+plugins_dir:     _plugins
+layouts_dir:     _layouts
+data_dir:        _data
+includes_dir:    _includes
+collections:
+  posts:
+    output:   true
+
+# Defaults for front matters
+defaults:
+  - # posts
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: blog/:name
+
+# General project settings
+title: Semanux
+email: contact@semanux.com
+description: > # this means to ignore newlines
+  We make the Web inclusive!
+plugins: [jekyll-polyglot, jekyll-assets, jekyll-minifier]
+baseurl: "" # must be empty string
+url: "localhost:4000"
+markdown: kramdown
+permalink: pretty
+future: false
+exclude:
+  - README.md
+  - /*README.md
+  - .gitignore
+  - .github
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+liquid:
+  strict_variables: true
+  strict_filters: true
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+# Polyglot settings
+languages: ["en", "de"]
+default_lang: "en"
+exclude_from_localization: ["assets", "css"]
+parallel_localization: false # must be false for Windows
+lang_from_path: true
