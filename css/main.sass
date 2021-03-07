@@ -5,8 +5,12 @@
 @import 'font'
 
 /* variables */
+$accent-color-1: #BB00FF
+$accent-color-2: #BDFF00
+$accent-color-3: #FF9D00
 $small-screen: 300px
 $medium-screen: 1024px
+$nav-reserve-height: 4rem
 
 html
 	overflow-y: scroll
@@ -22,7 +26,7 @@ body
 		padding-left: 1rem
 
 nav
-	text-align: center
+	text-align: left
 	position: fixed
 	top: 0
 	width: 100%
@@ -31,6 +35,16 @@ nav
 	padding-bottom: 0.5rem
 	border-bottom: 1px solid black;
 	max-width: $medium-screen
+
+	.logo
+		display: inline-block
+		padding-right: 1rem
+
+		a
+			text-decoration: none
+
+		img
+			height: 3rem
 
 	ul
 		list-style-type: none
@@ -49,10 +63,10 @@ nav
 	display: block
 	position: relative
 	visibility: hidden
-	top: -2rem // space for the navbar
+	top: -$nav-reserve-height
 
 .page
-	padding-top: 2rem // reserve space for the navbar
+	padding-top: $nav-reserve-height
 
 #scroll-top
 	transition: opacity 0.5s ease-in-out
@@ -65,8 +79,8 @@ nav
 	font-size: 2rem
 	border: none
 	outline: none
-	background-color: white
 	color: black
+	background-color: white
 	cursor: pointer
 	border-radius: 100%
 	width: 3rem
