@@ -20,14 +20,7 @@ New Website using Jekyll 4. Under construction.
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
-- Fix scroll-to-top button
-- Make header / navbar
-- Sections
- - Blog
- - Team (everybody with first name and include custom emails)
- - Idea
- - Mentors with images
-- Imprint page
+- Finish contents
 - Minify output of Jekyll (there is no Jekyll plugin available)
 - Schedule a call “button” on the Web page
 - Visitor tracker

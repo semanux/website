@@ -40,6 +40,10 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - /*-en.md
+  - /*-de.md
+  - /*-en.html
+  - /*-de.html
 
 liquid:
   strict_variables: true
