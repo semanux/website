@@ -4,19 +4,71 @@
 /* includes */
 @import 'font'
 
+/* variables */
+$small-screen: 300px
+$medium-screen: 1024px
+
+html
+	overflow-y: scroll
+
 body
 	padding: 0
-	margin: 0
-	background: rgb(188,234,228)
+	margin: 0 auto
 	overflow-x: hidden
 	font-family: Inter, sans-serif
+	max-width: $medium-screen
 
+	@media screen and (max-width: $small-screen)
+		padding-left: 1rem
 
 nav
-	display: block
+	text-align: center
+	position: fixed
+	top: 0
+	width: 100%
+	background-color: white
+	padding-top: 0.5rem
+	padding-bottom: 0.5rem
+	border-bottom: 1px solid black;
+	max-width: $medium-screen
+
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+		overflow:hidden
+		display: inline-block
+
+	li
+		float: left
+		margin: 0 auto
+		padding-left: 1rem
+		padding-right: 1rem
 
 .anchor
 	display: block
 	position: relative
 	visibility: hidden
-	top: 1px
+	top: -2rem // space for the navbar
+
+.page
+	padding-top: 2rem // reserve space for the navbar
+
+#scroll-top
+	transition: opacity 0.5s ease-in-out
+	opacity: 0
+	display: block
+	position: fixed
+	bottom: 20px
+	right: 20px
+	z-index: 99
+	font-size: 2rem
+	border: none
+	outline: none
+	background-color: white
+	color: black
+	cursor: pointer
+	border-radius: 100%
+	width: 3rem
+	height: 3rem
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.3)
