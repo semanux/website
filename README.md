@@ -16,12 +16,17 @@ New Website using Jekyll 4. Under construction.
 ## Third-party content
 - jekyll-polyglot <https://github.com/untra/polyglot>
 - jekyll-assets <https://github.com/envygeeks/jekyll-assets>
-- jekyll-minifier <https://github.com/digitalsparky/jekyll-minifier>
 - Inter Font <https://rsms.me/inter/>
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
 - Make header / navbar
-- Decide about sections
+- Sections
+ - Blog
+ - Team (everybody with first name and include custom emails)
+ - Idea
+ - Mentors with images
 - Imprint page
-- Check whether minifier actually works (seems to work no more :( )
+- Minify output of Jekyll (there is no Jekyll plugin available)
+- Schedule a call “button” on the Web page
+- Visitor tracker
