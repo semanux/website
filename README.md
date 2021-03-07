@@ -20,6 +20,7 @@ New Website using Jekyll 4. Under construction.
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
+- Fix scroll-to-top button
 - Make header / navbar
 - Sections
  - Blog

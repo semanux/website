@@ -3,14 +3,8 @@ layout: base
 title: Semanux
 ---
 
-Index
+{%- include index/idea.html -%}
+{%- include index/news.html -%}
+{%- include index/team.html -%}
 
 <i data-feather="alert-circle" aria-hidden="true"></i>Some icon
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
