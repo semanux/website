@@ -24,3 +24,4 @@ New Website using Jekyll 4. Under construction.
 - Minify output of Jekyll (there is no Jekyll plugin available)
 - Schedule a call “button” on the Web page
 - Visitor tracker
+- Use `CSS.supports("backdrop-filter", "blur(10px)");` to decide about using blurry backgrounds
