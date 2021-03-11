@@ -20,6 +20,7 @@ New Website using Jekyll 4. Under construction.
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
+- Test 'jekyll-i18n-date' to localize dates of blog posts
 - Finish contents
 - Style images in blog posts: <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
 - Use Jekyll Assets to convert images to a certain format? Like jpg or webp?

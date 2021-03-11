@@ -1,7 +1,8 @@
 ---
 title: Designing a new logo
 lang: en
+preview_alt: 'Alternative Text'
 ---
 
-TODO: create optional txt file next to image, that can contain ALT text and caption?
-![alt text]({%- include func/blog_asset_path.html -%}/preview.jpg "Hello" ){:.bordered style="width:150px;"}
+hello
+![alt text]({%- include func/blog_asset_path.html -%}/test-image.jpg "Hello" ){:.blog-img-bordered  style="width:150px;"}
