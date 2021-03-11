@@ -16,11 +16,12 @@ New Website using Jekyll 4. Under construction.
 ## Third-party content
 - jekyll-polyglot <https://github.com/untra/polyglot>
 - jekyll-assets <https://github.com/envygeeks/jekyll-assets>
+- jekyll-file-exists <https://github.com/Wolfr/jekyll_file_exists>
 - Inter Font <https://rsms.me/inter/>
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
-- Test 'jekyll-i18n-date' to localize dates of blog posts
+- Localize date (manually) ...
 - Finish contents
 - Style images in blog posts: <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
 - Use Jekyll Assets to convert images to a certain format? Like jpg or webp?
