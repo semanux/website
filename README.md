@@ -21,6 +21,8 @@ New Website using Jekyll 4. Under construction.
 
 ## TODO
 - Finish contents
+- Style images in blog posts: <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
+- Use Jekyll Assets to convert images to a certain format? Like jpg or webp?
 - Minify output of Jekyll (there is no Jekyll plugin available)
 - Schedule a call “button” on the Web page
 - Visitor tracker

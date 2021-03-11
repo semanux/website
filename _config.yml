@@ -19,7 +19,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: blog/:name
+      permalink: blog/:title
 
 # General project settings
 title: Semanux
@@ -40,10 +40,6 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
-  - /*-en.md
-  - /*-de.md
-  - /*-en.html
-  - /*-de.html
 
 liquid:
   strict_variables: true
