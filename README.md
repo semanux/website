@@ -20,11 +20,19 @@ New Website using Jekyll 4. Under construction.
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
+1. News on front
+1. Style blog posts <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
+1. Style blog overview
+1. Visitor tracker
+1. Imprint
+1. Idea on front
+1. Team on front
+1. Schedule a call “button” on front
+1. Actually write news
+1. Deploy page to Web server
+
+## Ideas
 - Have authors of blog posts?
-- Finish contents
-- Style images in blog posts: <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
 - Minify output of Jekyll (there is no Jekyll plugin available)
-- Schedule a call “button” on the Web page
-- Visitor tracker
 - Use `CSS.supports("backdrop-filter", "blur(10px)");` to decide about using blurry backgrounds
 - Use jekyll-assets to generate thumbnails?
