@@ -1,0 +1,24 @@
+{%- comment -%} Get localized day {%- endcomment -%}
+{%- assign day = page.date | date: '%-d' | to_integer -%}
+{%- if site.active_lang == 'en' -%}
+  {%- case day -%}
+    {%- when 1 or 21 or 31 -%}{%- assign day = day | append: 'st' -%}
+    {%- when 2 or 22 -%}{%- assign day = day | append: 'nd' -%}
+    {%- when 3 or 23 -%}{%- assign day = day | append: 'rd' -%}
+    {%- else -%}{%- assign day = day | append: 'th' -%}
+  {%- endcase -%}
+{%- else -%}
+  {%- assign day = day | append: '.' -%}
+{%- endif -%}
+
+{%- comment -%} Get localized month {%- endcomment -%}
+{%- assign months = 'january|february|march|april|may|june|july|august|september|october|november|december' | split: '|' -%}
+{%- assign m = page.date | date: '%-m' | minus: 1 -%}
+{%- assign month = months[m] -%}
+{%- assign month = site.data.dates[month] -%}
+
+{%- comment -%} Get year {%- endcomment -%}
+{%- assign year = page.date | date: '%Y' -%}
+
+{%- comment -%} Output {%- endcomment -%}
+{{ day}} {{ month }} {{ year }}
