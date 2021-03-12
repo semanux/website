@@ -13,7 +13,7 @@
   <div class='tongue'>
     <ul>
       {% for tongue in site.languages %}
-        <li><a {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a></li>
+        <li><a name='language_switch' {% static_href %}href="{% if tongue == site.default_lang %}{{site.baseurl}}{{page.url}}{% else %}{{site.baseurl}}/{{ tongue }}{{page.url}}{% endif %}"{% endstatic_href %} >{{ tongue }}</a></li>
       {% endfor %}
     </ul>
   </div>
