@@ -9,7 +9,8 @@ title: Semanux Blog
   {% for post in site.posts %}
     <li>
       {%- include func/local_date.html page=post -%}
-      <img src='/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview.jpg' alt='{{ post.preview_alt }}' style='width: 100px;'/>
+      {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
+      <img src='{%- include func/get_image.html path=preview_path -%}' alt='{{ post.preview_alt }}' style='width: 100px;'/>
       <a href='{{ post.url }}'>{{ post.title }}</a>
     </li>
   {% endfor %}

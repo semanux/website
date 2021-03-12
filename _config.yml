@@ -26,7 +26,7 @@ title: Semanux
 email: contact@semanux.com
 description: > # this means to ignore newlines
   We make the Web inclusive!
-plugins: [jekyll-polyglot, jekyll-assets]
+plugins: [jekyll-polyglot]
 baseurl: "" # must be empty string
 url: "localhost:4000"
 markdown: kramdown
@@ -40,7 +40,6 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
-
 liquid:
   strict_variables: true
   strict_filters: true
