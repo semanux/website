@@ -124,6 +124,52 @@ nav
 	@media screen and (max-width: $small-screen)
 		padding-left: 1rem
 
+.news
+	ul
+		text-align: center
+		list-style-type: none
+		margin: 0
+		padding: 0
+		padding-left: 0.5rem
+		overflow:hidden
+		display: inline-block
+
+	li
+		float: left
+		padding: 0.25rem
+		width: 31%
+		margin: auto
+		border-radius: 0.5rem
+		transition: border-color 0.125s ease-in-out
+		box-sizing: border-box
+		border: 1px solid rgba(255,255,255,0)
+		background-color: lightgray
+
+		&:hover
+			border-color: $accent-color-1
+
+		img
+			width: 100%
+
+.team-bubbles
+	ul
+		text-align: center
+		list-style-type: none
+		margin: 0
+		padding: 0
+		overflow:hidden
+		display: inline-block
+
+	li
+		float: left
+		padding: 0.25rem
+		width: 15%
+		margin: auto
+
+		img
+			width: 100%
+			border-radius: 100%
+
 #scroll-top
 	transition: opacity 0.125s ease-in-out
 	opacity: 0

@@ -32,6 +32,8 @@ New Website using Jekyll 4. Under construction.
 1. Deploy page to Web server
 
 ## Ideas
+- List our relevant publications?
+- Show gazetheweb? (or at least something about proved technology)
 - Have authors of blog posts?
 - Minify output of Jekyll (there is no Jekyll plugin available)
 - Use `CSS.supports("backdrop-filter", "blur(10px)");` to decide about using blurry backgrounds
