@@ -8,6 +8,7 @@ title: Semanux Blog
 <ul>
   {% for post in site.posts %}
     <li>
+      {%- include func/local_date.html page=post -%}
       <img src='/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview.jpg' alt='{{ post.preview_alt }}' style='width: 100px;'/>
       <a href='{{ post.url }}'>{{ post.title }}</a>
     </li>

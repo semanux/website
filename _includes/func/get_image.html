@@ -1,0 +1,15 @@
+{%- assign checkfiles = "" -%}
+{%- assign checkfiles = checkfiles | append: include.path | append:".svg," -%}
+{%- assign checkfiles = checkfiles | append: include.path | append:".png," -%}
+{%- assign checkfiles = checkfiles | append: include.path | append:".jpg," -%}
+{%- assign checkfiles = checkfiles | split:"," -%}
+
+{%- for file in checkfiles -%}
+  {%- if file != blank -%}
+    {%- capture found_file -%}{%- file_exists {{ file }} -%}{%- endcapture -%}
+    {%- if found_file  == "true" -%}
+      {{ file }}
+      {%- break -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
