@@ -11,7 +11,7 @@ New Website using Jekyll 4. Under construction.
 5. `git clone https://github.com/semanux/website.git semanux-website`
 6. `cd semanux-website`
 7. `bundle install --path vendor`
-8. `bundle exec jekyll serve`
+8. `bundle exec jekyll serve --livereload`
 
 ## Third-party content
 - jekyll-polyglot <https://github.com/untra/polyglot>
@@ -20,6 +20,7 @@ New Website using Jekyll 4. Under construction.
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
+1. Links are not correctly localized (at least on Mac, maybe issue only there?)
 1. News on front
 1. Style blog posts <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
 1. Style blog overview
