@@ -6,8 +6,9 @@
 
 /* variables */
 $accent-color-1: #BB00FF
-$accent-color-2: #FFBB00
-$accent-color-3: #00FFBB
+$accent-color-2: #3AFFF5
+$accent-color-3: #FCFF67
+$background-color: #fcfcfc
 $min-screen: 325px
 $phone-screen: 400px
 $tablet-screen: 600px
@@ -26,6 +27,7 @@ body
 	margin: 0
 	overflow-x: hidden
 	font-family: Inter, sans-serif
+	background-color: $background-color
 
 a
 	color: $accent-color-1
@@ -49,7 +51,7 @@ h2
 		margin-bottom: 1.25rem
 
 	span
-		background: white
+		background: $background-color
 		padding: 0
 		
 		&:before
@@ -140,6 +142,8 @@ nav
 				display: table-cell
 				vertical-align: middle
 				right: 0
+				font-weight: 300
+				font-size: 10pt
 
 				ul
 					text-align: left
@@ -214,8 +218,8 @@ nav
 		.preview
 			width: 100%
 			height: 10rem
-			background-position: center;
-			background-size: cover;
+			background-position: center
+			background-size: cover
 
 			@media screen and (max-width: $desktop-screen)
 				height: 7rem
@@ -251,7 +255,7 @@ nav
 	border: none
 	outline: none
 	color: black
-	background-color: white
+	background-color: $accent-color-3
 	cursor: pointer
 	border-radius: 100%
 	width: 3rem
