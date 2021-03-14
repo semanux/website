@@ -1,17 +1,17 @@
 <a class='anchor' id='news'></a>
-<h2>News</h2>
+<h2 class='section-title'><span>{{ site.data.misc.news }}</span></h2>
 
 <div class='news'>
-  <ul>
   {% for post in site.posts limit:3 %}
-      <li>
-        {%- include func/local_date.html page=post -%}
-        {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
-        <a href='{{ post.url }}'>
-          <img src='{%- include func/get_image.html path=preview_path -%}' alt='{{ post.preview_alt }}'/>
-          {{ post.title }}
-        </a>
-      </li>
+  <div>
+    {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
+    <a href='{{ post.url }}'>
+      <div class='preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}"' role='img' alt='{{ post.preview_alt }}'></div>
+    </a>
+    {%- include func/local_date.html page=post -%}.
+    <a href='{{ post.url }}'>
+        {{ post.title }}
+    </a>
+  </div>
   {% endfor %}
-  </ul>
 </div>
