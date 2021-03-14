@@ -38,3 +38,6 @@ New Website using Jekyll 4. Under construction.
 - Have authors of blog posts?
 - Minify output of Jekyll (there is no Jekyll plugin available)
 - Use jekyll-assets to generate thumbnails?
+
+## Tipps
+- Use double quotes (") to surround any relative link in HTML code (e.g., `<a href="/imprint">Imprint</a>`). Otherwise, localization of the relative link does not work.

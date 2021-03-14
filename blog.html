@@ -11,7 +11,7 @@ title: Semanux Blog
       {%- include func/local_date.html page=post -%}
       {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
       <img src='{%- include func/get_image.html path=preview_path -%}' alt='{{ post.preview_alt }}' style='width: 100px;'/>
-      <a href='{{ post.url }}'>{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
       <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
