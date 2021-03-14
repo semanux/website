@@ -1,21 +1,25 @@
 <nav class='acryl'>
-  <div class='logo'>
-    <a href="/"><img src='/static/logo.png' alt='TODO'></a>
-  </div>
-  <div class='links'>
-    <ul>
-      <li><a href='{{site.baseurl}}/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#idea'><div class='icon'><i data-feather='zap' aria-hidden='true'></i></div>{{ site.data.misc.nav-idea }}</a></li>
-      <li><a href='{{site.baseurl}}/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#news'><div class='icon'><i data-feather='bell' aria-hidden='true'></i></div>{{ site.data.misc.nav-news }}</a></li>
-      <li><a href='{{site.baseurl}}/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#team'><div class='icon'><i data-feather='users' aria-hidden='true'></i></div>{{ site.data.misc.nav-team }}</a></li>
-      <li><a href="/blog"><div class='icon'><i data-feather='pen-tool' aria-hidden='true'></i></div>{{ site.data.misc.nav-blog }}</a></li>
-    </ul>
-  </div>
-  <div class='tongue'>
-    <ul>
-      {% for tongue in site.languages %}
-        <li><a name='language_switch' href='{%- if tongue == site.default_lang -%}{{site.baseurl}}{{page.url}}{%- else -%}{{site.baseurl}}/{{ tongue }}{{page.url}}{%- endif -%}'>{{ tongue }}</a></li>
-      {% endfor %}
-    </ul>
+  <div> <!-- container for alignment -->
+    <div> <!-- container for table -->
+      <div class='home'>
+        <a href="/"><img src='/static/logo.png' alt='TODO'></a>
+      </div>
+      <div class='links'>
+        <ul>
+          <li><a href='{{site.baseurl}}/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#idea'><div class='icon'><i data-feather='zap' aria-hidden='true'></i></div>{{ site.data.misc.nav-idea }}</a></li>
+          <li><a href='{{site.baseurl}}/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#news'><div class='icon'><i data-feather='bell' aria-hidden='true'></i></div>{{ site.data.misc.nav-news }}</a></li>
+          <li><a href='{{site.baseurl}}/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#team'><div class='icon'><i data-feather='users' aria-hidden='true'></i></div>{{ site.data.misc.nav-team }}</a></li>
+          <li><a href="/blog"><div class='icon'><i data-feather='pen-tool' aria-hidden='true'></i></div>{{ site.data.misc.nav-blog }}</a></li>
+        </ul>
+      </div>
+      <div class='tongue'>
+        <ul>
+          {% for tongue in site.languages %}
+            <li><span aria-hidden='true'>▸</span><a name='language_switch' href='{%- if tongue == site.default_lang -%}{{site.baseurl}}{{page.url}}{%- else -%}{{site.baseurl}}/{{ tongue }}{{page.url}}{%- endif -%}'>{{ site.misc[tongue] }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 
 </nav>

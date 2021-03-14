@@ -30,6 +30,7 @@ New Website using Jekyll 4. Under construction.
 1. Schedule a call “button” on front
 1. Actually write news
 1. Deploy page to Web server
+1. Social media links
 
 ## Ideas
 - List our relevant publications?

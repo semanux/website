@@ -8,15 +8,18 @@
 $accent-color-1: #BB00FF
 $accent-color-2: #FFBB00
 $accent-color-3: #00FFBB
-$small-screen: 300px
-$medium-screen: 1024px
-$nav-reserve-height: 5rem
+$min-screen: 325px
+$phone-screen: 400px
+$tablet-screen: 600px
+$desktop-screen: 1024px
+$nav-reserve-height: 5.5rem
 
 .blog-img-bordered // testing kramdown
 	border: 1px solid black
 
 html
 	overflow-y: scroll
+	min-width: $min-screen
 
 body
 	padding: 0
@@ -28,81 +31,108 @@ a
 	color: $accent-color-1
 
 h2
-	font-weight: 300;
+	font-weight: 300
 
 nav
 	position: fixed
+	text-align: center
+	margin: 0
+	padding: 0
 	top: 0
 	width: 100%
-	background-color: white;
+	min-width: $min-screen
 	padding-top: 0.5rem
 	padding-bottom: 0.5rem
-	box-shadow: 0 4px 8px #00000026;
-	text-align: center
-	border-bottom: 1px solid white;
+	background-color: white
+	box-shadow: 0 4px 8px #00000026
+	border-bottom: 1px solid white
 
-	.logo
-		display: inline-block
-		padding-right: 6rem
+	div
+		display: block
+		max-width: $desktop-screen
+		margin: auto
+		padding: 0
 
-		a
-			text-decoration: none
-
-		img
-			height: 3.0rem
-			padding: 0.5rem
-
-	.links
-		display: inline-block
-
-		.icon // scale icons
-			height: 1.5rem
-			line-height: 1.5rem
-
-			svg
-				width: 100%
-				height: 100%
-
-		ul
-			text-align: center
-			list-style-type: none
+		div
+			display: table
 			margin: 0
 			padding: 0
-			overflow:hidden
-			display: inline-block
 
-		li
-			float: left
-			margin-left: 0.75rem
-			margin-right: 0.75rem
-			padding: 0.5rem
-			border-radius: 0.5rem
-			transition: border-color 0.125s ease-in-out
-			box-sizing: border-box
-			border: 1px solid rgba(255,255,255,0)
+			.home // logo with link to index
+				display: table-cell
+				vertical-align: middle
+				margin: auto
+				padding-left: 1rem
+				padding-right: 1.5rem
+				@media screen and (max-width: $tablet-screen)
+					display: none
 
-			&:hover
-				border-color: $accent-color-1
+				a
+					text-decoration: none
 
-	.tongue
-		display: inline-block
+				img
+					height: 3.0rem
+					padding: 0.5rem
 
-		ul
-			text-align: center
-			list-style-type: none
-			margin: 0
-			padding: 0
-			padding-left: 0.5rem
-			overflow:hidden
-			display: inline-block
-			border-left: 1px solid gray
+			.links // links to components on home page and blog
+				display: table-cell
+				vertical-align: middle
 
-		li
-			float: left
-			padding: 0.25rem
+				ul
+					display: table
+					margin: 0
+					padding: 0
+					overflow:hidden
+					list-style-type: none
 
-		a
-			color: gray
+				li
+					display: table-cell
+					float: left
+					text-align: center
+					padding: 0.5rem
+					margin-left: 0.25rem
+					margin-right: 0.25rem
+					border-radius: 0.5rem
+					transition: border-color 0.125s ease-in-out
+					box-sizing: border-box
+					border: 1px solid rgba(255,255,255,0)
+					@media screen and (max-width: $tablet-screen)
+						margin-left: 0.15rem
+						margin-right: 0.15rem
+						padding: 0.35rem
+
+					&:hover
+						border-color: $accent-color-1
+
+				.icon // scale icons
+					margin: auto
+
+			.tongue // language switch
+				display: table-cell
+				vertical-align: middle
+				right: 0
+
+				ul
+					text-align: left
+					display: table
+					margin: 0
+					padding: 0
+					margin-left: 1rem
+					overflow:hidden
+					list-style-type: none
+					border-left: 1px solid black
+
+					@media screen and (max-width: $tablet-screen)
+						margin-left: 0.5rem
+
+				li
+					margin: 0
+					padding: 0.5rem
+					padding-left: 0.75rem
+					padding-right: 0rem
+
+				a
+					color: black
 
 .footer
 	text-align: center
@@ -121,10 +151,10 @@ nav
 
 .page
 	padding-top: $nav-reserve-height
-	max-width: $medium-screen
+	max-width: $desktop-screen
 	margin: 0 auto
-	@media screen and (max-width: $small-screen)
-		padding-left: 1rem
+	padding-left: 12px
+	padding-right: 12px
 
 .news
 	ul
