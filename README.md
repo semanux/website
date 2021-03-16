@@ -20,7 +20,6 @@ New Website using Jekyll 4. Under construction.
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
-1. Issue: Assets are copied for german version - but should not be copied
 1. News on front
 1. Style blog posts <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
 1. Style blog overview
