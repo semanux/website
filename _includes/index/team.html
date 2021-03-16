@@ -1,37 +1,37 @@
 <a class='anchor' id='team'></a>
-<h2 class='section-title'><span>{{ site.data.misc.team }}</span></h2>
+<h2 class='section-title'><span>{{ site.data.misc.team.heading }}</span></h2>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla in ipsum molestie gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum massa mi, consequat vel nibh a, varius egestas est. Duis vehicula cursus risus sit amet venenatis. Curabitur porttitor sed arcu id semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer suscipit arcu lorem, eu venenatis justo viverra at. Vestibulum id suscipit felis, et interdum sapien. Nullam commodo, leo sit amet tincidunt placerat, sapien eros pretium dolor, ac imperdiet enim eros ut justo. Nullam euismod sem id risus fringilla, et hendrerit erat aliquet. Vivamus risus nunc, fermentum eget suscipit non, sollicitudin vel ligula. Maecenas blandit viverra lobortis. Duis vitae efficitur lectus.
+>{{ site.data.misc.team.desc }}
 
 <div class='team-bubbles'>
-  <ul>
-    <li>
-      <img src='{%- include func/get_image.html path="assets/team/raphael" -%}' alt='TODO'/>
-      Raphael
-      raphael at semanux.com
-      Projec Lead
-    </li>
-    <li>
-      <img src='{%- include func/get_image.html path="assets/team/raphael" -%}' alt='TODO'/>
-      Ramin
-      ramin at semanux.com
-      Interaction Designer
-    </li>
-    <li>
-      <img src='{%- include func/get_image.html path="assets/team/raphael" -%}' alt='TODO'/>
-      Lukas
-      lukas at semanux.com
-      AI Wizard
-    </li>
-    <li>
-      <img src='{%- include func/get_image.html path="assets/team/raphael" -%}' alt='TODO'/>
-      Florian
-      florian at semanux.com
-      Customer Relations
-    </li>
-  </ul>
+  <div>
+    <img src='{%- include func/get_image.html path="assets/team/raphael" -%}' alt='TODO'/>
+    <span class='name'>Raphael</span>
+    <span class='job'>{{ site.data.misc.team.job.raphael }}</span>
+    <span class='email'>[raphael at semanux.com]</span>
+  </div>
+  <div>
+    <img src='{%- include func/get_image.html path="assets/team/ramin" -%}' alt='TODO'/>
+    <span class='name'>Ramin</span>
+    <span class='job'>{{ site.data.misc.team.job.ramin }}</span>
+    <span class='email'>[ramin at semanux.com]</span>
+    
+  </div>
+  <div>
+    <img src='{%- include func/get_image.html path="assets/team/lukas" -%}' alt='TODO'/>
+    <span class='name'>Lukas</span>
+    <span class='job'>{{ site.data.misc.team.job.lukas }}</span>
+    <span class='email'>[lukas at semanux.com]</span>
+    
+  </div>
+  <div>
+    <img src='{%- include func/get_image.html path="assets/team/florian" -%}' alt='TODO'/>
+    <span class='name'>Florian</span>
+    <span class='job'>{{ site.data.misc.team.job.florian }}</span>
+    <span class='email'>[florian at semanux.com]</span>
+  </div>
 </div>
 
-<div class='team-support'>
-  TODO: Mention Steffen, Alex, Marcel, Chandan, Analytic Computing?
+<div class='team-support' style='text-align: center;'>
+  Supported by Prof. Dr. Steffen Staab, Prof. Dr. Alexander Brem, Marcel Werle, Dr. Chandan Kumar, Analytic Computing and Exi+ Programme / Institute for Entrepreneurship
 </div>

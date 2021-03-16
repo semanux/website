@@ -14,6 +14,7 @@ $phone-screen: 400px
 $tablet-screen: 600px
 $desktop-screen: 1024px
 $nav-reserve-height: 5.5rem
+$border-radius: 5px
 
 .blog-img-bordered // testing kramdown
 	border: 1px solid black
@@ -225,23 +226,49 @@ nav
 				height: 7rem
 
 .team-bubbles
-	ul
-		text-align: center
-		list-style-type: none
-		margin: 0
-		padding: 0
-		overflow:hidden
-		display: inline-block
+	margin: auto
+	padding: 0
+	text-align: center
+	width: 100%
+	margin-top: 1rem
+	margin-bottom: 1rem
 
-	li
-		float: left
-		padding: 0.25rem
-		width: 15%
-		margin: auto
+	div
+		width: 18%
+		margin: 1%
+		display: inline-block
+		vertical-align: top
+		box-shadow: 0 0.5rem 1rem lightgrey
+		padding: 0.75rem
+		border: 1px solid white
+		border-radius: $border-radius
+
+		@media screen and (max-width: $tablet-screen)
+			width: 40%
+			margin: 2%
+
+		@media screen and (max-width: $phone-screen)
+			width: 60%
+			margin: 5%
 
 		img
 			width: 100%
 			border-radius: 100%
+
+		.name, .job, .email
+			display: block
+
+		.name
+			margin-top: 0.25rem
+			font-weight: 300
+			font-size: 1.5em
+
+		.job
+			font-style: italic
+
+		.email
+			font-weight: 200
+			font-size: 0.8em
 
 #scroll-top
 	transition: opacity 0.125s ease-in-out

@@ -1,10 +1,20 @@
+idea:
+  nav: "Idea"
+  heading: "We Make The Web Inclusive!"
+news:
+  nav: "News"
+  heading: "News About Semanux"
+team:
+  nav: "Team"
+  heading: "The Team Behind Semanux"
+  desc: "TODO: some words about the team"
+  job:
+    raphael: "Project Lead"
+    ramin: "Interaction Design"
+    lukas: "Machine Learning"
+    florian: "Administration"
+blog:
+  nav: "Blog"
+  heading: "Blog About Semanux"
 scroll-top: "Scroll to the top"
-nav-idea: "Idea"
-nav-news: "News"
-nav-team: "Team"
-nav-blog: "Blog"
-idea: "We Make The Web Inclusive!"
-news: "News About Semanux"
-team: "The Team Behind Semanux"
-blog: "Blog About Semanux"
 footer: "Made with <span style='color:red'>♥</span> in Stuttgart. See the <a href=\"/imprint\">imprint</a> for more details."
