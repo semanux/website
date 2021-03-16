@@ -3,12 +3,12 @@
 
 <div class='news'>
   {% for post in site.posts limit:3 %}
-  <div>
-    <div class='date'>
-      <i data-feather='calendar' aria-hidden='true'></i> {%- include func/local_date.html page=post -%}</div>
-      {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
-    <div class='preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}"' role='img' alt='{{ post.preview_alt }}'></div>
-    <div class='link'>
+  {%- capture bg_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
+  <div style='background-image: url("{%- include func/get_image.html path=bg_path -%}"' role='img' alt='{{ post.preview_alt }}'>
+    <div class='date acryl'>
+      <i data-feather='calendar' aria-hidden='true'></i> {%- include func/local_date.html page=post -%}
+    </div>
+    <div class='link acryl'>
       <a href='{{ post.url }}'>
         {{ post.title }}
       </a>
@@ -16,3 +16,5 @@
   </div>
   {% endfor %}
 </div>
+
+<div class='news-more'>{{ site.data.misc.news.more }}</div>

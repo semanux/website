@@ -193,15 +193,20 @@ nav
 
 	> div
 		width: 30%
+		height: 13rem
 		margin: 1%
 		display: inline-block
 		vertical-align: top
 		box-shadow: $card-shadow
-		padding: 0.5rem
 		border: 1px solid white
 		border-radius: $border-radius
 		box-sizing: border-box
 		text-align: left
+		background-position: center
+		background-size: cover
+		text-align: center
+		overflow: hidden
+		position: relative
 
 		@media screen and (max-width: $tablet-screen)
 			width: 100%
@@ -215,29 +220,34 @@ nav
 			vertical-align: middle
 			display: inline-block
 			text-align: right
+			background-color: white
 			width: 100%
+			line-height: 2em
+			position: relative
+			padding-right: 0.35rem
+			box-sizing: border-box
 
 			> svg
 				padding-right: 0.125rem
 				width: 0.8em
 				height: 0.8em
 
-		> .preview
-			width: 100%
-			height: 10rem
-			background-position: center
-			background-size: cover
-			text-align: center
-			@media screen and (max-width: $desktop-screen)
-				height: 12rem
-
 		> .link
 			text-align: center
-			width: 100%
+			padding-top: 0.35rem
+			padding-bottom: 0.35rem
 			margin-top: 0.5rem
 			margin-bottom: 0.25rem
 			font-weight: 300
+			background-color: white
+			line-height: 2em
+			position: absolute
+			bottom: -$border-radius
+			width: 100%
 
+.news-more
+	width: 100%
+	text-align: right
 
 .team-cards
 	margin: auto

@@ -4,6 +4,7 @@ idea:
 news:
   nav: "Neues"
   heading: "Neuigkeiten über Semanux"
+  more: "...erfahre mehr Neuigkeiten über Semanux in unserem <a href=\"/blog\">Blog</a>."
 team:
   nav: "Team"
   heading: "Das Team hinter Semanux"
