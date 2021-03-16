@@ -1,5 +1,5 @@
 ---
-title: Designing a new logo
+title: A new logo for Semanux.
 lang: en
 preview_alt: 'Alternative Text'
 ---

@@ -47,12 +47,9 @@ h2
 	margin-bottom: 2.5rem
 
 	@media screen and (max-width: $tablet-screen)
-		border: none
-		line-height: 1.5rem
-		margin-top: 1rem
-		margin-bottom: 1.25rem
+		font-size: 1.25em
 
-	span
+	> span
 		background: $background-color
 		padding: 0
 		padding-left: 0.5rem
@@ -70,13 +67,13 @@ nav
 	box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
 	border-bottom: 1px solid white
 
-	div
+	> div
 		display: block
 		max-width: $desktop-screen
 		margin: auto
 		padding: 0
 
-		div
+		> div
 			margin: auto
 			padding: 0
 			text-align: center
@@ -121,7 +118,7 @@ nav
 					padding: 0.5rem
 					margin-left: 0.25rem
 					margin-right: 0.25rem
-					border-radius: 0.5rem
+					border-radius: $border-radius
 					transition: border-color 0.125s ease-in-out
 					box-sizing: border-box
 					border: 1px solid rgba(255,255,255,0)
@@ -191,39 +188,56 @@ nav
 	padding: 0
 	text-align: center
 	width: 100%
-	margin-top: 1rem
-	margin-bottom: 1rem
+	margin-top: 0.5rem
+	margin-bottom: 0.5rem
 
-	div // TODO: is not really centered within parent div
-		
+	> div
 		width: 30%
 		margin: 1%
 		display: inline-block
 		vertical-align: top
 		box-shadow: $card-shadow
-		padding: 0.75rem
+		padding: 0.5rem
 		border: 1px solid white
 		border-radius: $border-radius
-		// border-radius: 0.5rem
-		// transition: border-color 0.125s ease-in-out
 		box-sizing: border-box
-		// border: 1px solid rgba(255,255,255,0)
+		text-align: left
 
 		@media screen and (max-width: $tablet-screen)
 			width: 100%
 			margin: 0
+			margin-top: 0.5rem
+			margin-bottom: 0.5rem
 
-		.preview
+		> .date
+			font-weight: 300
+			font-size: 0.8em
+			vertical-align: middle
+			display: inline-block
+			text-align: right
+			width: 100%
+
+			> svg
+				padding-right: 0.125rem
+				width: 0.8em
+				height: 0.8em
+
+		> .preview
 			width: 100%
 			height: 10rem
 			background-position: center
 			background-size: cover
-			border: none
-			border-radius: 0
-			box-shadow: none
-
+			text-align: center
 			@media screen and (max-width: $desktop-screen)
-				height: 7rem
+				height: 12rem
+
+		> .link
+			text-align: center
+			width: 100%
+			margin-top: 0.5rem
+			margin-bottom: 0.25rem
+			font-weight: 300
+
 
 .team-cards
 	margin: auto
@@ -233,8 +247,8 @@ nav
 	margin-top: 1rem
 	margin-bottom: 1rem
 
-	div
-		width: 18%
+	> div
+		width: 22%
 		margin: 1%
 		display: inline-block
 		vertical-align: top
@@ -289,4 +303,4 @@ nav
 	border-radius: 100%
 	width: 3rem
 	height: 3rem
-	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.3)
+	box-shadow: $card-shadow

@@ -4,14 +4,15 @@
 <div class='news'>
   {% for post in site.posts limit:3 %}
   <div>
-    {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
-    <a href='{{ post.url }}'>
-      <div class='preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}"' role='img' alt='{{ post.preview_alt }}'></div>
-    </a>
-    {%- include func/local_date.html page=post -%}.
-    <a href='{{ post.url }}'>
+    <div class='date'>
+      <i data-feather='calendar' aria-hidden='true'></i> {%- include func/local_date.html page=post -%}</div>
+      {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
+    <div class='preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}"' role='img' alt='{{ post.preview_alt }}'></div>
+    <div class='link'>
+      <a href='{{ post.url }}'>
         {{ post.title }}
-    </a>
+      </a>
+    </div>
   </div>
   {% endfor %}
 </div>
