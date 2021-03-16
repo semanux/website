@@ -15,6 +15,7 @@ $tablet-screen: 600px
 $desktop-screen: 1024px
 $nav-reserve-height: 5.5rem
 $border-radius: 5px
+$card-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25)
 
 .blog-img-bordered // testing kramdown
 	border: 1px solid black
@@ -66,7 +67,7 @@ nav
 	padding-top: 0.5rem
 	padding-bottom: 0.5rem
 	background-color: white
-	box-shadow: 0 4px 8px #00000026
+	box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
 	border-bottom: 1px solid white
 
 	div
@@ -158,7 +159,6 @@ nav
 				li
 					margin: 0
 					padding: 0.5rem
-					padding-left: 0.75rem
 					padding-right: 0rem
 
 				a
@@ -171,7 +171,7 @@ nav
 	padding-top: 1rem
 	padding-bottom: 1rem
 	margin-top: 2rem
-	box-shadow: 0 -4px 8px #00000026;
+	box-shadow: 0 -0.25rem 1rem lightgrey
 
 .anchor
 	display: block
@@ -187,19 +187,23 @@ nav
 	padding-right: 12px
 
 .news
-	display: inline-block
-	width: 100%
-	padding: 0
 	margin: auto
+	padding: 0
+	text-align: center
+	width: 100%
+	margin-top: 1rem
+	margin-bottom: 1rem
 
 	div // TODO: is not really centered within parent div
 		
-		float: left
-		margin: 0
-		margin-left: 1%
-		margin-right: 1%
-		padding: 0
 		width: 30%
+		margin: 1%
+		display: inline-block
+		vertical-align: top
+		box-shadow: $card-shadow
+		padding: 0.75rem
+		border: 1px solid white
+		border-radius: $border-radius
 		// border-radius: 0.5rem
 		// transition: border-color 0.125s ease-in-out
 		box-sizing: border-box
@@ -209,19 +213,19 @@ nav
 			width: 100%
 			margin: 0
 
-		&:hover
-			border-color: $accent-color-1
-
 		.preview
 			width: 100%
 			height: 10rem
 			background-position: center
 			background-size: cover
+			border: none
+			border-radius: 0
+			box-shadow: none
 
 			@media screen and (max-width: $desktop-screen)
 				height: 7rem
 
-.team-bubbles
+.team-cards
 	margin: auto
 	padding: 0
 	text-align: center
@@ -234,10 +238,11 @@ nav
 		margin: 1%
 		display: inline-block
 		vertical-align: top
-		box-shadow: 0 0.5rem 1rem lightgrey
+		box-shadow: $card-shadow
 		padding: 0.75rem
 		border: 1px solid white
 		border-radius: $border-radius
+		box-sizing: border-box
 
 		@media screen and (max-width: $tablet-screen)
 			width: 35%
@@ -255,12 +260,13 @@ nav
 			display: block
 
 		.name
-			margin-top: 0.25rem
+			margin-top: 0.4rem
+			margin-bottom: 0.2rem
 			font-weight: 300
 			font-size: 1.5em
 
 		.job
-			font-style: italic
+			font-weight: 200
 
 		.email
 			font-weight: 200
