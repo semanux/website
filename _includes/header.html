@@ -1,6 +1,6 @@
 <nav class='acryl'>
   <div> <!-- container for alignment -->
-    <div> <!-- container for table -->
+    <div> <!-- container for header contents -->
       <div class='home'>
         <a href="/"><img src='/static/logo.png' alt='TODO'></a>
       </div>
@@ -15,7 +15,7 @@
       <div class='tongue'>
         <ul>
           {% for tongue in site.languages %}
-            <li><span aria-hidden='true'>▸</span><a name='language_switch' href='{%- if tongue == site.default_lang -%}{{site.baseurl}}{{page.url}}{%- else -%}{{site.baseurl}}/{{ tongue }}{{page.url}}{%- endif -%}'>{{ site.misc[tongue] }}</a></li>
+            <li><span aria-hidden='true'>▸ </span><a name='language_switch' href='{%- if tongue == site.default_lang -%}{{site.baseurl}}{{page.url}}{%- else -%}{{site.baseurl}}/{{ tongue }}{{page.url}}{%- endif -%}'>{{ site.misc[tongue] }}</a></li>
           {% endfor %}
         </ul>
       </div>

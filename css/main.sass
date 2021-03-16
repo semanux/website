@@ -54,18 +54,8 @@ h2
 	span
 		background: $background-color
 		padding: 0
-		
-		&:before
-			content: "▹ "
-			color: $accent-color-1
-			@media screen and (max-width: $tablet-screen)
-				display: none
-
-		&:after
-			content: " ◃"
-			color: $accent-color-1
-			@media screen and (max-width: $tablet-screen)
-				display: none
+		padding-left: 0.5rem
+		padding-right: 0.5rem
 nav
 	position: fixed
 	padding: 0
@@ -86,16 +76,20 @@ nav
 		padding: 0
 
 		div
-			display: table
 			margin: auto
 			padding: 0
+			text-align: center
+
+			.home, .links, .tongue
+				display: inline-block
+				vertical-align: middle
 
 			.home // logo with link to index
-				display: table-cell
-				vertical-align: middle
+				
+				float: left
 				margin: auto
-				padding-left: 1rem
-				padding-right: 1.5rem
+				margin-left: 1rem
+				margin-right: 2rem
 				@media screen and (max-width: $tablet-screen)
 					display: none
 
@@ -107,8 +101,10 @@ nav
 					padding: 0.5rem
 
 			.links // links to components on home page and blog
-				display: table-cell
-				vertical-align: middle
+
+				float: left
+				@media screen and (max-width: $tablet-screen)
+					float: none
 
 				ul
 					display: table
@@ -140,11 +136,11 @@ nav
 					margin: auto
 
 			.tongue // language switch
-				display: table-cell
-				vertical-align: middle
-				right: 0
+
+				float: right
 				font-weight: 300
 				font-size: 10pt
+				margin-right: 1rem
 
 				ul
 					text-align: left
@@ -244,11 +240,11 @@ nav
 		border-radius: $border-radius
 
 		@media screen and (max-width: $tablet-screen)
-			width: 40%
+			width: 35%
 			margin: 2%
 
 		@media screen and (max-width: $phone-screen)
-			width: 60%
+			width: 70%
 			margin: 5%
 
 		img
@@ -282,7 +278,7 @@ nav
 	border: none
 	outline: none
 	color: black
-	background-color: $accent-color-3
+	background-color: white
 	cursor: pointer
 	border-radius: 100%
 	width: 3rem
