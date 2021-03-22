@@ -4,6 +4,7 @@
 /* definitions */
 $background-color: rgb(188,234,228);
 $background-gradient: linear-gradient(0deg, rgba(188,234,228,1) 0%, rgba(222,232,230,1) 100%);
+$red: #EA332F;
 $bright-yellow: #FFFAC8;
 $dark-yellow: #CCAE5E;
 $dark-cyan: #4E6B5F;
@@ -74,6 +75,19 @@ a {
 		margin: auto;
 		display: block;
 	}
+}
+
+.info {
+	display: block;
+	border-radius: $border-radius;
+	background-color: rgba(255,255,255,0.5);
+	border: 1px solid $red;
+	box-shadow: $box-shadow;
+	width: 50%;
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding: 0.5rem;
 }
 
 .flyers {
