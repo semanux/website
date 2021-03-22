@@ -33,6 +33,7 @@ New Website using Jekyll 4. Under construction.
 1. Social media links
 1. Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version)
 1. Create Email addresses as listd on the page
+1. Integrate Matomo
 
 ## Ideas
 - List our relevant publications?
