@@ -201,10 +201,8 @@ nav
 		border: 1px solid white
 		border-radius: $border-radius
 		box-sizing: border-box
-		text-align: left
 		background-position: center
 		background-size: cover
-		text-align: center
 		overflow: hidden
 		position: relative
 
@@ -233,7 +231,6 @@ nav
 				height: 0.8em
 
 		> .link
-			text-align: center
 			padding-top: 0.35rem
 			padding-bottom: 0.35rem
 			margin-top: 0.5rem
@@ -249,7 +246,7 @@ nav
 	width: 100%
 	text-align: right
 
-.team-cards
+.team-cards // container
 	margin: auto
 	padding: 0
 	text-align: center
@@ -257,9 +254,8 @@ nav
 	margin-top: 1rem
 	margin-bottom: 1rem
 
-	> div
-		width: 22%
-		margin: 1%
+	> div // card
+		margin: 0.5rem
 		display: inline-block
 		vertical-align: top
 		box-shadow: $card-shadow
@@ -268,26 +264,36 @@ nav
 		border-radius: $border-radius
 		box-sizing: border-box
 
-		@media screen and (max-width: $tablet-screen)
-			width: 35%
-			margin: 2%
-
-		@media screen and (max-width: $phone-screen)
-			width: 70%
-			margin: 5%
-
-		img
-			width: 100%
+		> div // portrait
 			border-radius: 100%
+			box-sizing: border-box
+			background-position: center
+			background-size: cover
+			overflow: hidden
+			position: relative
+			width: 12rem
+			height: 12rem
+			margin: auto
+			margin-bottom: 0.5rem
 
-		.name, .job, .email
+			@media screen and (max-width: $desktop-screen)
+				width: 10rem
+				height: 10rem
+
+			.name
+				margin-top: 0.4rem
+				margin-bottom: 0.2rem
+				font-weight: 300
+				font-size: 1.5em
+				position: absolute
+				bottom: 0
+				width: 100%
+				background-color: white
+				line-height: 1.75em
+				bottom: -0.2rem
+
+		.job, .email
 			display: block
-
-		.name
-			margin-top: 0.4rem
-			margin-bottom: 0.2rem
-			font-weight: 300
-			font-size: 1.5em
 
 		.job
 			font-weight: 200
