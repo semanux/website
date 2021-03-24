@@ -8,7 +8,11 @@ news:
 team:
   nav: "Team"
   heading: "Das Team hinter Semanux"
-  desc: "TODO: some words about the team"
+  desc: "Wir forschen seit Jahren zusammen in der Mensch-Computer-Interaktion und dem maschinellen Lernen. Diese Expertise wird in Semanux zusammenfinden, um ein einzigartiges Erlebnis zu schaffen."
+  support: "Als Ausgründung aus der Universität Stuttgart werden wir umfänglich unterstützt:"
+  steffen: "<a href='https://de.wikipedia.org/wiki/Steffen_Staab'>Prof. Dr. Steffen Staab</a>, Cyber Valley Stiftungslehrstuhl für Analytic Computing"
+  alexander: "<a href='https://www.uni-stuttgart.de/presse/experten/Prof.-Dr.-Alexander-Brem'>Prof. Dr. Alexander Brem</a>, Lehrstuhl für Entrepreneurship in Technologie und Digitalisierung"
+  network: "<a href='https://www.uni-stuttgart.de/transfer/entrepreneurship/beratung'>Gründungsnetzwerk</a> der Universität Stuttgart"
   job:
     raphael: "Projektleitung"
     ramin: "Interaktionsdesign"
