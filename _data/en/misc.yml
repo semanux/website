@@ -9,7 +9,7 @@ team:
   nav: "Team"
   heading: "The Team Behind Semanux"
   desc: "We have been researching together in human-computer interaction and machine learning for years. This expertise will come together in Semanux to create a unique experience."
-  support: "As a spin-off from the University of Stuttgart, we receive extensive support:"
+  support: "As a spin-off from the University Stuttgart, we receive extensive support:"
   steffen: "<a href='https://www.ipvs.uni-stuttgart.de/institute/team/Staab-00001/'>Prof. Dr. Steffen Staab</a>, Cyber Valley Endowed Chair for Analytic Computing"
   alexander: "<a href='https://www.uni-stuttgart.de/en/press/experts/Prof.-Dr.-Alexander-Brem/'>Prof. Dr. Alexander Brem</a>, Chair of Entrepreneurship in Technology and Digitization"
   network: "<a href='https://www.uni-stuttgart.de/en/transfer/entrepreneurship/start-up-advice/'>Startup network</a> of the University Stuttgart"
@@ -21,5 +21,6 @@ team:
 blog:
   nav: "Blog"
   heading: "Blog About Semanux"
+  more: " ... read more."
 scroll-top: "Scroll to the top"
 footer: "Made with <span style='color:red'>♥</span> in Stuttgart. See the <a href=\"/imprint\">imprint</a> for more details."

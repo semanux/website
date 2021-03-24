@@ -5,14 +5,23 @@ title: Semanux Blog
 
 <h2 class='section-title'><span>{{ site.data.misc.blog.heading }}</span></h2>
 
-<ul>
+<div class='post-cards'>
   {% for post in site.posts %}
-    <li>
-      {%- include func/local_date.html page=post -%}
+    <div>
       {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
-      <img src='{%- include func/get_image.html path=preview_path -%}' alt='{{ post.preview_alt }}' style='width: 100px;'/>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <p>{{ post.excerpt }}</p>
-    </li>
+      <div class='preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}"' role='img' alt='{{ post.preview_alt }}'></div>
+      <div class='content'>
+        <div class='header'>
+          <a class='title' href="{{ post.url }}">{{ post.title }}</a>
+          <div class='date'>
+            <i data-feather='calendar' aria-hidden='true'></i> {%- include func/local_date.html page=post -%}
+          </div>
+        </div>
+        <div>
+          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+          <a href="{{ post.url }}"> {{ site.data.misc.blog.more }} </a>
+        </div>
+      </div>
+    </div>
   {% endfor %}
-</ul>
+  </div>

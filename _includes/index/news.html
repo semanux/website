@@ -1,7 +1,7 @@
 <a class='anchor' id='news'></a>
 <h2 class='section-title'><span>{{ site.data.misc.news.heading }}</span></h2>
 
-<div class='news'>
+<div class='news-cards'>
   {% for post in site.posts limit:3 %}
   {%- capture bg_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
   <div style='background-image: url("{%- include func/get_image.html path=bg_path -%}"' role='img' alt='{{ post.preview_alt }}'>
@@ -17,4 +17,6 @@
   {% endfor %}
 </div>
 
-<div class='news-more'>{{ site.data.misc.news.more }}</div>
+<div class='index-text'>
+  {{ site.data.misc.news.more }}
+</div>
