@@ -17,6 +17,8 @@ $desktop-screen: 1024px
 $nav-reserve-height: 5.5rem
 $border-radius: 5px
 $card-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25)
+$font-size: 13pt
+$font-size-small: 10pt
 
 .blog-img-bordered // testing kramdown
 	border: 1px solid black
@@ -31,7 +33,7 @@ body
 	overflow-x: hidden
 	font-family: Inter, sans-serif
 	background-color: $background-color
-	font-size: 13pt
+	font-size: $font-size
 
 a
 	color: $accent-color-1
@@ -45,8 +47,8 @@ h2
 	border-bottom: 1px solid $accent-color-1
 	line-height: 0.05rem
 	margin: 0
-	margin-top: 4rem
-	margin-bottom: 3rem
+	margin-top: 3rem
+	margin-bottom: 2rem
 
 	@media screen and (max-width: $phone-screen)
 		font-size: 1.25em
@@ -56,6 +58,7 @@ h2
 		padding: 0
 		padding-left: 0.5rem
 		padding-right: 0.5rem
+
 nav
 	position: fixed
 	padding: 0
@@ -140,7 +143,7 @@ nav
 
 				float: right
 				font-weight: 300
-				font-size: 10pt
+				font-size: $font-size-small
 				margin-right: 1rem
 
 				ul
@@ -166,7 +169,7 @@ nav
 
 .footer
 	text-align: center
-	font-size: 10pt
+	font-size: $font-size-small
 	border-top: 1px solid white
 	padding-top: 1rem
 	padding-bottom: 1rem
@@ -191,6 +194,7 @@ nav
 
 	ul
 		list-style-type: none
+		font-weight: 300
 
 		li
 			&:before
@@ -234,7 +238,7 @@ nav
 
 		> .date
 			font-weight: 300
-			font-size: 0.8em
+			font-size:  $font-size-small
 			display: inline-block
 			text-align: right
 			background-color: $light
@@ -245,9 +249,10 @@ nav
 			box-sizing: border-box
 
 			> svg
-				padding-right: 0.125rem
-				width: 0.8em
-				height: 0.8em
+				padding-right: 0.25rem
+				width:  $font-size-small
+				height:  $font-size-small
+				transform: translateY($font-size-small / 8)
 
 		> .link
 			padding-top: 0.35rem
@@ -309,12 +314,13 @@ nav
 			display: block
 
 		.job
-			font-weight: 200
+			font-weight: 300
 
 		.email
-			font-weight: 200
+			font-weight: 300
 			font-size: 0.8em
 
+// Blog / post overview
 .post-cards // container
 	margin: auto
 	padding: 0
@@ -322,7 +328,7 @@ nav
 
 	> div // card
 		margin: 0.5rem
-		display: inline-block
+		display: table
 		box-shadow: $card-shadow
 		padding: 0.75rem
 		border: 1px solid white
@@ -331,41 +337,57 @@ nav
 		background-color: $light
 		margin-top: 1.0rem
 		margin-bottom: 1.0rem
+		border-spacing: 0.5rem
 
 		.preview // picture of the post
 			width: 20%
-			height: 10rem
-			float: left
-			margin-right: 2%
 			background-position: center
 			background-size: cover
+			display: table-cell
 
 			@media screen and (max-width: $tablet-screen)
+				width: 40%
+
+			@media screen and (max-width: $phone-screen)
 				display: none
 
 		.content // textual content of the posrt
-			width: 78%
-			float: left
+			display: table-cell
 
 			.header
 				width: 100%
-				display: inline-block
-				
-				.title
-					float: left
-					margin-right: 1rem
+				display: block
+				margin-bottom: 0.25rem
 
-				.date
-					float: right
+				> .title
+					display: block
+					padding-bottom: 0.25rem
+
+				> .date
 					font-weight: 300
+					display: block
+					font-size: $font-size-small
 
-					@media screen and (max-width: $desktop-screen)
-						float: left
-				
 					> svg
 						padding-right: 0.25rem
-						width: 0.8em
-						height: 0.8em
+						width: $font-size-small
+						height: $font-size-small
+						transform: translateY($font-size-small / 8)
+
+.post-date
+	font-weight: 300
+
+	> svg
+		padding-right: 0.25rem
+		width: $font-size
+		height: $font-size
+		transform: translateY($font-size / 8)
+
+.post-preview
+	width: 100%
+	height: 14rem
+	background-position: center
+			background-size: cover
 
 #scroll-top
 	transition: opacity 0.125s ease-in-out
