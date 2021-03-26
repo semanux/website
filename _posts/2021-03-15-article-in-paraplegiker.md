@@ -1,5 +1,5 @@
 ---
-title: The new homepage goes online.
+title: Feature in the latest edition of the PARAplegiker magazine.
 lang: en
 preview_alt: 'Alternative Text'
 ---
