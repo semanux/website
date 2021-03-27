@@ -3,13 +3,14 @@ layout: base
 title: Semanux Blog
 ---
 
-<h2 class='section-title'><span>{{ site.data.misc.blog.heading }}</span></h2>
+<h2 class='section-title blog'><span>{{ site.data.misc.blog.heading }}</span></h2>
 
 <div class='post-cards'>
   {% for post in site.posts %}
     <div>
       {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
-      <div class='preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}"' role='img' alt='{{ post.preview_alt }}'></div>
+      <a href="{{ post.url }}" aria-hidden='true' class='preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}"' role='img' alt='{{ post.preview_alt }}'>
+      </a>
       <div class='content'>
         <div class='header'>
           <a class='title' href="{{ post.url }}">{{ post.title }}</a>
@@ -17,7 +18,7 @@ title: Semanux Blog
             <i data-feather='calendar' aria-hidden='true'></i> {%- include func/local_date.html page=post -%}
           </div>
         </div>
-        <div>
+        <div class='post-excerpt'>
           {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
           <a href="{{ post.url }}"> {{ site.data.misc.blog.more }} </a>
         </div>

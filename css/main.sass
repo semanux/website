@@ -8,10 +8,15 @@
 $accent-color-1: #BB00FF
 $accent-color-2: #3AFFF5
 $accent-color-3: #FCFF67
+$link-color: black
+$idea-color: #e74d00
+$news-color: #0055dd
+$team-color: #b70055
+$blog-color: #3c9000
 $background-color: #fcfcfc
 $light: #f3f3f3
 $min-screen: 350px
-$phone-screen: 400px
+$phone-screen: 420px
 $tablet-screen: 650px
 $desktop-screen: 1024px
 $nav-reserve-height: 5.5rem
@@ -37,7 +42,8 @@ body
 	font-size: $font-size
 
 a
-	color: $accent-color-1
+	color: $link-color
+	font-weight: 400
 
 h2
 	font-weight: 300
@@ -45,14 +51,30 @@ h2
 .section-title
 	width: 100%
 	text-align: center
-	border-bottom: 1px solid $accent-color-1
+	border-bottom: 1px solid gray
 	line-height: 0.05rem
 	margin: 0
-	margin-top: 3rem
+	margin-top: 2rem
 	margin-bottom: 2rem
 
 	@media screen and (max-width: $phone-screen)
 		font-size: 1.25em
+
+	&.idea
+		border-color: $idea-color
+		color: $idea-color
+
+	&.news
+		border-color: $news-color
+		color: $news-color
+
+	&.team
+		border-color: $team-color
+		color: $team-color
+
+	&.blog
+		border-color: $blog-color
+		color: $blog-color
 
 	> span
 		background: $background-color
@@ -67,11 +89,11 @@ nav
 	top: 0
 	width: 100%
 	min-width: $min-screen
-	padding-top: 0.5rem
-	padding-bottom: 0.5rem
+	padding-top: 0.25rem
+	padding-bottom: 0.25rem
 	background-color: white
 	box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
-	border-bottom: 1px solid $accent-color-1
+	border-bottom: 1px solid gray
 	z-index: 999
 
 	> div
@@ -83,18 +105,32 @@ nav
 		> div
 			margin: auto
 			padding: 0
-			text-align: center
+			position: relative
+			padding-left: 4.25rem // to have space for the absolute positioned icon
 
-			.home, .links, .tongue
+			@media screen and (max-width: $phone-screen)
+				padding-left: 0
+
+			.brand-icon, .brand-title, .links, .tongue
 				display: inline-block
-				vertical-align: middle
 
-			.home // logo with link to index
-				
+			.brand-icon // icon with link to index
+				position: absolute
+				left: 0.25rem
+				top: 0.2rem
+
+				@media screen and (max-width: $phone-screen)
+					display: none
+
+				img
+					height: 3.25 * 1.5rem
+
+			.brand-title // title with link to index
 				float: left
-				margin: auto
-				margin-left: 1rem
-				margin-right: 2rem
+				margin: 0
+				padding: 0
+				padding-top: 1.5rem // TODO: hacky way for vertical alignment
+				margin-right: 1.5rem
 				@media screen and (max-width: $tablet-screen)
 					display: none
 
@@ -102,14 +138,10 @@ nav
 					text-decoration: none
 
 				img
-					height: 3.0rem
-					padding: 0.5rem
+					height: 1.5rem
+					display: inline-block
 
 			.links // links to components on home page and blog
-
-				float: left
-				@media screen and (max-width: $tablet-screen)
-					float: none
 
 				ul
 					display: table
@@ -122,20 +154,41 @@ nav
 					display: table-cell
 					float: left
 					text-align: center
-					padding: 0.5rem
+					padding: 0.35rem
 					margin-left: 0.25rem
 					margin-right: 0.25rem
 					border-radius: $border-radius
 					transition: border-color 0.125s ease-in-out
 					box-sizing: border-box
 					border: 1px solid rgba(255,255,255,0)
-					@media screen and (max-width: $tablet-screen)
-						margin-left: 0.15rem
-						margin-right: 0.15rem
-						padding: 0.35rem
+
+				.idea
+					a
+						color: $idea-color
 
 					&:hover
-						border-color: $accent-color-1
+						border-color: $idea-color
+
+				.news
+					a
+						color: $news-color
+
+					&:hover
+						border-color: $news-color
+
+				.team
+					a
+						color: $team-color
+
+					&:hover
+						border-color: $team-color
+
+				.blog
+					a
+						color: $blog-color
+
+					&:hover
+						border-color: $blog-color
 
 				.icon // scale icons
 					margin: auto
@@ -162,7 +215,7 @@ nav
 
 				li
 					margin: 0
-					padding: 0.5rem
+					padding: 0.45em
 					padding-right: 0rem
 
 				a
@@ -200,12 +253,12 @@ nav
 		li
 			&:before
 				content: '✧\00a0\00a0'
-				color: $accent-color-1
+				color: black
 				font-size: 12pt
 
 			&:after
 				content: '\00a0\00a0✧'
-				color: $accent-color-1
+				color: black
 				font-size: 12pt
 
 .news-cards // container
@@ -216,7 +269,7 @@ nav
 	margin-top: 0.5rem
 	margin-bottom: 0.5rem
 
-	> div // card
+	> a // card
 		width: 30%
 		height: 15rem
 		margin: 1%
@@ -236,18 +289,20 @@ nav
 			margin: 0
 			margin-top: 0.5rem
 			margin-bottom: 0.5rem
+			padding: 0
 
 		> .date
 			font-weight: 300
 			font-size:  $font-size-small
 			display: inline-block
 			text-align: right
-			background-color: $light
+			background-color: white
 			width: 100%
 			line-height: 2em
 			position: relative
 			padding-right: 0.35rem
 			box-sizing: border-box
+			border-bottom: 1px solid gray
 
 			> svg
 				padding-right: 0.25rem
@@ -256,8 +311,7 @@ nav
 				transform: translateY($font-size-small / 8)
 
 		> .link
-			padding-top: 0.35rem
-			padding-bottom: 0.35rem
+			padding: 0.5rem
 			margin-top: 0.5rem
 			margin-bottom: 0.25rem
 			font-weight: 300
@@ -266,6 +320,9 @@ nav
 			position: absolute
 			bottom: -$border-radius
 			width: 100%
+			border-top: 1px solid gray
+			box-sizing: border-box
+			text-decoration: underline
 
 .team-cards // container
 	margin: auto
@@ -297,6 +354,7 @@ nav
 			margin: auto
 			margin-bottom: 0.5rem
 			border-bottom: $slight-border
+			border-width: 2px
 
 			@media screen and (max-width: $desktop-screen)
 				width: 10rem
@@ -307,10 +365,11 @@ nav
 				font-size: 1.5em
 				position: absolute
 				width: 100%
-				background-color: $light
+				background-color: white
 				line-height: 1.85em
 				bottom:  0
 				padding-bottom: 0.2rem
+				border-top: 1px solid gray
 
 		.job, .email
 			display: block
@@ -389,9 +448,12 @@ nav
 
 .post-preview
 	width: 100%
-	height: 14rem
+	height: 20rem
 	background-position: center
 			background-size: cover
+
+.post-excerpt
+	font-weight: 300
 
 #scroll-top
 	transition: opacity 0.125s ease-in-out

@@ -22,7 +22,7 @@ defaults:
       permalink: blog/:title
 
 # General project settings
-title: Semanux
+title: semanux
 email: contact@semanux.com
 description: > # this means to ignore newlines
   We make the Web inclusive!
@@ -31,7 +31,7 @@ baseurl: "" # must be empty string
 url: "localhost:4000"
 markdown: kramdown
 permalink: pretty
-future: true
+future: false # TODO: set to true to see future posts
 exclude:
   - README.md
   - /*README.md

@@ -1,19 +1,19 @@
 <a class='anchor' id='news'></a>
-<h2 class='section-title'><span>{{ site.data.misc.news.heading }}</span></h2>
+<h2 class='section-title news'><span>{{ site.data.misc.news.heading }}</span></h2>
 
 <div class='news-cards'>
   {% for post in site.posts limit:3 %}
   {%- capture bg_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
-  <div style='background-image: url("{%- include func/get_image.html path=bg_path -%}"' role='img' alt='{{ post.preview_alt }}'>
+
+  <!-- below link with children might be bad for screen readers but much better for tactile users -->
+  <a href="{{ post.url }}" style='background-image: url("{%- include func/get_image.html path=bg_path -%}"' role='img' alt='{{ post.preview_alt }}'>
     <div class='date acryl'>
       <i data-feather='calendar' aria-hidden='true'></i> {%- include func/local_date.html page=post -%}
     </div>
     <div class='link acryl'>
-      <a href='{{ post.url }}'>
-        {{ post.title }}
-      </a>
+      {{ post.title }}
     </div>
-  </div>
+  </a>
   {% endfor %}
 </div>
 

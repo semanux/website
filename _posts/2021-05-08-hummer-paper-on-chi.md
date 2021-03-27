@@ -1,5 +1,5 @@
 ---
-title: Our approach at a premier conference.
+title: Our approach at a premier conference
 lang: en
 preview_alt: 'Alternative Text'
 ---
