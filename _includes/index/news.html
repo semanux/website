@@ -1,5 +1,8 @@
 <a class='anchor' id='news'></a>
-<h2 class='section-title news'><span>{{ site.data.misc.news.heading }}</span></h2>
+<h2 class='section-title news'>
+  <i data-feather='bell' aria-hidden='true'></i>
+  <span> {{ site.data.misc.news.heading }} </span>
+</h2>
 
 <div class='news-cards'>
   {% for post in site.posts limit:3 %}

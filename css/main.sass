@@ -9,13 +9,13 @@ $accent-color-1: #BB00FF
 $accent-color-2: #3AFFF5
 $accent-color-3: #FCFF67
 $link-color: black
-$idea-color: #e74d00
+$idea-color: #a46d00
 $news-color: #0055dd
 $team-color: #b70055
 $blog-color: #3c9000
 $background-color: #fcfcfc
 $light: #f3f3f3
-$min-screen: 350px
+$min-screen: 355px
 $phone-screen: 420px
 $tablet-screen: 650px
 $desktop-screen: 1024px
@@ -52,10 +52,18 @@ h2
 	width: 100%
 	text-align: center
 	border-bottom: 1px solid gray
-	line-height: 0.05rem
 	margin: 0
-	margin-top: 2rem
+	margin-top: 1rem
 	margin-bottom: 2rem
+
+	> span
+		padding: 0
+		margin: 0
+
+	> svg
+		margin: auto
+		width: 1.25rem
+		height: 1.25rem
 
 	@media screen and (max-width: $phone-screen)
 		font-size: 1.25em
@@ -75,12 +83,6 @@ h2
 	&.blog
 		border-color: $blog-color
 		color: $blog-color
-
-	> span
-		background: $background-color
-		padding: 0
-		padding-left: 0.5rem
-		padding-right: 0.5rem
 
 nav
 	position: fixed
@@ -125,6 +127,10 @@ nav
 				img
 					height: 3.25 * 1.5rem
 
+				a
+					&:hover
+						border-bottom: 2px solid $accent-color-1
+
 			.brand-title // title with link to index
 				float: left
 				margin: 0
@@ -135,7 +141,8 @@ nav
 					display: none
 
 				a
-					text-decoration: none
+					&:hover
+						border-bottom: 2px solid $accent-color-1
 
 				img
 					height: 1.5rem
@@ -215,7 +222,7 @@ nav
 
 				li
 					margin: 0
-					padding: 0.45em
+					padding: 0.5em
 					padding-right: 0rem
 
 				a
@@ -267,7 +274,7 @@ nav
 	text-align: center
 	width: 100%
 	margin-top: 0.5rem
-	margin-bottom: 0.5rem
+	margin-bottom: 1rem
 
 	> a // card
 		width: 30%

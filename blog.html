@@ -3,7 +3,10 @@ layout: base
 title: Semanux Blog
 ---
 
-<h2 class='section-title blog'><span>{{ site.data.misc.blog.heading }}</span></h2>
+<h2 class='section-title blog'>
+  <i data-feather='pen-tool' aria-hidden='true'></i>
+  <span> {{ site.data.misc.blog.heading }} </span>
+</h2>
 
 <div class='post-cards'>
   {% for post in site.posts %}
