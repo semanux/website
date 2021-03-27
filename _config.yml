@@ -22,7 +22,7 @@ defaults:
       permalink: blog/:title
 
 # General project settings
-title: semanux
+title: Semanux
 email: contact@semanux.com
 description: > # this means to ignore newlines
   We make the Web inclusive!
