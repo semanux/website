@@ -23,9 +23,9 @@ jobs:
                         && echo "NodeJS installed!"
                         && sudo apt update
                         && sudo apt -yq install ruby-full nodejs
-                        && gem install bundler
+                        && sudo gem install bundler
                         && bundle install --path vendor
                         && bundle exec jekyll build
-                        && npm install html-minifier -g
+                        && sudo npm install html-minifier -g
                         && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
                         && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
