@@ -19,8 +19,8 @@ jobs:
       - name: Setup and Build # TODO: consider the additional deployment config
         # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html, .css, and .js files, move archive to output
         run: curl -sL https://deb.nodesource.com/setup_13.x | bash
-                        && apt update
-                        && apt -yq install ruby-full nodejs
+                        && sudo apt update
+                        && sudo apt -yq install ruby-full nodejs
                         && gem install bundler
                         && bundle install --path vendor
                         && bundle exec jekyll build
