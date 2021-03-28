@@ -17,8 +17,8 @@ jobs:
           fetch-depth: 0
           ref: jekyll
 
-      - name: Setup and Build
-        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html, .css, and .js files, move archive to output
+      - name: Setup and Build # TODO: minify js (does currently break)
+        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html and .css
         run: curl -sL https://deb.nodesource.com/setup_14.x | sudo bash
                         && sudo apt update
                         && sudo apt -yq install ruby-full nodejs
@@ -28,7 +28,7 @@ jobs:
                         && sudo npm install html-minifier -g
                         && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
                         && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
-                        && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext js
+                        # && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext js
 
       - name: Push
         uses: appleboy/scp-action@master
