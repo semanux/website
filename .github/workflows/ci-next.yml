@@ -1,0 +1,29 @@
+name: ci-next
+
+on:
+  push:
+    branches:
+      - jekyll  # source files for jekyll
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with: # checkout with submodules (not yet required)
+          submodules: true
+          fetch-depth: 0
+          ref: jekyll
+
+      - name: Setup and Build # TODO: consider the additional deployment config
+        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html, .css, and .js files, move archive to output
+        run: curl -sL https://deb.nodesource.com/setup_13.x | bash
+                        && apt update
+                        && apt -yq install ruby-full nodejs
+                        && gem install bundler
+                        && bundle install --path vendor
+                        && bundle exec jekyll build
+                        && npm install html-minifier -g
+                        && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
+                        && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
