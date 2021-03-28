@@ -20,19 +20,16 @@ New Website using Jekyll 4. Under construction.
 - Feather Icons <https://github.com/feathericons/feather>
 
 ## TODO
-1. News on front
 1. Style blog posts <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
-1. Style blog overview
 1. Visitor tracker
 1. Imprint
 1. Idea on front
-1. Team on front
 1. Schedule a call “button” on front
 1. Actually write news
 1. Deploy page to Web server
 1. Social media links
 1. Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version)
-1. Create Email addresses as listd on the page
+1. Create Email addresses as listed on the page
 1. Integrate Matomo
 
 ## Ideas
