@@ -2,6 +2,7 @@
 title: Our approach at a premier conference
 lang: en
 preview_alt: 'Alternative Text'
+preview_offset: 0px
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla in ipsum molestie gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum massa mi, consequat vel nibh a, varius egestas est. Duis vehicula cursus risus sit amet venenatis. Curabitur porttitor sed arcu id semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer suscipit arcu lorem, eu venenatis justo viverra at.
