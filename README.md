@@ -31,6 +31,7 @@ New Website using Jekyll 4. Under construction.
 1. Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version)
 1. Create Email addresses as listed on the page
 1. Integrate Matomo
+1. CI script is both in main and in jekyll branch. Still confusing which one is actually used by GitHub
 
 ## Ideas
 - List our relevant publications?
