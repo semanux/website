@@ -16,14 +16,28 @@ jobs:
           fetch-depth: 0
           ref: jekyll
 
-      - name: Setup and Build # TODO: consider the additional deployment config
-        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html, .css, and .js files, move archive to output
-        run: sudo curl -sL https://deb.nodesource.com/setup_13.x | bash
+      - name: Setup and Build # TODO: minify js (does currently break)
+        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html and .css
+        run: curl -sL https://deb.nodesource.com/setup_14.x | sudo bash
                         && sudo apt update
                         && sudo apt -yq install ruby-full nodejs
-                        && gem install bundler
+                        && sudo gem install bundler
                         && bundle install --path vendor
-                        && bundle exec jekyll build
-                        && npm install html-minifier -g
-                        && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
-                        && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
+                        && bundle exec jekyll build --config _config.yml,_config-deploy.yml
+                        # && sudo npm install html-minifier -g
+                        # && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
+                        # && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
+                        # && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext js
+
+      - name: Push
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          source: "_site"
+          target: "/semanux-next/"
+          strip_components: 1 # ignore the "_site" super directory when copying
+          rm: true # remove the target directory before copying
+
+
