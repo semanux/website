@@ -3,8 +3,7 @@ name: ci-next
 on:
   push:
     branches:
-      # - jekyll  # source files for jekyll
-      - '**'
+      - jekyll  # source files for jekyll
 
 jobs:
   deploy:
