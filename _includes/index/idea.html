@@ -1,5 +1,6 @@
 <a class='anchor' id='idea'></a>
-<h2 class='idea-title idea'>
+<h2 class='section-title idea'>
+  <i data-feather='zap' aria-hidden='true'></i>
   <span> {{ site.data.misc.idea.heading }} </span>
 </h2>
 
@@ -8,19 +9,14 @@
 <div class='idea-card'>
   <div class='picture' aria-hidden='true' role='img' style='background-image: url("{%- include func/get_image.html path='/assets/semanux-laptop' -%}"'></div>
   <div class='content'>
-    Surfen Sie im Internet mit der kombinierten Interaktion durch:
-    <ul>
-      <li> Augensteuerung </li>
-      <li> Sprachsteuerung </li>
-      <li> Joystick </li>
-      <li> Schalter </li>
-      <li> Maus </li>
-      <li> Tastatur </li>
-    </ul>
-    Unsere künstliche Intelligenz versteht die Interaktivität von Webseiten und passt die Interaktionen an Ihre Möglichkeiten an!
+    {{ site.data.misc.idea.info }}
   </div>
 </div>
 
-<div class='index-text'>
-  Melden Sie sich für mehr Informationen bei unseren Newsletter an. Wir suchen für Ende 2021 Tester für unsere Betaversion!
+<div class='newsletter'>
+  {{ site.data.misc.idea.newsletter.info }}
+  <form action=''>
+    <input type='text' id='email' value='' placeholder='you@domain.com'>
+    <input type='submit' value='{{ site.data.misc.idea.newsletter.submit }}'>
+  </form>
 </div>

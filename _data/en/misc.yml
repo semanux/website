@@ -2,6 +2,19 @@ idea:
   nav: "Idea"
   heading: "We Make The Web Inclusive!"
   intro: "In Semanux we are using AI and hands-free interaction to make the Web inclusive for people with motor impairment."
+  info: "Browse in the Web using a combined interaction through:
+    <ul>
+      <li> Eyetracking </li>
+      <li> Speech control </li>
+      <li> Joystick </li>
+      <li> Triggers </li>
+      <li> Mouse </li>
+      <li> Keyboard </li>
+    </ul>
+    Our artificial intelligence undertands the interacitivity of web sites and adapts the interaction to suit your needs!"
+  newsletter:
+    info: "Subscribe to our newsletter for more information! We will then notify you as soon as a trial version of Semanux is available (add DSVGO stuff here)."
+    submit: "Send"
 news:
   nav: "News"
   heading: "News About Semanux"

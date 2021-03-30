@@ -49,22 +49,14 @@ a
 h2
 	font-weight: 300
 
-.idea-title
-	border-color: $idea-color
-	color: $idea-color
-	font-size: 24pt
-	margin-left: 4rem
-	margin-top: 1rem
-	margin-bottom: 1.25rem
-
 .section-title
 	width: 100%
 	text-align: center
-	border-bottom: 1px solid gray
 	margin: 0
 	margin-top: 1rem
 	margin-bottom: 2rem
 	font-size: $font-size-large
+	border-bottom: 1px solid gray
 
 	@media screen and (max-width: $phone-screen)
 		margin-top: 0.5rem
@@ -82,17 +74,21 @@ h2
 	@media screen and (max-width: $phone-screen)
 		font-size: 16pt
 
+	&.idea
+		color: $idea-color
+		border-color: $idea-color
+
 	&.news
-		border-color: $news-color
 		color: $news-color
+		border-color: $news-color
 
 	&.team
-		border-color: $team-color
 		color: $team-color
+		border-color: $team-color
 
 	&.blog
-		border-color: $blog-color
 		color: $blog-color
+		border-color: $blog-color
 
 nav
 	position: fixed
@@ -278,6 +274,13 @@ nav
 				color: black
 				font-size: 12pt
 
+.newsletter
+	text-align: center
+
+	> form
+		> input
+			font-size: $font-size
+
 .news-cards // container
 	margin: auto
 	padding: 0
@@ -405,7 +408,7 @@ nav
 			margin: auto
 			margin-bottom: 0.5rem
 			border: $slight-border
-			border-bottom-width: 2px
+			// border-bottom-width: 2px
 
 			@media screen and (max-width: $desktop-screen)
 				width: 10rem
