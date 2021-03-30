@@ -24,6 +24,7 @@ $border-radius: 5px
 $card-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25)
 $font-size: 13pt
 $font-size-small: 10pt
+$font-size-large: 20pt
 $slight-border: 1px solid gray
 
 .blog-img-bordered // testing kramdown
@@ -48,6 +49,14 @@ a
 h2
 	font-weight: 300
 
+.idea-title
+	border-color: $idea-color
+	color: $idea-color
+	font-size: 24pt
+	margin-left: 4rem
+	margin-top: 1rem
+	margin-bottom: 1.25rem
+
 .section-title
 	width: 100%
 	text-align: center
@@ -55,6 +64,7 @@ h2
 	margin: 0
 	margin-top: 1rem
 	margin-bottom: 2rem
+	font-size: $font-size-large
 
 	@media screen and (max-width: $phone-screen)
 		margin-top: 0.5rem
@@ -70,11 +80,7 @@ h2
 		height: 1.25rem
 
 	@media screen and (max-width: $phone-screen)
-		font-size: 1.25em
-
-	&.idea
-		border-color: $idea-color
-		color: $idea-color
+		font-size: 16pt
 
 	&.news
 		border-color: $news-color
@@ -335,6 +341,40 @@ nav
 			box-sizing: border-box
 			text-decoration: underline
 
+.idea-card
+	margin-top: 1rem
+	margin-bottom: 1rem
+	vertical-align: top
+	box-shadow: $card-shadow
+	border: $slight-border
+	border-radius: $border-radius
+	box-sizing: border-box
+	width: 100%
+	display: table
+
+	> .picture
+			width: 30%
+			display: table-cell
+			box-sizing: border-box
+			background-position: center
+			background-size: cover
+			overflow: hidden
+			position: relative
+			margin: 0
+			padding: 0
+			border: $slight-border
+
+			@media screen and (max-width: $phone-screen)
+				display: none
+
+	> .content
+		padding: 0.5rem
+		display: table-cell
+		font-weight: 300
+
+		ul
+			list-style-type: "- "
+
 .team-cards // container
 	margin: auto
 	padding: 0
@@ -364,8 +404,8 @@ nav
 			height: 12rem
 			margin: auto
 			margin-bottom: 0.5rem
-			border-bottom: $slight-border
-			border-width: 2px
+			border: $slight-border
+			border-bottom-width: 2px
 
 			@media screen and (max-width: $desktop-screen)
 				width: 10rem

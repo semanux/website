@@ -23,15 +23,13 @@ New Website using Jekyll 4. Under construction.
 1. Style blog posts <https://www.xaprb.com/blog/how-to-style-images-with-markdown>
 1. Visitor tracker
 1. Imprint
-1. Idea on front
-1. Schedule a call “button” on front
 1. Actually write news
-1. Deploy page to Web server
 1. Social media links
 1. Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version)
 1. Create Email addresses as listed on the page
 1. Integrate Matomo
 1. CI script is both in main and in jekyll branch. Still confusing which one is actually used by GitHub
+1. SASS: "cards" are highly similar, maybe let them share rules?
 
 ## Ideas
 - List our relevant publications?
