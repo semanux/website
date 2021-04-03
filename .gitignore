@@ -2,3 +2,4 @@ _gen
 public
 resources
 .DS_Store
+backend\backend\setting.py
