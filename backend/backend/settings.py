@@ -26,7 +26,13 @@ SECRET_KEY = 'rslh(zacbl*(zr09cdfty5$$13c=g7o7$(f2=by+mrjg+i6ryd'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*','localhost:8000/', '127.0.0.1:8000/', 'semanux.com', 'semanux.de']
 
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+    'https://semanux.com',
+    'https://backend.semanux.com',
+)
 
 # Application definition
 
@@ -37,6 +43,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'user',
+    'newsletter',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +88,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+ # For mysql we 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'semanux',
+#         'USER': 'backend',
+#         'PASSWORD': '',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
@@ -98,6 +118,13 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Pagination
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 100
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
