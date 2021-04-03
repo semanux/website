@@ -1,10 +1,22 @@
 ---
 title: Raphael defends his PHD thesis
 lang: en
-preview_alt: 'Alternative Text'
+preview_alt: 'Photo from the defense showing a screen and Raphael in the front.'
 preview_offset: 0px
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla in ipsum molestie gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum massa mi, consequat vel nibh a, varius egestas est. Duis vehicula cursus risus sit amet venenatis. Curabitur porttitor sed arcu id semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer suscipit arcu lorem, eu venenatis justo viverra at.
+- Raphael hat erfolgreich seine Dissertation "Improving Usability and Accessibility of the Web with Eye Tracking" an der Universität Koblenz-Landau verteidigt.
+- Die Gutachter haben in ihrer Expertise dabei das interdisziplinäre Spektrum der Arbeit abgedeckt
+- Mit Prof. Dr. Steffen Staab als Experte im Bereich der Web Science
+- Prof. Dr. Andreas Bulling als Experte im Bereich der Mensch-Computer Interaktion
+und Prof. Dr. Dietrich Paulus als Experte für Bildverarbeitung
 
-Vestibulum id suscipit felis, et interdum sapien. Nullam commodo, leo sit amet tincidunt placerat, sapien eros pretium dolor, ac imperdiet enim eros ut justo. Nullam euismod sem id risus fringilla, et hendrerit erat aliquet. Vivamus risus nunc, fermentum eget suscipit non, sollicitudin vel ligula. Maecenas blandit viverra lobortis. Duis vitae efficitur lectus. Fusce sollicitudin tellus non diam semper, eget rutrum odio condimentum. Phasellus hendrerit imperdiet aliquet. Curabitur egestas leo quis tellus dictum, id ornare leo tristique. Pellentesque molestie sem dictum metus feugiat aliquam. Aliquam egestas leo nulla, eu venenatis dui laoreet a. Pellentesque in luctus est. Nam dictum elit turpis, ac tempus nibh condimentum et. Phasellus rutrum tellus metus, sed rhoncus massa dignissim vel. Cras a tortor non metus tristique ullamcorper ac sit amet ipsum. Cras ut consectetur purus. Suspendisse viverra, ex at ornare suscipit, ante purus lobortis neque, at elementum justo mauris sit amet dolor. Aenean eget massa risus. In pharetra dictum ligula sed consectetur. Nam maximus luctus nunc, eget efficitur massa lacinia nec. Nulla dapibus sapien mauris, sit amet finibus orci lobortis ut. Donec at purus vel quam fermentum pharetra. Curabitur lorem libero, facilisis at nibh in, malesuada rutrum massa. Vivamus a aliquet orci, non aliquet lacus. Pellentesque finibus tortor feugiat bibendum finibus. Fusce malesuada, quam sed pretium aliquet, dui libero mollis turpis, ut ornare purus lorem a est. Nunc consectetur nunc elit. Nulla eget pulvinar urna, eu laoreet ipsum. Aenean porttitor eget velit id tristique. Nunc eu justo et orci tincidunt hendrerit. Donec elementum lacinia lorem quis luctus. Suspendisse neque felis, sodales a tortor in, consequat dapibus metus. Integer cursus facilisis aliquam. Pellentesque eget sodales nibh, a placerat lacus. Etiam et accumsan augue. Vestibulum massa diam, blandit sed nibh non, eleifend dignissim nibh. Etiam nec justo scelerisque, ultricies metus sed, iaculis lacus. Quisque gravida fermentum dui, id porta sem placerat at. Nullam in hendrerit neque. Vivamus eget pharetra lacus. Pellentesque dignissim, metus eget gravida faucibus, dui augue laoreet augue, nec pellentesque turpis diam sit amet orci. Proin id turpis malesuada dolor malesuada volutpat. Aliquam eget nisi est. Etiam blandit, nulla ac rhoncus fringilla, velit tortor pellentesque quam, et aliquam turpis ante vitae turpis. Maecenas venenatis elit id felis interdum, sed malesuada nunc facilisis. Vivamus varius sem quis purus lobortis, a pharetra nulla malesuada. Suspendisse vel sollicitudin turpis. Nam iaculis tristique gravida.
+bild von raphael mit dem phd hut / bild vom phd hut im detail
+![alt text]({%- include func/blog_asset_path.html -%}/test-image.jpg "Hello" ){:.blog-img-bordered  style="width:150px;"}
+
+- grundlegende forschungsarbeiten die Semanux erst möglich machen
+- visuelles verständnis von webseiten
+- interaktivität von dynamischen web inhalten erkennen
+- zugänglichkeit durch eye tracking
+- ausführliche feldstudie mit menschen mit motorischen einschränkungen in Griechenland und Israel
+- Dissertation wurde mit magna cum laude benotet

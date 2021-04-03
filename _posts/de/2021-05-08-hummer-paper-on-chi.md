@@ -1,7 +1,7 @@
 ---
-title: Design eines neuen Logos
+title: Veröffentlichung unseres Papiers auf internationaler Konferenz
 lang: de
-preview_alt: 'Alternativer Text'
+preview_alt: 'Alternative Text'
 preview_offset: 0px
 ---
 
