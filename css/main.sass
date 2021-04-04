@@ -13,19 +13,19 @@ $idea-color: #a46d00
 $news-color: #0055dd
 $team-color: #b70055
 $blog-color: #3c9000
-$background-color: #fcfcfc
-$light: #f3f3f3
+$foreground-color: #fdfdfd
+$background-color: #fafafa
 $min-screen: 355px
 $phone-screen: 420px
 $tablet-screen: 650px
 $desktop-screen: 1024px
-$nav-reserve-height: 5.5rem
+$nav-reserve-height: 5.0rem
 $border-radius: 5px
-$card-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25)
+$card-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
 $font-size: 13pt
 $font-size-small: 10pt
-$font-size-large: 20pt
-$slight-border: 1px solid gray
+$font-size-large: 24pt
+$slight-border: 1px solid white
 
 .blog-img-bordered // testing kramdown
 	border: 1px solid black
@@ -53,10 +53,9 @@ h2
 	width: 100%
 	text-align: center
 	margin: 0
-	margin-top: 1rem
-	margin-bottom: 2rem
+	margin-top: 1.0rem
+	margin-bottom: 0.75rem
 	font-size: $font-size-large
-	border-bottom: 1px solid gray
 
 	@media screen and (max-width: $phone-screen)
 		margin-top: 0.5rem
@@ -68,27 +67,24 @@ h2
 
 	> svg
 		margin: auto
-		width: 1.25rem
-		height: 1.25rem
+		width: 2.5rem
+		height: 2.5rem
+		transform: translateY(0.4rem)
 
 	@media screen and (max-width: $phone-screen)
 		font-size: 16pt
 
 	&.idea
 		color: $idea-color
-		border-color: $idea-color
 
 	&.news
 		color: $news-color
-		border-color: $news-color
 
 	&.team
 		color: $team-color
-		border-color: $team-color
 
 	&.blog
 		color: $blog-color
-		border-color: $blog-color
 
 nav
 	position: fixed
@@ -99,9 +95,9 @@ nav
 	min-width: $min-screen
 	padding-top: 0.25rem
 	padding-bottom: 0.25rem
-	background-color: white
+	background-color: $foreground-color
 	box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
-	border-bottom: 1px solid gray
+	border-bottom: $slight-border
 	z-index: 999
 
 	> div
@@ -316,13 +312,13 @@ nav
 			font-size:  $font-size-small
 			display: inline-block
 			text-align: right
-			background-color: white
+			background-color: $foreground-color
 			width: 100%
 			line-height: 2em
 			position: relative
 			padding-right: 0.35rem
 			box-sizing: border-box
-			border-bottom: 1px solid gray
+			border-bottom: $slight-border
 
 			> svg
 				padding-right: 0.25rem
@@ -335,12 +331,12 @@ nav
 			margin-top: 0.5rem
 			margin-bottom: 0.25rem
 			font-weight: 300
-			background-color: $light
+			background-color: $foreground-color
 			line-height: 1.5em
 			position: absolute
 			bottom: -$border-radius
 			width: 100%
-			border-top: 1px solid gray
+			border-top: $slight-border
 			box-sizing: border-box
 			text-decoration: underline
 
@@ -419,11 +415,11 @@ nav
 				font-size: 1.5em
 				position: absolute
 				width: 100%
-				background-color: white
+				background-color: $foreground-color
 				line-height: 1.85em
 				bottom:  0
 				padding-bottom: 0.2rem
-				border-top: 1px solid gray
+				border-top: $slight-border
 
 		.job, .email
 			display: block
@@ -446,14 +442,15 @@ nav
 		padding: 0
 		display: table
 		box-shadow: $card-shadow
-		border: 1px solid white
+		border: $slight-border
 		box-sizing: border-box
 		overflow: hidden
-		background-color: $light
+		background-color: $foreground-color
 		margin-top: 1.0rem
 		margin-bottom: 1.0rem
 		border: $slight-border
 		border-radius: $border-radius
+		width: 100%
 
 		.preview // picture of the post
 			width: 20%
@@ -521,7 +518,7 @@ nav
 	border: none
 	outline: none
 	color: black
-	background-color: white
+	background-color: $foreground-color
 	cursor: pointer
 	border-radius: 100%
 	width: 3rem
