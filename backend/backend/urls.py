@@ -20,7 +20,8 @@ from django.urls import include, path
 from rest_framework import routers
 from user import views
 
-from newsletter.views import subscriber
+from newsletter.views import SubscriberList
+from newsletter.views import SubscriberDetail
 from newsletter.views import SubscriberViewSet
 
 router = routers.DefaultRouter()
@@ -34,5 +35,6 @@ urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
-    #path('subscribers_list/', subscriber),
+    path('subscribers/', SubscriberList.as_view()),
+    path('subscribers/<int:pk>/', SubscriberDetail.as_view()),
 ]

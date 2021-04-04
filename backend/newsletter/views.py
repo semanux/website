@@ -1,35 +1,56 @@
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.renderers import JSONRenderer
-from rest_framework.parsers import JSONParser
+from newsletter.models import Subscriber
+from newsletter.serializers import SubscriberSerializer
+
+from django.http import Http404
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+#from rest_framework.parsers import JSONParser
+from rest_framework import mixins
+from rest_framework import generics
 
 from rest_framework import viewsets
 from rest_framework import permissions
 
-from newsletter.models import Subscriber
-from newsletter.serializers import SubscriberSerializer
 
-import json
+class SubscriberList(APIView):
+    """
+    List all subscribers, or create a new subscriber.
+    """
+    permission_classes = [permissions.IsAuthenticated]
+    def get(self, request, format=None):
+        subscribers = Subscriber.objects.all()
+        serializer = SubscriberSerializer(subscribers, many=True)
+        return Response(serializer.data)
 
-@csrf_exempt
-def subscriber(request):
-	"""
-	List all log records, or create a new log.
-	"""
-	if request.method == 'GET':
-		subs = Subscriber.objects.all()
-		serializer = SubscriberSerializer(subs, many=True)
-		return JsonResponse(serializer.data, safe=False)
+    def post(self, request, format=None):
+        #data = JSONParser().parse(request)
+        serializer = SubscriberSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-	elif request.method == 'POST':
-		data = JSONParser().parse(request)
-		#data['user'] = USER
-		serializer = SubscriberSerializer(data=data)
-		if serializer.is_valid():
-			serializer.save()
-			return JsonResponse(serializer.data, status=201)
-		return JsonResponse(serializer.errors, status=400)
+
+class SubscriberDetail(mixins.RetrieveModelMixin,
+                    mixins.UpdateModelMixin,
+                    mixins.DestroyModelMixin,
+                    generics.GenericAPIView):
+    """
+    Retrieve, update or delete a subscriber.
+    """
+    queryset = Subscriber.objects.all()
+    serializer_class = SubscriberSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request, *args, **kwargs):
+        return self.retrieve(request, *args, **kwargs)
+
+    def put(self, request, *args, **kwargs):
+        return self.update(request, *args, **kwargs)
+
+    def delete(self, request, *args, **kwargs):
+        return self.destroy(request, *args, **kwargs)
 
 
 class SubscriberViewSet(viewsets.ModelViewSet):
@@ -39,30 +60,3 @@ class SubscriberViewSet(viewsets.ModelViewSet):
     queryset = Subscriber.objects.all().order_by('-created')
     serializer_class = SubscriberSerializer
     permission_classes = [permissions.IsAuthenticated]
-
-
-@csrf_exempt
-def subscriber_detail(request, pk):
-    """
-    Retrieve, update or delete a subscriber.
-    """
-    try:
-        sub = Subscriber.objects.get(pk=pk)
-    except Subscriber.DoesNotExist:
-        return HttpResponse(status=404)
-
-    if request.method == 'GET':
-        serializer = SubscriberSerializer(sub)
-        return JsonResponse(serializer.data)
-
-    elif request.method == 'PUT':
-        data = JSONParser().parse(request)
-        serializer = SubscriberSerializer(sub, data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return JsonResponse(serializer.data)
-        return JsonResponse(serializer.errors, status=400)
-
-    elif request.method == 'DELETE':
-        sub.delete()
-        return HttpResponse(status=204)
