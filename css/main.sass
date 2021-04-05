@@ -10,22 +10,26 @@ $accent-color-2: #3AFFF5
 $accent-color-3: #FCFF67
 $link-color: black
 $idea-color: #a46d00
+$idea-background-color: #FFF6E5
 $news-color: #0055dd
+$news-background-color: #E8F1FF
 $team-color: #b70055
+$team-background-color: #FFE8F2
 $blog-color: #3c9000
+$blog-background-color: #F0FFE5
 $foreground-color: #fdfdfd
 $background-color: #fafafa
 $min-screen: 355px
 $phone-screen: 420px
 $tablet-screen: 650px
 $desktop-screen: 1024px
-$nav-reserve-height: 5.0rem
-$border-radius: 5px
-$card-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
+$nav-reserve-height: 5.5rem
+$footer-height: 2.5rem
+$border-radius: 15px
+$card-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.125)
 $font-size: 13pt
 $font-size-small: 10pt
 $font-size-large: 24pt
-$slight-border: 1px solid white
 
 .blog-img-left
 	float: left
@@ -37,7 +41,6 @@ $slight-border: 1px solid white
 
 .blog-img-full
 	width: 100%
-
 
 html
 	overflow-y: scroll
@@ -58,12 +61,12 @@ a
 h2
 	font-weight: 300
 
-.section-title
+.box-title
 	width: 100%
 	text-align: center
 	margin: 0
 	margin-top: 1.0rem
-	margin-bottom: 0.75rem
+	margin-bottom: 0.25rem
 	font-size: $font-size-large
 
 	@media screen and (max-width: $phone-screen)
@@ -85,15 +88,19 @@ h2
 
 	&.idea
 		color: $idea-color
+		border-color: $idea-color
 
 	&.news
 		color: $news-color
+		border-color: $news-color
 
 	&.team
 		color: $team-color
+		border-color: $team-color
 
 	&.blog
 		color: $blog-color
+		border-color: $blog-color
 
 nav
 	position: fixed
@@ -106,7 +113,6 @@ nav
 	padding-bottom: 0.25rem
 	background-color: $foreground-color
 	box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
-	border-bottom: $slight-border
 	z-index: 999
 
 	> div
@@ -119,7 +125,7 @@ nav
 			margin: auto
 			padding: 0
 			position: relative
-			padding-left: 4.25rem // to have space for the absolute positioned icon
+			padding-left: 5.3rem // to have space for the absolute positioned icon
 
 			@media screen and (max-width: $phone-screen)
 				padding-left: 0
@@ -129,8 +135,8 @@ nav
 
 			.brand-icon // icon with link to index
 				position: absolute
-				left: 0.25rem
-				top: 0.1rem
+				left: 1.25rem
+				top: 0.15rem
 
 				@media screen and (max-width: $phone-screen)
 					display: none
@@ -138,22 +144,14 @@ nav
 				img
 					height: 3.3 * 1.5rem
 
-				a
-					&:hover
-						border-bottom: 2px solid $accent-color-1
-
 			.brand-title // title with link to index
 				float: left
 				margin: 0
 				padding: 0
-				padding-top: 1.5rem // TODO: hacky way for vertical alignment
+				padding-top: 1.65rem // TODO: hacky way for vertical alignment
 				margin-right: 1.5rem
 				@media screen and (max-width: $tablet-screen)
 					display: none
-
-				a
-					&:hover
-						border-bottom: 2px solid $accent-color-1
 
 				img
 					height: 1.5rem
@@ -172,41 +170,25 @@ nav
 					display: table-cell
 					float: left
 					text-align: center
-					padding: 0.35rem
-					margin-left: 0.25rem
-					margin-right: 0.25rem
-					border-radius: $border-radius
-					transition: border-color 0.125s ease-in-out
-					box-sizing: border-box
-					border: 1px solid rgba(255,255,255,0)
+					padding: 0.55rem
+					margin-left: 0.125rem
+					margin-right: 0.215rem
 
 				.idea
 					a
 						color: $idea-color
 
-					&:hover
-						border-color: $idea-color
-
 				.news
 					a
 						color: $news-color
-
-					&:hover
-						border-color: $news-color
 
 				.team
 					a
 						color: $team-color
 
-					&:hover
-						border-color: $team-color
-
 				.blog
 					a
 						color: $blog-color
-
-					&:hover
-						border-color: $blog-color
 
 				.icon // scale icons
 					margin: auto
@@ -239,14 +221,24 @@ nav
 				a
 					color: black
 
-.footer
+.page
+	margin: 0 auto
+	padding: 0
+	margin-top: $nav-reserve-height
+	padding-left: 1rem
+	padding-right: 1rem
+	overflow-y: hidden // otherwise floats in blog posts destroy footer
+	max-width: $desktop-screen
+
+#footer
 	text-align: center
 	font-size: $font-size-small
-	border-top: $slight-border
-	padding-top: 1rem
-	padding-bottom: 1rem
-	margin-top: 2rem
-	box-shadow: 0 -0.25rem 1rem lightgrey
+	margin: auto
+	width: 100%
+	box-shadow: 0 -0.25rem 1rem rgba(0,0,0,0.25)
+	background-color: $foreground-color
+	padding-top: 1.0rem
+	padding-bottom: 1.0rem
 
 .anchor
 	display: block
@@ -254,13 +246,31 @@ nav
 	visibility: hidden
 	top: -$nav-reserve-height
 
-.page
-	padding-top: $nav-reserve-height
-	max-width: $desktop-screen
-	margin: 0 auto
-	padding-left: 12px
-	padding-right: 12px
-	overflow: hidden // otherwise floats in blog posts destroy footer
+.box
+	border-top: 1px solid black
+	padding: 1.0rem
+	border-radius: $border-radius
+	margin-bottom: 2.5rem
+
+	&.idea
+		border-color: $idea-color
+		background-color: $idea-background-color
+		background-image: linear-gradient($idea-background-color, $background-color);
+
+	&.news
+		border-color: $news-color
+		background-color: $news-background-color
+		background-image: linear-gradient($news-background-color, $background-color);
+
+	&.team
+		border-color: $team-color
+		background-color: $team-background-color
+		background-image: linear-gradient($team-background-color, $background-color);
+
+	&.blog
+		border-color: $blog-color
+		background-color: $blog-background-color
+		background-image: linear-gradient($blog-background-color, $background-color);
 
 .index-text
 	text-align: center
@@ -302,7 +312,6 @@ nav
 		display: inline-block
 		vertical-align: top
 		box-shadow: $card-shadow
-		border: $slight-border
 		border-radius: $border-radius
 		box-sizing: border-box
 		background-position: center
@@ -328,7 +337,6 @@ nav
 			position: relative
 			padding-right: 0.35rem
 			box-sizing: border-box
-			border-bottom: $slight-border
 
 			> svg
 				padding-right: 0.25rem
@@ -337,16 +345,14 @@ nav
 				transform: translateY($font-size-small / 8)
 
 		> .link
-			padding: 0.5rem
-			margin-top: 0.5rem
-			margin-bottom: 0.25rem
+			padding: 0.75rem
+			margin: 0
 			font-weight: 300
 			background-color: $foreground-color
 			line-height: 1.5em
 			position: absolute
-			bottom: -$border-radius
+			bottom: 0
 			width: 100%
-			border-top: $slight-border
 			box-sizing: border-box
 			text-decoration: underline
 
@@ -355,11 +361,11 @@ nav
 	margin-bottom: 1rem
 	vertical-align: top
 	box-shadow: $card-shadow
-	border: $slight-border
 	border-radius: $border-radius
 	box-sizing: border-box
 	width: 100%
 	display: table
+	background-color: $foreground-color
 
 	> .picture
 			width: 30%
@@ -371,7 +377,6 @@ nav
 			position: relative
 			margin: 0
 			padding: 0
-			border: $slight-border
 
 			@media screen and (max-width: $phone-screen)
 				display: none
@@ -398,12 +403,12 @@ nav
 		vertical-align: top
 		box-shadow: $card-shadow
 		padding: 0.75rem
-		border: $slight-border
 		border-radius: $border-radius
 		box-sizing: border-box
+		background-color: $foreground-color
 
 		> div // portrait
-			border-radius: 100%
+			border-radius: $border-radius
 			box-sizing: border-box
 			background-position: center
 			background-size: cover
@@ -413,8 +418,6 @@ nav
 			height: 12rem
 			margin: auto
 			margin-bottom: 0.5rem
-			border: $slight-border
-			// border-bottom-width: 2px
 
 			@media screen and (max-width: $desktop-screen)
 				width: 10rem
@@ -429,7 +432,6 @@ nav
 				line-height: 1.85em
 				bottom:  0
 				padding-bottom: 0.2rem
-				border-top: $slight-border
 
 		.job, .email
 			display: block
@@ -452,13 +454,11 @@ nav
 		padding: 0
 		display: table
 		box-shadow: $card-shadow
-		border: $slight-border
 		box-sizing: border-box
 		overflow: hidden
 		background-color: $foreground-color
 		margin-top: 1.0rem
 		margin-bottom: 1.0rem
-		border: $slight-border
 		border-radius: $border-radius
 		width: 100%
 
@@ -534,4 +534,3 @@ nav
 	width: 3rem
 	height: 3rem
 	box-shadow: $card-shadow
-	border: $slight-border

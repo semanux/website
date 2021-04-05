@@ -2,11 +2,12 @@
 layout: base
 title: Semanux Blog
 ---
-
-<h2 class='section-title blog'>
+<h2 class='box-title blog'>
   <i data-feather='pen-tool' aria-hidden='true'></i>
   <span> {{ site.data.misc.blog.heading }} </span>
 </h2>
+
+<div class='box blog'>
 
 <div class='post-cards'>
   {% for post in site.posts %}
@@ -28,4 +29,6 @@ title: Semanux Blog
       </div>
     </div>
   {% endfor %}
-  </div>
+</div>
+
+</div>
