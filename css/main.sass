@@ -27,8 +27,17 @@ $font-size-small: 10pt
 $font-size-large: 24pt
 $slight-border: 1px solid white
 
-.blog-img-bordered // testing kramdown
-	border: 1px solid black
+.blog-img-left
+	float: left
+	width: 33%
+
+.blog-img-right
+	float: right
+	width: 33%
+
+.blog-img-full
+	width: 100%
+
 
 html
 	overflow-y: scroll
@@ -251,6 +260,7 @@ nav
 	margin: 0 auto
 	padding-left: 12px
 	padding-right: 12px
+	overflow: hidden // otherwise floats in blog posts destroy footer
 
 .index-text
 	text-align: center

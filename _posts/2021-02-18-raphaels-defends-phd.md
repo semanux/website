@@ -12,7 +12,7 @@ preview_offset: 0px
 und Prof. Dr. Dietrich Paulus als Experte für Bildverarbeitung
 
 bild von raphael mit dem phd hut / bild vom phd hut im detail
-![alt text]({%- include func/blog_asset_path.html -%}/test-image.jpg "Hello" ){:.blog-img-bordered  style="width:150px;"}
+![alt text]({%- include func/blog_asset_path.html -%}/raphael-with-phd-hat.jpg "Hello" ){:.blog-img-right}
 
 - grundlegende forschungsarbeiten die Semanux erst möglich machen
 - visuelles verständnis von webseiten
