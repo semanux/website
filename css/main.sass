@@ -31,15 +31,43 @@ $font-size: 13pt
 $font-size-small: 10pt
 $font-size-large: 24pt
 
-.blog-img-left
+.fig-left, .fig-right, .fig-full
+	padding: 0
+	display: inline-block
+	margin: 1rem
+	font-size: $font-size-small
+
+	@media screen and (max-width: $phone-screen)
+		margin: 0.5
+		margin-top: 0.5
+		margin-bottom: 0.5
+		width: 100%
+
+.fig-left
 	float: left
 	width: 33%
+	margin-left: 0
+	>img
+		width: 100%
 
-.blog-img-right
+	@media screen and (max-width: $phone-screen)
+		float: none
+		width: 100%
+		margin-right: 0
+
+.fig-right
 	float: right
 	width: 33%
+	margin-right: 0
+	>img
+		width: 100%
 
-.blog-img-full
+	@media screen and (max-width: $phone-screen)
+		float: none
+		width: 100%
+		margin-left: 0
+
+.fig-full
 	width: 100%
 
 html
@@ -236,7 +264,7 @@ nav
 	margin: auto
 	width: 100%
 	box-shadow: 0 -0.25rem 1rem rgba(0,0,0,0.25)
-	background-color: $foreground-color
+	background-color: $background-color
 	padding-top: 1.0rem
 	padding-bottom: 1.0rem
 
