@@ -1,7 +1,7 @@
 # When changing something here, you might also want to change .gitignore.
 
 # OS files
-.DS_Store/
+.DS_Store
 
 # IDE files
 .idea/
