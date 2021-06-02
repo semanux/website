@@ -5,14 +5,6 @@ preview_alt: 'Alternative Text'
 preview_offset: -200px
 ---
 
-- PARAplegiker als das wichtigste Magazin mit dem Fokus auf querschnittlähmung in Deutschland
-- Herausgeber ist FGQ
-- semanux und unser team vorgestellt
+Uns wurde in der aktuellen Ausgabe des PARAplegiker für das Frühjahr 2021 ein eigener Abschnitt gewidmet. Das "PARAplegiker" Magazin ist das wichtigste deutschsprachige Magazin mit dem Fokus auf Querschnittlähmung. 
 
-BILD VOM ARTIKEL
-
-- magazin erscheint vierteljährig
-- liegt in nahezu allen einrichtungen für die behandlung von menschen mit querschnittlähmung aus
-- wichtiger accelerator für unser vorhaben
-- erhoffen uns den direkten kontakt zu nutzern
-- demnächst auf der suche nach testern für die beta versionen von semanux
+Das Magazin wird von der Fördergemeinschaft der Querschnittgelähmten in Deutschland e.V. (FGQ) vierteljährlich herausgegeben. Es liegt in nahezu allen Einrichtungen in Deutschland aus, welche auf die Behandlung von Menschen mit Querschnittlähmung spezialisiert sind. Damit bietet der Artikel für uns eine hervorragende Plattform, um mit Betroffenen und eventuellen Pilotkunden in Kontakt zu kommen. Wir suchen bereits nach Testern für die Betaversionen von Semanux, um zu einem möglichst frühen Zeitraum die Herausforderungen und die Wünsche von Kundinnen und Kunden in unserer Umsetzung berücksichtigen zu können.
