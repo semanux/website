@@ -47,8 +47,7 @@ liquid:
 # Sass settings
 sass:
   sass_dir: _sass
-  style: compressed
-  sourcemap: never
+  sourcemap: never # Sourcemaps seem to be broken in our Jekyll version (TODO: link GitHub for this).
 
 # Polyglot settings
 languages: ["en", "de"]
