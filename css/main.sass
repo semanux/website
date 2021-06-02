@@ -9,14 +9,6 @@ $accent-color-1: #BB00FF
 $accent-color-2: #3AFFF5
 $accent-color-3: #FCFF67
 $link-color: black
-$idea-color: #a46d00
-$idea-background-color: #FFF6E5
-$news-color: #0055dd
-$news-background-color: #E8F1FF
-$team-color: #b70055
-$team-background-color: #FFE8F2
-$blog-color: #3c9000
-$blog-background-color: #F0FFE5
 $foreground-color: #fdfdfd
 $background-color: #fafafa
 $min-screen: 355px
@@ -26,49 +18,9 @@ $desktop-screen: 1024px
 $nav-reserve-height: 5.5rem
 $footer-height: 2.5rem
 $border-radius: 15px
-$card-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.125)
 $font-size: 13pt
 $font-size-small: 10pt
 $font-size-large: 24pt
-
-.fig-left, .fig-right, .fig-full
-	padding: 0
-	display: inline-block
-	margin: 1rem
-	font-size: $font-size-small
-
-	@media screen and (max-width: $phone-screen)
-		margin: 0.5
-		margin-top: 0.5
-		margin-bottom: 0.5
-		width: 100%
-
-.fig-left
-	float: left
-	width: 33%
-	margin-left: 0
-	>img
-		width: 100%
-
-	@media screen and (max-width: $phone-screen)
-		float: none
-		width: 100%
-		margin-right: 0
-
-.fig-right
-	float: right
-	width: 33%
-	margin-right: 0
-	>img
-		width: 100%
-
-	@media screen and (max-width: $phone-screen)
-		float: none
-		width: 100%
-		margin-left: 0
-
-.fig-full
-	width: 100%
 
 html
 	overflow-y: scroll
@@ -82,54 +34,6 @@ body
 	background-color: $background-color
 	font-size: $font-size
 
-a
-	color: $link-color
-	font-weight: 400
-
-h2
-	font-weight: 300
-
-.box-title
-	width: 100%
-	text-align: center
-	margin: 0
-	margin-top: 1.0rem
-	margin-bottom: 0.25rem
-	font-size: $font-size-large
-
-	@media screen and (max-width: $phone-screen)
-		margin-top: 0.5rem
-		margin-bottom: 1.25rem
-
-	> span
-		padding: 0
-		margin: 0
-
-	> svg
-		margin: auto
-		width: 2.5rem
-		height: 2.5rem
-		transform: translateY(0.4rem)
-
-	@media screen and (max-width: $phone-screen)
-		font-size: 16pt
-
-	&.idea
-		color: $idea-color
-		border-color: $idea-color
-
-	&.news
-		color: $news-color
-		border-color: $news-color
-
-	&.team
-		color: $team-color
-		border-color: $team-color
-
-	&.blog
-		color: $blog-color
-		border-color: $blog-color
-
 nav
 	position: fixed
 	padding: 0
@@ -142,112 +46,6 @@ nav
 	background-color: $foreground-color
 	box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.25)
 	z-index: 999
-
-	> div
-		display: block
-		max-width: $desktop-screen
-		margin: auto
-		padding: 0
-
-		> div
-			margin: auto
-			padding: 0
-			position: relative
-			padding-left: 5.3rem // to have space for the absolute positioned icon
-
-			@media screen and (max-width: $phone-screen)
-				padding-left: 0
-
-			.brand-icon, .brand-title, .links, .tongue
-				display: inline-block
-
-			.brand-icon // icon with link to index
-				position: absolute
-				left: 1.25rem
-				top: 0.15rem
-
-				@media screen and (max-width: $phone-screen)
-					display: none
-
-				img
-					height: 3.3 * 1.5rem
-
-			.brand-title // title with link to index
-				float: left
-				margin: 0
-				padding: 0
-				padding-top: 1.65rem // TODO: hacky way for vertical alignment
-				margin-right: 1.5rem
-				@media screen and (max-width: $tablet-screen)
-					display: none
-
-				img
-					height: 1.5rem
-					display: inline-block
-
-			.links // links to components on home page and blog
-
-				ul
-					display: table
-					margin: 0
-					padding: 0
-					overflow:hidden
-					list-style-type: none
-
-				li
-					display: table-cell
-					float: left
-					text-align: center
-					padding: 0.55rem
-					margin-left: 0.125rem
-					margin-right: 0.215rem
-
-				.idea
-					a
-						color: $idea-color
-
-				.news
-					a
-						color: $news-color
-
-				.team
-					a
-						color: $team-color
-
-				.blog
-					a
-						color: $blog-color
-
-				.icon // scale icons
-					margin: auto
-
-			.tongue // language switch
-
-				float: right
-				font-weight: 300
-				font-size: $font-size-small
-				margin-right: 1rem
-
-				ul
-					text-align: left
-					display: table
-					margin: 0
-					padding: 0
-					margin-left: 1rem
-					overflow:hidden
-					list-style-type: none
-					border-left: 1px solid black
-
-					@media screen and (max-width: $tablet-screen)
-						margin-left: 0.5rem
-
-				li
-					margin: 0
-					padding: 0.65em
-					padding-right: 0rem
-
-				a
-					color: black
 
 .page
 	margin: 0 auto
@@ -268,208 +66,7 @@ nav
 	padding-top: 1.0rem
 	padding-bottom: 1.0rem
 
-.anchor
-	display: block
-	position: relative
-	visibility: hidden
-	top: -$nav-reserve-height
-
-.box
-	border-top: 1px solid black
-	padding: 1.0rem
-	border-radius: $border-radius
-	margin-bottom: 2.5rem
-
-	&.idea
-		border-color: $idea-color
-		background-color: $idea-background-color
-		background-image: linear-gradient($idea-background-color, $background-color);
-
-	&.news
-		border-color: $news-color
-		background-color: $news-background-color
-		background-image: linear-gradient($news-background-color, $background-color);
-
-	&.team
-		border-color: $team-color
-		background-color: $team-background-color
-		background-image: linear-gradient($team-background-color, $background-color);
-
-	&.blog
-		border-color: $blog-color
-		background-color: $blog-background-color
-		background-image: linear-gradient($blog-background-color, $background-color);
-
-.index-text
-	text-align: center
-
-	ul
-		list-style-type: none
-		font-weight: 300
-
-		li
-			&:before
-				content: '–\00a0\00a0'
-				color: black
-				font-size: 12pt
-
-			&:after
-				content: '\00a0\00a0–'
-				color: black
-				font-size: 12pt
-
-.newsletter
-	text-align: center
-
-	> form
-		> input
-			font-size: $font-size
-
-.news-cards // container
-	margin: auto
-	padding: 0
-	text-align: center
-	width: 100%
-	margin-top: 0.5rem
-	margin-bottom: 1rem
-
-	> a // card
-		width: 30%
-		height: 15rem
-		margin: 1%
-		display: inline-block
-		vertical-align: top
-		box-shadow: $card-shadow
-		border-radius: $border-radius
-		box-sizing: border-box
-		background-position: center
-		background-size: cover
-		overflow: hidden
-		position: relative
-
-		@media screen and (max-width: $tablet-screen)
-			width: 100%
-			margin: 0
-			margin-top: 0.5rem
-			margin-bottom: 0.5rem
-			padding: 0
-
-		> .date
-			font-weight: 300
-			font-size:  $font-size-small
-			display: inline-block
-			text-align: right
-			background-color: $foreground-color
-			width: 100%
-			line-height: 2em
-			position: relative
-			padding-right: 0.75rem
-			box-sizing: border-box
-
-			> svg
-				padding-right: 0.25rem
-				width:  $font-size-small
-				height:  $font-size-small
-				transform: translateY($font-size-small / 8)
-
-		> .link
-			padding: 0.75rem
-			margin: 0
-			font-weight: 300
-			background-color: $foreground-color
-			line-height: 1.5em
-			position: absolute
-			bottom: 0
-			width: 100%
-			box-sizing: border-box
-			text-decoration: underline
-
-.idea-card
-	margin-top: 1rem
-	margin-bottom: 1rem
-	vertical-align: top
-	box-shadow: $card-shadow
-	border-radius: $border-radius
-	box-sizing: border-box
-	width: 100%
-	display: table
-	background-color: $foreground-color
-
-	> .picture
-			width: 30%
-			display: table-cell
-			box-sizing: border-box
-			background-position: center
-			background-size: cover
-			overflow: hidden
-			position: relative
-			margin: 0
-			padding: 0
-
-			@media screen and (max-width: $phone-screen)
-				display: none
-
-	> .content
-		padding: 0.5rem
-		display: table-cell
-		font-weight: 300
-
-		ul
-			list-style-type: "- "
-
-.team-cards // container
-	margin: auto
-	padding: 0
-	text-align: center
-	width: 100%
-	margin-top: 1rem
-	margin-bottom: 2rem
-
-	> div // card
-		margin: 0.5rem
-		display: inline-block
-		vertical-align: top
-		box-shadow: $card-shadow
-		padding: 0.75rem
-		border-radius: $border-radius
-		box-sizing: border-box
-		background-color: $foreground-color
-
-		> div // portrait
-			border-radius: $border-radius
-			box-sizing: border-box
-			background-position: center
-			background-size: cover
-			overflow: hidden
-			position: relative
-			width: 12rem
-			height: 12rem
-			margin: auto
-			margin-bottom: 0.5rem
-
-			@media screen and (max-width: $desktop-screen)
-				width: 10rem
-				height: 10rem
-
-			.name
-				font-weight: 300
-				font-size: 1.5em
-				position: absolute
-				width: 100%
-				background-color: $foreground-color
-				line-height: 1.85em
-				bottom:  0
-				padding-bottom: 0.2rem
-
-		.job, .email
-			display: block
-
-		.job
-			font-weight: 300
-
-		.email
-			font-weight: 300
-			font-size: 0.8em
+// BELOW IS FOR BLOG AND POST LAYOUT
 
 // Blog / post overview
 .post-cards // container
@@ -481,7 +78,6 @@ nav
 		margin: 0
 		padding: 0
 		display: table
-		box-shadow: $card-shadow
 		box-sizing: border-box
 		overflow: hidden
 		background-color: $foreground-color
@@ -561,4 +157,42 @@ nav
 	border-radius: 100%
 	width: 3rem
 	height: 3rem
-	box-shadow: $card-shadow
+
+.fig-left, .fig-right, .fig-full
+	padding: 0
+	display: inline-block
+	margin: 1rem
+	font-size: $font-size-small
+
+	@media screen and (max-width: $phone-screen)
+		margin: 0.5
+		margin-top: 0.5
+		margin-bottom: 0.5
+		width: 100%
+
+.fig-left
+	float: left
+	width: 33%
+	margin-left: 0
+	>img
+		width: 100%
+
+	@media screen and (max-width: $phone-screen)
+		float: none
+		width: 100%
+		margin-right: 0
+
+.fig-right
+	float: right
+	width: 33%
+	margin-right: 0
+	>img
+		width: 100%
+
+	@media screen and (max-width: $phone-screen)
+		float: none
+		width: 100%
+		margin-left: 0
+
+.fig-full
+	width: 100%

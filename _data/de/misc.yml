@@ -1,37 +1,3 @@
-idea:
-  nav: "Idee"
-  heading: "Wir machen das Web inklusiv!"
-  intro: "In Semanux kombinieren wir künstliche Intelligenz und berührungslose Eingaben für einen barrierefreien Internetzugang."
-  info: "Surfen Sie im Internet mit der kombinierten Interaktion durch:
-    <ul>
-      <li> Augensteuerung </li>
-      <li> Sprachsteuerung </li>
-      <li> Joystick </li>
-      <li> Schalter </li>
-      <li> Maus </li>
-      <li> Tastatur </li>
-    </ul>
-    Unsere künstliche Intelligenz versteht die Interaktivität von Webseiten und passt die Interaktionen an Ihre Möglichkeiten an!"
-  newsletter:
-    info: "Melden Sie sich für mehr Informationen bei unseren Newsletter an! Wir werden Sie dann benachrichtigen, sobald es eine Testversion von Semanux gibt (add DSVGO stuff here)."
-    submit: "Senden"
-news:
-  nav: "Neues"
-  heading: "Neuigkeiten über Semanux"
-  more: "Erfahre mehr Neuigkeiten über Semanux in unserem <a href=\"/blog\">Blog</a>."
-team:
-  nav: "Team"
-  heading: "Das Team hinter Semanux"
-  desc: "Wir forschen seit Jahren zusammen in der Mensch-Computer-Interaktion und dem maschinellen Lernen. Diese Expertise wird in Semanux zusammenfinden, um ein einzigartiges Erlebnis zu schaffen."
-  support: "Als Ausgründung aus der Universität Stuttgart werden wir umfänglich unterstützt:"
-  steffen: "<a href='https://de.wikipedia.org/wiki/Steffen_Staab'>Prof. Dr. Steffen Staab</a>, Cyber Valley Stiftungslehrstuhl für Analytic Computing"
-  alexander: "<a href='https://www.uni-stuttgart.de/presse/experten/Prof.-Dr.-Alexander-Brem'>Prof. Dr. Alexander Brem</a>, Lehrstuhl für Entrepreneurship in Technologie und Digitalisierung"
-  network: "<a href='https://www.uni-stuttgart.de/transfer/entrepreneurship/beratung'>Gründungsnetzwerk</a> der Universität Stuttgart"
-  job:
-    raphael: "Projektleitung"
-    ramin: "Interaktionsdesign"
-    lukas: "Maschinelles Lernen"
-    florian: "Betriebswirtschaft"
 blog:
   nav: "Blog"
   heading: "Blog über Semanux"
