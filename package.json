@@ -8,7 +8,10 @@
     "type": "git",
     "url": "git+https://github.com/semanux/website.git"
   },
-  "scripts": {},
+  "scripts": {
+    "check": "prettier --check .",
+    "format": "prettier --write ."
+  },
   "dependencies": {},
   "devDependencies": {
     "@prettier/plugin-ruby": "1.5.5",
