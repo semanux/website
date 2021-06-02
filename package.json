@@ -10,7 +10,8 @@
   },
   "scripts": {
     "check": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "serve": "bundle exec jekyll serve --livereload"
   },
   "dependencies": {},
   "devDependencies": {
