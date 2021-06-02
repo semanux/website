@@ -10,5 +10,8 @@
   },
   "scripts": {},
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "@prettier/plugin-ruby": "1.5.5",
+    "prettier": "2.3.0"
+  }
 }

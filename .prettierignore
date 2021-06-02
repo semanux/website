@@ -1,0 +1,26 @@
+# When changing something here, you might also want to change .gitignore.
+
+# OS files
+.DS_Store/
+
+# IDE files
+.idea/
+
+# JavaScript files
+node_modules/
+
+# Ruby files
+.bundle/
+vendor/
+Gemfile.lock
+
+# Jekyll files
+_site/
+.jekyll-cache/
+
+# Minified files should be not formatted.
+*.min.js
+
+# Don't yet know how to get prettier to not auto-format template tags.
+*.md
+*.html

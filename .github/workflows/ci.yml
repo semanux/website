@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - main  # source files for hugo
+      - main # source files for hugo
 
 jobs:
   deploy:
@@ -19,13 +19,13 @@ jobs:
       - name: Setup
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.74.3'
+          hugo-version: "0.74.3"
           extended: true
 
       - name: Build
         run: hugo --minify
-  
-      - name: Push    
+
+      - name: Push
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.DEPLOY_HOST }}

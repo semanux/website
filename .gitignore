@@ -1,3 +1,5 @@
+# When changing something here, you might also want to change .prettierignore.
+
 # OS files
 .DS_Store/
 
