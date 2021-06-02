@@ -1,0 +1,14 @@
+{
+  "name": "semanux-website",
+  "version": "1.0.0",
+  "description": "Semanux website.",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semanux/website.git"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
