@@ -11,7 +11,8 @@
   "scripts": {
     "check": "prettier --check .",
     "format": "prettier --write .",
-    "serve": "bundle exec jekyll serve --livereload"
+    "serve": "bundle exec jekyll serve --livereload",
+    "clean": "bundle exec jekyll clean"
   },
   "dependencies": {},
   "devDependencies": {
