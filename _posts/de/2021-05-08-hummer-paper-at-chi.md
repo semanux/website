@@ -2,15 +2,15 @@
 title: Texteingabe mit Blick und Summen
 lang: de
 preview_alt: 'Eine Frau schaut auf einen Laptop mit virtueller Tastatur. Vor dem Laptop ist ein Mikrofon befestigt, unter dem Bildschirm ist ein Eyetracker angebracht.'
-preview_offset: 0px
+preview_offset: 50px
 ---
 
-In der Forschungsarbeit "Hummer: Text Entry by Gaze and Hum" haben wir in einer neuartigen, berührungslosen Texteingabe die Blicksteuerung mit Summgeräuschen kombiniert. Unsere Ergebnisse wurden auf der wichtigsten internationalen Konferenz zur Mensch-Computer Interaktion, der CHI, für eine ausführliche Veröffentlichung und Präsentation angenommen.
+In der Forschungsarbeit *"Hummer: Text Entry by Gaze and Hum"* haben wir in einer neuartigen, berührungslosen Texteingabe die Blicksteuerung mit Summgeräuschen kombiniert. Unsere Ergebnisse wurden auf **der wichtigsten internationalen Konferenz zur Mensch-Computer Interaktion**, der CHI, für eine ausführliche Veröffentlichung und Präsentation angenommen.
 
 In vielen Situation kann eine berührungslose Texteingabe notwendig sein - sei es beim Kochen, bei einer kurz- oder langfristigen Verletzung oder auch durch eine Krankheit. Sprachsteuerung könnte eine Lösung für die Eingabe von Texten sein, jedoch wird potentiell die Privatssphäre gefährdet. In manchen Fällen kann die Spracheingabe durch die Art der Erkrankung den Nutzerinnen und Nutzern gar nicht erst möglich sein.
 
-Wir kombinieren daher Summgeräusche mit der Blicksteuerung via Eyetracking für eine berührungslose Wort-für-Wort Eingabe von Texten. Dazu schaut man auf den Anfangsbuchstaben eines Wortes auf der Bildschirmtastatur, beginnt zu summen, schaut über die weiteren Buchstaben des Wortes und beendet mit dem Summen auch die Eingabe des Wortes - schnell, präsize und diskret. Unser Ansatz ermöglichte den Probandinnen und Probanden die berührungslose Eingabe von über 20 Wörtern pro Minute, was andere aktuelle berührungslose Eingaben übertrifft. Das konnte sowohl die Gutachter unserer Veröffentlichung als auch das international Forscherpublikum bei der Präsentation auf der "2021 CHI Conference on Human Factors in Computing Systems" im Mai überzeugen.
+**Wir kombinieren daher Summgeräusche mit der Blicksteuerung via Eyetracking für eine berührungslose Wort-für-Wort Eingabe von Texten.** Dazu schaut man auf den Anfangsbuchstaben eines Wortes auf der Bildschirmtastatur, beginnt zu summen, schaut über die weiteren Buchstaben des Wortes und beendet mit dem Summen auch die Eingabe des Wortes - schnell, präsize und diskret. Unser Ansatz ermöglichte den Probandinnen und Probanden die berührungslose Eingabe von über 20 Wörtern pro Minute, was andere aktuelle berührungslose Eingaben übertrifft. Das konnte sowohl die Gutachter unserer Veröffentlichung als auch das international Forscherpublikum bei der Präsentation auf der *"2021 CHI Conference on Human Factors in Computing Systems"* im Mai überzeugen.
 
-Wir planen diese innovative Art der Texteingabe auch in Semanux zu integrieren und damit unseren Kunden durch die neuesten Erkenntnisse aus der Forschung eine schnellere, einfachere und zuverlässigere berührungslose Bedienung zu ermöglichen.
+**Wir planen diese innovative Art der Texteingabe auch in Semanux zu integrieren und damit unseren Kunden durch die neuesten Erkenntnisse aus der Forschung eine schnellere, einfachere und zuverlässigere berührungslose Bedienung zu ermöglichen.**
 
 Auf YouTube ist die englischsprachige Präsentation von Ramin zu sehen: <https://www.youtube.com/watch?v=_eu91g5fTaw>

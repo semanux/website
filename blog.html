@@ -23,7 +23,7 @@ title: Semanux Blog
           </div>
         </div>
         <div class='post-excerpt'>
-          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+          {{ page.excerpt | markdownify | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}
           <a href="{{ post.url }}"> {{ site.data.misc.blog.more }} </a>
         </div>
       </div>
