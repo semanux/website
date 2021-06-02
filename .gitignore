@@ -1,6 +1,14 @@
+# OS files
 .DS_Store
+
+# IDE files
+.idea
+
+# Ruby files
 .bundle
 vendor
-_site
 Gemfile.lock
+
+# Jekyll files
+_site
 .jekyll-cache
