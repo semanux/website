@@ -4,14 +4,16 @@ New Website using Jekyll 4. Under construction.
 
 ## Local Setup
 
-1. Install Ruby on your system: <https://www.ruby-lang.org/en/documentation/installation>
-2. Open Command Line / PowerShell / Bash / zsh
-3. Install the [bundler gem](https://bundler.io) for managing dependencies with `gem install bundler`
-4. `cd directory/to/place/repo`
-5. `git clone https://github.com/semanux/website.git semanux-website`
-6. `cd semanux-website`
-7. `bundle install --path vendor`
-8. `bundle exec jekyll serve --livereload`
+1. Install Ruby on your system: <https://www.ruby-lang.org/en/documentation/installation>.
+1. Open Command Line / PowerShell / Bash / zsh.
+1. Install the [bundler gem](https://bundler.io) for managing dependencies with `gem install bundler`.
+1. Go to the directory where the repository should be cloned to with `cd directory/to/place/repo`.
+1. Clone the repository with `git clone https://github.com/semanux/website.git semanux-website`.
+1. Go into the directory of the repository `cd semanux-website`.
+1. Install dependencies into a local vendor directory with `bundle install --path vendor`.
+1. Optional: Run `npm install` to install tools for code autoformatting. Requires node.js installation.
+1. Generate and serve the Web site with `bundle exec jekyll serve --livereload`.
+1. Optional: Run `npm run check` to check the code formatting, run `npm run format` to automatically format the code, or run `npm run serve` to combine the automatic formatting of the code with live Jekyll serving.
 
 ## Third-party content
 - jekyll-polyglot <https://github.com/untra/polyglot>
