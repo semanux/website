@@ -1,0 +1,22 @@
+// -- Fonts --------------------------------------------------------------------
+
+$font-sans: Inter, sans-serif;
+$font-feature-settings: "kern", "liga";
+
+// -- Colors -------------------------------------------------------------------
+
+$color-black: black;
+$color-white: white;
+$color-name-english-vermillion: #d14641; // English Vermillion
+$color-name-liver-dogs: #b16309; // Liver Dogs
+$color-name-avocado: #668008; // Avocado
+$color-name-celadon-green: #18847b; // Celadon Green
+$color-name-cg-blue: #3b7c97; // CG Blue
+$color-name-middle-blue-purple: #8467b0; // Middle Blue Purple
+$color-name-medium-orchid: #b241d7; // Medium Orchid
+$color-name-electric-purple: #bb00ff; // Electric Purple
+$color-accent-1: $color-name-cg-blue;
+
+// Sizing
+
+$header-gap: 2rem; // Gap between items in the header.

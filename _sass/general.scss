@@ -1,0 +1,37 @@
+:root {
+  font-family: $font-sans;
+  font-size: 12pt;
+  line-height: 1.4;
+  color: $color-black;
+  background: $color-white;
+
+  font-feature-settings: $font-feature-settings;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 25rem;
+  max-width: 75rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $color-accent-1;
+
+  &:hover {
+    color: $color-black;
+  }
+}
+
+@mixin reverse-a-hover {
+  a {
+    color: $color-black;
+
+    &:hover {
+      color: $color-accent-1;
+    }
+  }
+}

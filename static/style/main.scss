@@ -1,9 +1,12 @@
 ---
 ---
 
+@import "settings";
+
 @import "normalize";
 @import "font-inter";
 
-body {
-  background: blue;
-}
+@import "general";
+@import "header";
+
+@import "page/index";
