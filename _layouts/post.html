@@ -8,6 +8,6 @@ layout: base
 {{ page.excerpt }}
 
 {%- capture preview_path -%}/assets/blog/{{ page.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
-<div class='post-preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}");background-position: 50% calc(50% - {{ page.preview_offset }});' role='img' alt='{{ page.preview_alt }}'></div>
+<div class='post-preview' style='background-image: url("{%- include func/get_image.html path=preview_path -%}");background-position: 50% calc(50% - {{ page.preview_offset }})' role='img' alt='{{ page.preview_alt }}'></div>
 
 {{ page.content | remove: page.excerpt }}
