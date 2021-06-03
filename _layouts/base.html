@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-{%- include head.html -%}
+{% include head.html %}
 
 <body>
 
-{%- include header.html -%} <!-- outside of page -->
+{% include header.html %}
 
-<div class='page'>
+<main>
+  {{ content }}
+</main>
 
-{{ content }}
+{%- include footer.html -%}
 
-</div> <!-- page -->
-
-{%- include footer.html -%} <!-- outside of page -->
-
-{%- include scroll-top.html -%}
-
-{%- include foot.html -%}
+{% include scroll-top.html %}
+{% include foot.html %}
 
 </body>
 </html>
