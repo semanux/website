@@ -17,6 +17,12 @@ $color-name-medium-orchid: #b241d7; // Medium Orchid
 $color-name-electric-purple: #bb00ff; // Electric Purple
 $color-accent-1: $color-name-cg-blue;
 
-// Sizing
+// -- Sizing -------------------------------------------------------------------
+
+$font-base-size-min: 1em;
+$font-base-size-max: 1.5em;
+$breakpoint-font-base-size-min: 48em;
+$breakpoint-font-base-size-max: $font-base-size-max/$font-base-size-min *
+  $breakpoint-font-base-size-min;
 
 $header-gap: 2rem; // Gap between items in the header.
