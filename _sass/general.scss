@@ -1,11 +1,10 @@
 :root {
   font-family: $font-sans;
   font-size: $font-base-size-min / 1em * 16px;
+  font-feature-settings: $font-feature-settings;
   line-height: 1.4;
   color: $color-black;
   background: $color-white;
-
-  font-feature-settings: $font-feature-settings;
   text-rendering: optimizeLegibility;
 
   @media (min-width: $breakpoint-font-base-size-min) {
@@ -18,8 +17,8 @@
 }
 
 html {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
@@ -34,8 +33,8 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: $color-accent-1;
+  text-decoration: none;
 
   &:hover {
     color: $color-black;

@@ -6,6 +6,7 @@
   src: url("/static/font/Inter-Thin.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-Thin.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -23,6 +24,7 @@
   src: url("/static/font/Inter-ExtraLight.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-ExtraLight.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -40,6 +42,7 @@
   src: url("/static/font/Inter-Light.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-Light.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -57,6 +60,7 @@
   src: url("/static/font/Inter-Regular.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-Regular.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -74,6 +78,7 @@
   src: url("/static/font/Inter-Medium.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-Medium.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -91,6 +96,7 @@
   src: url("/static/font/Inter-SemiBold.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-SemiBold.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -108,6 +114,7 @@
   src: url("/static/font/Inter-Bold.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-Bold.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -125,6 +132,7 @@
   src: url("/static/font/Inter-ExtraBold.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-ExtraBold.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -142,6 +150,7 @@
   src: url("/static/font/Inter-Black.woff2?v=3.15") format("woff2"),
     url("/static/font/Inter-Black.woff?v=3.15") format("woff");
 }
+
 @font-face {
   font-family: "Inter";
   font-style: italic;
@@ -162,17 +171,18 @@ Usage:
 */
 @font-face {
   font-family: "Inter var";
+  font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  font-style: normal;
   font-named-instance: "Regular";
   src: url("/static/font/Inter-roman.var.woff2?v=3.15") format("woff2");
 }
+
 @font-face {
   font-family: "Inter var";
+  font-style: italic;
   font-weight: 100 900;
   font-display: swap;
-  font-style: italic;
   font-named-instance: "Italic";
   src: url("/static/font/Inter-italic.var.woff2?v=3.15") format("woff2");
 }
@@ -192,8 +202,8 @@ explicitly, e.g.
 */
 @font-face {
   font-family: "Inter var experimental";
+  font-style: oblique 0deg 10deg;
   font-weight: 100 900;
   font-display: swap;
-  font-style: oblique 0deg 10deg;
   src: url("/static/font/Inter.var.woff2?v=3.15") format("woff2");
 }

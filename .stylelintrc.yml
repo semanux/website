@@ -1,0 +1,20 @@
+plugins:
+  - stylelint-scss
+extends:
+  - stylelint-config-standard
+  - stylelint-config-recess-order
+rules:
+  # Personal preference.
+  color-hex-length: long
+
+  # Replace standard at-rule-no-unknown with SCSS-aware implementation.
+  at-rule-no-unknown:
+  scss/at-rule-no-unknown: true
+
+  # Needed for compatability with prettier.
+  declaration-colon-newline-after:
+
+  # Needed to parse font-inter.css.
+  property-no-unknown:
+    - true
+    - ignoreProperties: font-named-instance

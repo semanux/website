@@ -9,14 +9,18 @@
     "url": "git+https://github.com/semanux/website.git"
   },
   "scripts": {
-    "check": "prettier --check .",
-    "format": "prettier --write .",
+    "check": "stylelint '_sass/*.{css,scss}' && prettier --check .",
+    "format": "stylelint --fix '_sass/*.{css,scss}' && prettier --write .",
     "serve": "bundle exec jekyll serve --livereload",
     "clean": "bundle exec jekyll clean"
   },
   "dependencies": {},
   "devDependencies": {
     "@prettier/plugin-ruby": "1.5.5",
-    "prettier": "2.3.0"
+    "prettier": "2.3.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recess-order": "^2.4.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.19.0"
   }
 }
