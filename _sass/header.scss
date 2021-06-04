@@ -2,8 +2,10 @@ body > header {
   @include reverse-a-hover;
 
   display: grid;
-  // Size logo and languages with 1 fr to keep sections centered.
-  grid-template: "logo sections languages" auto / 1fr auto 1fr;
+  grid-template: // Size logo and languages with 1 fr to keep sections centered.
+
+    "logo sections languages" auto
+    / 1fr auto 1fr;
   gap: $header-gap;
   justify-content: space-between;
   padding: 1rem 0;
@@ -38,10 +40,10 @@ body > header {
   justify-self: start;
 
   svg {
-    display: block;
-    height: 1.3em;
     // Sized and moved so that the lowercase "semanux" word of the logo is the
     // exact same size as the x-height and baseline of the other header content.
+    display: block;
+    height: 1.3em;
     margin-top: -0.15em;
   }
 

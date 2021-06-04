@@ -28,6 +28,9 @@ body {
   margin: 0 auto;
 
   @media (min-width: 25em) {
+    // Values of the breakpoint and the padding calculation are chosen so that
+    // they have a smooth transition to the fixed padding value on smaller
+    // screens defined above.
     padding: 0 calc(4vw - 0.5rem);
   }
 }
