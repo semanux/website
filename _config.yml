@@ -1,65 +1,80 @@
 environment: development
 
-# Where things are
+# General
+title: Semanux
+description: > # This means to ignore newlines.
+  We make the Web inclusive!
+email: contact@semanux.com
+
+# Where things are.
 source: .
 destination: ./_site
+collections_dir: .
 plugins_dir: _plugins
 layouts_dir: _layouts
 data_dir: _data
 includes_dir: _includes
+sass.sass_dir: _sass
 collections:
   posts:
     output: true
 
-# Defaults for front matters
+# Serving
+host: 0.0.0.0
+port: 4000
+baseurl: "" # TODO: Describe why we need this.
+
+# Content
+draft: false # TODO: Why do we set draft and future to false in development?
+future: false
+permalink: pretty
+markdown: kramdown
 defaults:
-  - # posts
-    scope:
+  # Posts
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       permalink: blog/:title
-
-# General project settings
-title: Semanux
-email: contact@semanux.com
-description: > # this means to ignore newlines
-  We make the Web inclusive!
-plugins: [jekyll-polyglot]
-baseurl: "" # must be empty string
-markdown: kramdown
-permalink: pretty
-future: false # TODO: set to true to see future posts
 exclude:
-  - README.md
-  - /*README.md
   - .gitignore
   - .github
-  - vendor
+  - .prettierignore
+  - .prettierrc.yml
+  - .stylelintrc.yml
   - Gemfile
   - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - /*README.md
+  - vendor
+
+# Templating system.
 liquid:
+  error_mode: strict
   strict_variables: true
   strict_filters: true
 
-# Deployment
-host: 0.0.0.0
-port: 4000
-
-# Sass settings
+# SCSS to CSS conversion.
 sass:
-  sass_dir: _sass
-  sourcemap: never # Sourcemaps seem to be broken in our Jekyll version (TODO: link GitHub for this).
+  style: expanded
+  sourcemap: never # Sourcemaps seem to be broken in our Jekyll version. TODO: link GitHub issue for this.
 
-# Polyglot settings
+plugins:
+  - jekyll-polyglot
+
+# Plugin: Polyglot
 languages: ["en", "de"]
 default_lang: "en"
 exclude_from_localization: ["static", "css", "assets"]
-parallel_localization: false # must be false for Windows
+parallel_localization: false # Must be false for Windows.
 lang_from_path: true
 
-# Misc
+# TODO: What does this do? Is it a polyglot specific setting?
 misc:
   en: English
   de: Deutsch

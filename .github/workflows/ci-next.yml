@@ -24,7 +24,7 @@ jobs:
           && sudo apt -yq install ruby-full nodejs
           && sudo gem install bundler
           && bundle install --path vendor
-          && bundle exec jekyll build --config _config.yml,_config-deploy.yml
+          && bundle exec jekyll build --config _config.yml,_config.produciton.yml
           # && sudo npm install html-minifier -g
           # && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
           # && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
@@ -40,4 +40,3 @@ jobs:
           target: "/semanux-next/"
           strip_components: 1 # ignore the "_site" super directory when copying
           rm: true # remove the target directory before copying
-
