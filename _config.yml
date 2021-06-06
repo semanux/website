@@ -9,7 +9,6 @@ email: contact@semanux.com
 # Where things are.
 source: .
 destination: ./_site
-collections_dir: .
 plugins_dir: _plugins
 layouts_dir: _layouts
 data_dir: _data
@@ -30,8 +29,8 @@ future: false
 permalink: pretty
 markdown: kramdown
 defaults:
-  # Posts
-  - scope:
+  - # Posts
+    scope:
       path: ""
       type: "posts"
     values:
@@ -50,7 +49,6 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
-  - /*README.md
   - vendor
 
 # Templating system.
