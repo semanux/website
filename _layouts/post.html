@@ -3,7 +3,8 @@ layout: base
 ---
 <h2>{{ page.title }}</h2>
 
-<div class='post-date'><i class='ph-calendar-blank' aria-hidden='true'></i>{%- include func/local_date.html page=page -%}</div>
+<div class='post-date'>
+    {%- include icon.html class='calendar-blank' -%}{%- include func/local_date.html page=page -%}</div>
 
 {{ page.excerpt }}
 
