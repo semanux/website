@@ -29,8 +29,8 @@ future: false
 permalink: pretty
 markdown: kramdown
 defaults:
-  - # Posts
-    scope:
+  # Posts
+  - scope:
       path: ""
       type: "posts"
     values:
