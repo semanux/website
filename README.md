@@ -38,7 +38,7 @@ The repository is structured as following:
 - jekyll-polyglot, used as gem: <https://github.com/untra/polyglot>
 - jekyll-file-exists, see `_plugins` directory: <https://github.com/Wolfr/jekyll_file_exists>
 - Inter Font, see `static` directory: <https://rsms.me/inter/>
-- Feather Icons, see `static` directory: <https://github.com/feathericons/feather>
+- Phosphor Icons, see `static` directory: <https://github.com/phosphor-icons/phosphor-icons>
 
 ## TODO
 

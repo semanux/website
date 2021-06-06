@@ -3,7 +3,7 @@ layout: base
 title: Semanux Blog
 ---
 <h2 class='box-title blog'>
-  <i data-feather='pen-tool' aria-hidden='true'></i>
+  <i class="ph-pen-nib" aria-hidden='true'></i>
   <span>{{ site.data.misc.blog.heading }}</span>
 </h2>
 
@@ -19,7 +19,8 @@ title: Semanux Blog
         <div class='header'>
           <a class='title' href="{{ post.url }}">{{ post.title }}</a>
           <div class='date'>
-            <i data-feather='calendar' aria-hidden='true'></i> {%- include func/local_date.html page=post -%}
+            <i class='ph-calendar-blank' aria-hidden='true'></i>
+            {%- include func/local_date.html page=post -%}
           </div>
         </div>
         <div class='post-excerpt'>
