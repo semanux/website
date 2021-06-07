@@ -1,3 +1,7 @@
+header:
+  about: "Über"
+  blog: "Blog"
+  team: "Team"
 blog:
   nav: "Blog"
   heading: "Blog über Semanux"
