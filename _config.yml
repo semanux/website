@@ -21,7 +21,6 @@ collections:
 # Serving
 # host: 0.0.0.0 # TODO: Describe why this nees to be set to 0.0.0.0. Does not work under Windows.
 port: 4000
-baseurl: "" # TODO: Describe why we need this.
 
 # Content
 draft: false # TODO: Why do we set draft and future to false in development?
@@ -71,8 +70,3 @@ default_lang: "en"
 exclude_from_localization: ["static", "css", "assets"]
 parallel_localization: false # Must be false for Windows.
 lang_from_path: true
-
-# TODO: What does this do? Is it a polyglot specific setting?
-misc:
-  en: English
-  de: Deutsch
