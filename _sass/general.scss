@@ -26,6 +26,7 @@ body {
   max-width: 52rem;
   padding: 0 0.5rem;
   margin: 0 auto;
+  overflow: scroll; // force visible scrollbar
 
   @media (min-width: 25em) {
     // Values of the breakpoint and the padding calculation are chosen so that
