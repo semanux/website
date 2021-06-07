@@ -15,3 +15,12 @@ layout: base
 <div class="page-post-preview" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" alt="{{ page.preview_alt }}" title="{{ page.preview_alt }}"></div>
 
 {{ page.content | remove: page.excerpt }}
+
+
+
+{% if page.next %}
+    <a class="prev" href="{{ page.next.url }}">{{ page.next.title }}</a>
+{% endif %}
+{% if page.previous %}
+    <a class="prev" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+{% endif %}
