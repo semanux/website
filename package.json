@@ -9,8 +9,8 @@
     "url": "git+https://github.com/semanux/website.git"
   },
   "scripts": {
-    "check": "stylelint '_sass/*.{css,scss}' && prettier --check .",
-    "format": "stylelint --fix '_sass/*.{css,scss}' && prettier --write .",
+    "check": "stylelint _sass/*.{css,scss} && prettier --check .",
+    "format": "stylelint --fix _sass/*.{css,scss}",
     "serve": "bundle exec jekyll serve --livereload",
     "clean": "bundle exec jekyll clean"
   },
