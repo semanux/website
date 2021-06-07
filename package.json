@@ -10,7 +10,7 @@
   },
   "scripts": {
     "check": "stylelint _sass/*.{css,scss} && prettier --check .",
-    "format": "stylelint --fix _sass/*.{css,scss}",
+    "format": "stylelint --fix _sass/*.{css,scss} && prettier --write .",
     "serve": "bundle exec jekyll serve --livereload",
     "clean": "bundle exec jekyll clean"
   },
