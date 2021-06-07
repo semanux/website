@@ -11,6 +11,8 @@ In vielen Situation kann eine berührungslose Texteingabe notwendig sein - sei e
 
 **Wir kombinieren daher Summgeräusche mit der Blicksteuerung via Eyetracking für eine berührungslose Wort-für-Wort Eingabe von Texten.** Dazu schaut man auf den Anfangsbuchstaben eines Wortes auf der Bildschirmtastatur, beginnt zu summen, schaut über die weiteren Buchstaben des Wortes und beendet mit dem Summen auch die Eingabe des Wortes - schnell, präsize und diskret. Unser Ansatz ermöglichte den Probandinnen und Probanden die berührungslose Eingabe von über 20 Wörtern pro Minute, was andere aktuelle berührungslose Eingaben übertrifft. Das konnte sowohl die Gutachter unserer Veröffentlichung als auch das international Forscherpublikum bei der Präsentation auf der [*"2021 CHI Conference on Human Factors in Computing Systems"*](https://chi2021.acm.org/) im Mai überzeugen.
 
+> Ramin Hedeshy, Chandan Kumar, Raphael Menges, and Steffen Staab. 2021. Hummer: Text Entry by Gaze and Hum. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 741, 1–11. DOI:<https://doi.org/10.1145/3411764.3445501>
+
 **Wir planen diese innovative Art der Texteingabe auch in Semanux zu integrieren und damit unseren Kunden durch die neuesten Erkenntnisse aus der Forschung eine schnellere, einfachere und zuverlässigere berührungslose Bedienung zu ermöglichen.**
 
 Auf YouTube ist die englischsprachige Präsentation von Ramin zu sehen: <https://www.youtube.com/watch?v=_eu91g5fTaw>

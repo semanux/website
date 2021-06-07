@@ -11,7 +11,7 @@ In many situations, touchless text input may be necessary - whether it is cookin
 
 **We therefore combine buzzing sounds with gaze control via eye tracking for hands-free word-by-word text entry.** For this purpose, the user looks at the first letter of a word on the on-screen virtual keyboard, starts humming, looks over the other letters of the word, and ends the input of the word with the humming - fast, precise, and discrete. Our approach enabled testers to input over 20 words per minute without touching the keyboard, outperforming other current hands-free input methods. This convinced both the reviewers of our publication and the international audience of researchers during our presentation at the [*"2021 CHI Conference on Human Factors in Computing Systems"*](https://chi2021.acm.org/) in May.
 
-> Ramin Hedeshy, Chandan Kumar, Raphael Menges, and Steffen Staab. 2021. Hummer: Text Entry by Gaze and Hum. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 741, 1–11. DOI:https://doi.org/10.1145/3411764.3445501
+> Ramin Hedeshy, Chandan Kumar, Raphael Menges, and Steffen Staab. 2021. Hummer: Text Entry by Gaze and Hum. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 741, 1–11. DOI:<https://doi.org/10.1145/3411764.3445501>
 
 **We are planning to integrate this innovative way of text input into Semanux as well, thus providing our customers with faster, simpler and more reliable hands-free interaction based on the latest research findings.**
 
