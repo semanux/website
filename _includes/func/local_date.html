@@ -4,10 +4,10 @@
 {%- assign day = page.date | date: '%-d' | to_integer -%}
 {%- if site.active_lang == 'en' -%}
   {%- case day -%}
-    {%- when 1 or 21 or 31 -%}{%- assign day = day | append: 'st' -%}
-    {%- when 2 or 22 -%}{%- assign day = day | append: 'nd' -%}
-    {%- when 3 or 23 -%}{%- assign day = day | append: 'rd' -%}
-    {%- else -%}{%- assign day = day | append: 'th' -%}
+    {%- when 1 or 21 or 31 -%}{%- assign day = day | append: '<span class="ordinals">st</span>' -%}
+    {%- when 2 or 22 -%}{%- assign day = day | append: '<span class="ordinals">nd</span>' -%}
+    {%- when 3 or 23 -%}{%- assign day = day | append: '<span class="ordinals">rd</span>' -%}
+    {%- else -%}{%- assign day = day | append: '<span class="ordinals">th</span>' -%}
   {%- endcase -%}
 {%- else -%}
   {%- assign day = day | append: '.' -%}

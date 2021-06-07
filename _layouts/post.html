@@ -1,10 +1,12 @@
 ---
 layout: base
 ---
-<h2>{{ page.title }}</h2>
+<h2 class="page-post-heading">{{ page.title }}</h2>
 
 <div class="page-post-date">
-    {%- include icon.html class="calendar-blank" -%}{%- include func/local_date.html page=page -%}
+    <div>
+        {%- include icon.html class="calendar-blank" -%}{%- include func/local_date.html page=page -%}
+    </div>
 </div>
 
 {{ page.excerpt }}

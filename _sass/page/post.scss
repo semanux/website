@@ -1,10 +1,35 @@
+.page-post-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
 .page-post-date {
+  // Div can be centered only in container
+  div {
+    margin: auto;
+    padding: 0.5rem;
+    width: max-content;
+    display: block;
+    text-align: center;
+    line-height: 1em;
+    font-size: 0.75em;
+    color: $color-white;
+    background-color: $color-black;
+    border-radius: 1rem;
+
+    i {
+      margin-right: 0.1rem;
+      vertical-align: bottom;
+      font-size: 1em;
+    }
+  }
 }
 
 .page-post-preview {
   width: 100%;
   height: 25vw;
   max-height: 15rem;
+  min-height: 5rem;
   background-size: cover;
   background-position: center center;
 }

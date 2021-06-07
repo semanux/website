@@ -5,7 +5,6 @@ title: Semanux
 description: > # This means to ignore newlines.
   We make the Web inclusive!
 email: contact@semanux.com
-
 # Where things are.
 source: .
 destination: ./_site
