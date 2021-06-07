@@ -1,5 +1,5 @@
 ---
-title: Our approach at a premier conference
+title: Gaze and Hum for Text Entry
 lang: en
 preview_alt: 'A woman looks at a laptop with a virtual keyboard. A microphone is attached in front of the laptop, and an eye tracker is attached under the screen.'
 ---
