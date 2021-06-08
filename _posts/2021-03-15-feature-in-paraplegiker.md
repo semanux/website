@@ -1,5 +1,5 @@
 ---
-title: Feature about us in the PARAplegiker magazine
+title: Feature about us in the PARAplegiker Magazine
 lang: en
 preview_alt: 'The cover of the PARAplegiker magazine displays a home robot.'
 ---

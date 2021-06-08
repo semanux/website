@@ -1,5 +1,5 @@
 ---
-title: Raphael defends his PHD thesis
+title: Raphael defends his PHD Thesis
 lang: en
 preview_alt: 'Photo from the defense showing a screen and Raphael in the front.'
 ---
