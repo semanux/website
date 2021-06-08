@@ -1,0 +1,49 @@
+#page-blog-container {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 3rem;
+  margin-top: 1rem;
+}
+
+.page-blog-post {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 0.5rem;
+}
+
+.page-blog-post-image {
+  grid-row-start: 1;
+  grid-row-end: span 4; // TODO: Why does -1 not work?
+  background-size: cover;
+  background-position: center center;
+}
+
+.page-blog-post-title {
+  color: $color-white;
+  background-color: $color-black;
+  font-size: larger;
+  font-weight: bold;
+  padding: 0.5rem;
+  transform: translateX(-1.75rem) translateY(-0.6rem);
+  z-index: 1;
+
+  &:hover {
+    color: $color-accent-1;
+  }
+}
+
+.page-blog-post-date {
+  justify-self: end;
+  transform: translateX(-1.75rem) translateY(-0.6rem); // TODO: same transform as title, maybe put into container?
+  margin-top: 0.25rem;
+  line-height: 1em;
+  font-size: 0.75em;
+  i {
+    margin-right: 0.1rem;
+    vertical-align: bottom;
+  }
+}
+
+.page-blog-post-excerpt {
+  font-size: medium;
+}

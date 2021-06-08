@@ -3,8 +3,6 @@ header:
   blog: "Blog"
   team: "Team"
 blog:
-  nav: "Blog"
-  heading: "Blog über Semanux"
-  more: " ... mehr lesen."
+  more: " ...&nbsp;mehr lesen."
 scroll-top: "Zum Anfang scrollen"
 footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. Sie finden im <a href="/imprint">Impressum</a> weitere Details.'

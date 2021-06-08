@@ -12,14 +12,11 @@
     text-align: center;
     line-height: 1em;
     font-size: 0.75em;
-    color: $color-black;
     background-color: $color-lightest-gray;
     border-radius: 1rem;
-
     i {
       margin-right: 0.1rem;
       vertical-align: bottom;
-      font-size: 1em;
     }
   }
 }
@@ -54,7 +51,6 @@
     background-size: cover;
     background-position: center center;
     transform: translateX(-0.25rem) translateY(0.75rem);
-    z-index: 0;
   }
 
   // Title and link of post.
