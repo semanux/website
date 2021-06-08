@@ -4,5 +4,5 @@ header:
   team: "Team"
 blog:
   more: " ...&nbsp;read more."
-scroll-top: "Scroll to the top"
+scroll-top: "Scroll to the top."
 footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. See the <a href="/imprint">imprint</a> for more details.'
