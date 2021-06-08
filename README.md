@@ -33,6 +33,10 @@ The repository is structured as following:
 - `assets`: Pictures that might be put into an asset pipeline in the future.
 - `static`: Static files. Might be still processed by a minifier.
 
+## Contribution
+
+Before contribution, please read following guide about CSS grids: <https://css-tricks.com/snippets/css/complete-guide-grid>
+
 ## Third-party content
 
 - jekyll-polyglot, used as gem: <https://github.com/untra/polyglot>
