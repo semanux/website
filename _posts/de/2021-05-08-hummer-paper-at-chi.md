@@ -12,6 +12,6 @@ In vielen Situation kann eine berührungslose Texteingabe notwendig sein - sei e
 
 > Ramin Hedeshy, Chandan Kumar, Raphael Menges, and Steffen Staab. 2021. Hummer: Text Entry by Gaze and Hum. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 741, 1–11. DOI:<https://doi.org/10.1145/3411764.3445501>
 
-**Wir planen diese innovative Art der Texteingabe auch in Semanux zu integrieren und damit unseren Kunden durch die neuesten Erkenntnisse aus der Forschung eine schnellere, einfachere und zuverlässigere berührungslose Bedienung zu ermöglichen.**
+Wir planen diese innovative Art der Texteingabe auch in Semanux zu integrieren und **damit unseren Kunden durch die neuesten Erkenntnisse aus der Forschung eine schnellere, einfachere und zuverlässigere berührungslose Bedienung zu ermöglichen.**
 
 Auf YouTube ist die englischsprachige Präsentation von Ramin zu sehen: <https://www.youtube.com/watch?v=_eu91g5fTaw>
