@@ -17,6 +17,13 @@
   background-size: cover;
   background-position: center center;
   min-height: 10rem;
+
+  // TODO: Testing 3D transform with animation
+  transform: perspective(1500px) rotateY(10deg);
+  transition: transform 1s ease 0s;
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }
 }
 
 .page-blog-post-title {
@@ -46,5 +53,5 @@
 }
 
 .page-blog-post-excerpt {
-  font-size: medium;
+  // font-size: medium;
 }

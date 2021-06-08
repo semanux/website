@@ -13,6 +13,7 @@
     line-height: 1em;
     font-size: 0.75em;
     background-color: $color-lightest-gray;
+    background-image: $gradient-glass;
     border-radius: 1rem;
     i {
       margin-right: 0.1rem;
@@ -37,21 +38,14 @@
   column-gap: 0.5rem;
 
   // Space for transform.
-  padding-left: 0.25rem;
+  padding-left: 0.5rem;
 }
 
 .page-post-other-post {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 10rem auto;
+  grid-template-rows: auto 10rem;
   justify-self: center;
-
-  // Image of post.
-  > div {
-    background-size: cover;
-    background-position: center center;
-    transform: translateX(-0.25rem) translateY(0.75rem);
-  }
 
   // Title and link of post.
   > a {
@@ -64,9 +58,23 @@
     z-index: 1;
     margin-left: 1rem;
     margin-right: 1rem;
+    transform: translateX(-0.5rem) translateY(0.5rem);
 
     &:hover {
       color: $color-accent-1;
+    }
+  }
+
+  // Image of post.
+  > div {
+    background-size: cover;
+    background-position: center center;
+
+    // TODO: Testing 3D transform with animation
+    transform: perspective(1500px) rotateY(15deg);
+    transition: transform 1s ease 0s;
+    &:hover {
+      transform: perspective(3000px) rotateY(5deg);
     }
   }
 }

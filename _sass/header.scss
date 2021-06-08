@@ -11,6 +11,7 @@ body > header {
   padding: 1rem 0;
   font-size: 2rem;
   line-height: 1;
+  border-bottom: 1px solid black;
 
   @media (max-width: 50rem) {
     grid-template:
@@ -38,6 +39,7 @@ body > header {
 #header-logo {
   grid-area: logo;
   justify-self: start;
+  scale: 0.99; // Hotfix for slightly cropped icon.
 
   svg {
     // Sized and moved so that the lowercase "semanux" word of the logo is the

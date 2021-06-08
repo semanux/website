@@ -23,16 +23,16 @@ TODO: Include Newsletter Subscription Form from Index Page here
 <div id="page-post-other-container">
     {% if page.previous %}
         <div class="page-post-other-post">
+            <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
             {%- capture preview_path -%}/assets/blog/{{ page.previous.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
             <div style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" alt="{{ page.previous.preview_alt }}" title="{{ page.previous.preview_alt }}"></div>
-            <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
         </div>
     {% endif %}
     {% if page.next %}
         <div class="page-post-other-post">
+            <a href="{{ page.next.url }}">{{ page.next.title }}</a>
             {%- capture preview_path -%}/assets/blog/{{ page.next.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
             <div style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" alt="{{ page.next.preview_alt }}" title="{{ page.next.preview_alt }}"></div>
-            <a href="{{ page.next.url }}">{{ page.next.title }}</a>
         </div>
     {% endif %}
 </div>
