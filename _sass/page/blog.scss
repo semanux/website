@@ -16,6 +16,7 @@
   grid-row-end: span 4; // TODO: Why does -1 not work?
   background-size: cover;
   background-position: center center;
+  min-height: 10rem;
 }
 
 .page-blog-post-title {
