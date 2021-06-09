@@ -44,7 +44,5 @@
 }
 
 .page-post-further-reading-cards {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  // column-gap: 0.5rem; 
+  @include responsive-post-card-container;
 }

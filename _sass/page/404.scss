@@ -11,6 +11,5 @@
 }
 
 .fourofour-posts-cards {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  @include responsive-post-card-container;
 }
