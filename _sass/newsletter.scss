@@ -1,10 +1,11 @@
-#newsletter {
-  width: 75%;
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.newsletter {
 
-  > div {
+  h3 {
+    margin: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  div {
     display: grid;
     grid-template-columns: auto min-content;
 
@@ -15,7 +16,7 @@
     }
 
     // TODO: very similar to the titles of selectable posts in blog and post layout!
-    > button {
+    button {
       padding: 0.5rem;
       padding-right: 1rem;
       padding-left: 1rem;
@@ -31,7 +32,7 @@
     }
   }
 
-  > p {
+  p {
     margin: 0;
     margin-top: 0.5rem;
     font-size: 75%;
