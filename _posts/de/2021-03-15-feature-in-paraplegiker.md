@@ -1,5 +1,5 @@
 ---
-title: Bericht über uns im PARAplegiker Magazin
+title: Bericht im PARAplegiker Magazin
 lang: de
 preview_alt: 'Das Cover des PARAplegiker zeigt einen Haushaltsroboter.'
 ---
