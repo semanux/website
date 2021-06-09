@@ -18,7 +18,7 @@ collections:
     output: true
 
 # Serving
-# host: 0.0.0.0 # TODO: Describe why this nees to be set to 0.0.0.0. Does not work under Windows.
+host: 0.0.0.0 # Means that local development server is accesible from home network. Useful for checking with other devices (e.g. Windows laptop, mobile, etc.)
 port: 4000
 
 # Content
