@@ -47,8 +47,8 @@
   grid-template-rows: auto 10rem;
   justify-self: center;
 
-  // Title and link of post.
-  > a {
+  // Title of the other post.
+  > .page-post-other-title {
     
     text-align: center;
     color: $color-white;
@@ -65,13 +65,13 @@
     }
   }
 
-  // Image of post.
-  > div {
+  // Preview image of the other post.
+  > .page-post-other-preview  {
     background-size: cover;
     background-position: center center;
 
     // TODO: Testing 3D transform with animation
-    transform: perspective(1500px) rotateY(15deg);
+    transform: perspective(1500px) rotateY(10deg);
     transition: transform 1s ease 0s;
     &:hover {
       transform: perspective(3000px) rotateY(5deg);

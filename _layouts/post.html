@@ -21,16 +21,16 @@ layout: base
 <div id="page-post-other-container">
     {% if page.previous %}
         <div class="page-post-other-post">
-            <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+            <a class="page-post-other-title" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
             {%- capture preview_path -%}/assets/blog/{{ page.previous.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
-            <div style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" alt="{{ page.previous.preview_alt }}" title="{{ page.previous.preview_alt }}"></div>
+            <a class="page-post-other-preview" href="{{ page.previous.url }}" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" title="{{ page.previous.title }}" aria-hidden="true"></a>
         </div>
     {% endif %}
     {% if page.next %}
         <div class="page-post-other-post">
-            <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+            <a class="page-post-other-title" href="{{ page.next.url }}">{{ page.next.title }}</a>
             {%- capture preview_path -%}/assets/blog/{{ page.next.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
-            <div style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" alt="{{ page.next.preview_alt }}" title="{{ page.next.preview_alt }}"></div>
+            <a class="page-post-other-preview" href="{{ page.next.url }}" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" title="{{ page.next.title }}" aria-hidden="true"></a>
         </div>
     {% endif %}
 </div>
