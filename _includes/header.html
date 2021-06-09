@@ -7,7 +7,7 @@
     <ul>
       {%- comment -%} Blog link must be in double quotes to be properly localized. {%- endcomment -%}
       <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#about">{{ site.data.misc.header.about }}</a></li>
-      <li><a href="{%- if page.url == '/' -%}/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#blog{%- else -%}/blog{%- endif -%}">{{ site.data.misc.header.blog }}</a></li>
+      <li><a href="/blog">{{ site.data.misc.header.blog }}</a></li>
       <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#team">{{ site.data.misc.header.team }}</a></li>
     </ul>
   </nav>
