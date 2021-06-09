@@ -47,11 +47,17 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 
 ## TODO
 
-1. Visitor tracker (with respect to privacy laws)
-1. Imprint
-1. Social media links
-1. Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version)
-1. Create Email addresses as listed on the page
+* Raphael: Check and repair autoformatting on Windows and macOS
+* Raphael: Move "post previews" (like on the bottom of each post) into includes directory and reuse it e.g. on the 404 page
+* Raphael: Social media links
+* Ramin: Visitor tracker (with respect to privacy laws)
+* Florian: Check imprint and data privacy statement
+* Raphael: Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version)
+* Raphael: Create Email addresses as listed on the page
+* Lukas: Design landing page
+
+## Issues
+
 1. CI script is both in main and in jekyll branch. Still confusing which one is actually used by GitHub (will be resolved when this is on main branch?)
 
 ## Ideas
