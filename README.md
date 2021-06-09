@@ -60,6 +60,7 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 - Raphael: Create Email addresses as listed on the page.
 - Lukas: Design landing page.
 - Raphael: Past news about submitting the proposal.
+- Raphael: Replace \<div>'s with covering background images in blog and post with actual \<img>
 
 ## Issues
 
