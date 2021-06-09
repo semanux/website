@@ -5,7 +5,9 @@ header:
 blog:
   more: " ...&nbsp;read more."
 newsletter:
-  input: "Your E-Mail address"
+  input: "E-mail address"
   submit: "Subscribe"
+  supertext: "Subscribe to our newsletter to stay informed!"
+  subtext: 'We send about three to five E-mails per year. The newsletter can be unsubscribed at every time by sending a short message to <a href="newsletter@semanux.com">newsletter@semanux.com</a>. Further details can be found in our statement about <a href="/data-privacy">data privacy</a>.'
 scroll-top: "Scroll to the top."
 footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. See our <a href="/imprint">imprint</a> and our statement about <a href="/data-privacy">data privacy</a>.'

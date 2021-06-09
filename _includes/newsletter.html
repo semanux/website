@@ -1,8 +1,8 @@
 <form id="newsletter">
-  <h3>Haltet mich auf dem laufenden!</h3>
+  <h3>{{ site.data.misc.newsletter.supertext }}</h3>
   <div>
     <input type="email" placeholder="{{ site.data.misc.newsletter.input }}"/>
     <button type="submit">{{ site.data.misc.newsletter.submit }}</button>
   </div>
-  <p>Wir senden dir wahrscheinlich drei bis fünf E-Mails pro Jahr. Du kannst den Newletter jederzeit mit einer kurzen Nachricht an newsletter@semanux.com abbestellen. Weitere Details zum Datenschutz findet du unter data-privacy#newsletter.</p>
+  <p>{{ site.data.misc.newsletter.subtext }}</p>
 </form>
