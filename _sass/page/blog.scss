@@ -20,10 +20,12 @@
   box-sizing:border-box;
 
   // TODO: Testing 3D transform with animation
+  box-sizing: border-box;
   transform: perspective(1500px) rotateY(10deg);
-  transition: transform 1s ease 0s;
+  border: 0px solid $color-black;
+  transition: all 1s ease 0s;
   &:hover {
-    transform: perspective(3000px) rotateY(5deg);
+    transform: perspective(3000px) rotateY(5deg) scale(1.03);
   }
 }
 
