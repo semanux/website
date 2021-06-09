@@ -39,7 +39,6 @@ body > header {
 #header-logo {
   grid-area: logo;
   justify-self: start;
-  scale: 0.99; // Hotfix for slightly cropped icon.
 
   svg {
     // Sized and moved so that the lowercase "semanux" word of the logo is the
