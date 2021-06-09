@@ -8,7 +8,7 @@ newsletter:
   input: "E-Mail Adresse"
   submit: "Anmelden"
   supertext: "Jetzt zum Newsletter anmelden und Neuigkeiten erfahren!"
-  subtext: 'Wir senden ungefähr drei bis fünf E-Mails pro Jahr. Der Newsletter kann jederzeit mit einer kurzen Nachricht an <a href="newsletter@semanux.com">newsletter@semanux.com</a> abbestellt werden. Weitere Details sind in unserer <a href="/data-privacy">Datenschutzerklärung</a> zu finden.'
+  subtext: 'Wir senden ungefähr drei bis fünf E-Mails pro Jahr. Der Newsletter kann jederzeit mit einer kurzen Nachricht an <a href="mailto:newsletter@semanux.com">newsletter@semanux.com</a> abbestellt werden. Weitere Details sind in unserer <a href="/data-privacy">Datenschutzerklärung</a> zu finden.'
 post:
   further-reading: "Folgendes Posts könnten ebenfalls interessant sein:"
 fourofour:

@@ -8,7 +8,7 @@ newsletter:
   input: "E-mail address"
   submit: "Subscribe"
   supertext: "Subscribe to our newsletter to stay informed!"
-  subtext: 'We send about three to five E-mails per year. The newsletter can be unsubscribed at every time by sending a short message to <a href="newsletter@semanux.com">newsletter@semanux.com</a>. Further details can be found in our statement about <a href="/data-privacy">data privacy</a>.'
+  subtext: 'We send about three to five E-mails per year. The newsletter can be unsubscribed at every time by sending a short message to <a href="mailto:newsletter@semanux.com">newsletter@semanux.com</a>. Further details can be found in our statement about <a href="/data-privacy">data privacy</a>.'
 post:
   further-reading: "Following posts could be also of interest:"
 fourofour:
