@@ -20,19 +20,18 @@ layout: base
   {%- include newsletter.html -%}
 </div>
 
-<div class="page-post-other-container">
-  {% if page.previous %}
-    <div class="page-post-other-post">
-      <a class="page-post-other-title" href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-      {%- capture preview_path -%}/assets/blog/{{ page.previous.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
-      <a class="page-post-other-preview" href="{{ page.previous.url }}" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" title="{{ page.previous.title }}" aria-hidden="true"></a>
-    </div>
-  {% endif %}
-  {% if page.next %}
-    <div class="page-post-other-post">
-      <a class="page-post-other-title" href="{{ page.next.url }}">{{ page.next.title }}</a>
-      {%- capture preview_path -%}/assets/blog/{{ page.next.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
-      <a class="page-post-other-preview" href="{{ page.next.url }}" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" title="{{ page.next.title }}" aria-hidden="true"></a>
-    </div>
-  {% endif %}
+{%- comment -%} Simplistic setup to display the latest two posts. {%- endcomment -%}
+<h3 class="page-post-further-reading-title">{{ site.data.misc.post.further-reading }}</h3>
+<div class="page-post-further-reading-cards">
+  {%- assign posts = site.posts -%}
+  {%- assign counter = 0 -%}
+  {%- for post in posts -%}
+    {%- if post.url != page.url -%}
+      {%- include post-card.html post=post -%}
+      {%- assign counter = counter | plus: 1 -%}
+    {%- endif -%}
+    {%- if counter > 1 -%}
+      {% break %}
+    {%- endif -%}
+  {%- endfor -%}
 </div>

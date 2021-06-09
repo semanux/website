@@ -52,12 +52,12 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 ## TODO
 
 - Raphael: Check and repair autoformatting on Windows and macOS.
-- Raphael: Move "post previews" (like on the bottom of each post) into includes directory and reuse it e.g. on the 404 page.
 - Raphael: Social media links.
 - Ramin: Visitor tracker (with respect to privacy laws).
 - Florian: Check imprint and data privacy statement.
 - Raphael: Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version).
 - Raphael: Create Email addresses as listed on the page.
+- Raphael: Design 404 page.
 - Lukas: Design landing page.
 - Raphael: Past news about submitting the proposal.
 - Raphael: Replace \<div>'s with covering background images in blog and post with actual \<img>
