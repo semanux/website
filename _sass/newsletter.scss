@@ -1,0 +1,39 @@
+#newsletter {
+  width: 75%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  > div {
+    display: grid;
+    grid-template-columns: auto min-content;
+
+    > input {
+      padding: 0.5rem;
+      border: 0;
+      background-color: $color-lightest-gray;
+    }
+
+    // TODO: very similar to the titles of selectable posts in blog and post layout!
+    > button {
+      padding: 0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      cursor: pointer;
+      border: none;
+      background-color: $color-black;
+      color: $color-white;
+      // font-weight: bold;
+
+      &:hover {
+        color: $color-accent-1;
+      }
+    }
+  }
+
+  > p {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 75%;
+  }
+}

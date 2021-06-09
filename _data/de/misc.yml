@@ -4,5 +4,8 @@ header:
   team: "Team"
 blog:
   more: " ...&nbsp;mehr lesen."
+newsletter:
+  input: "Deine E-Mail Adresse"
+  submit: "Einschreiben"
 scroll-top: "Zum Anfang scrollen."
-footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. Lesen Sie unser <a href="/imprint">Impressum</a> und unsere <a href="/data-privacy">Datenschutzerklärung</a>.'
+footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. Lies auch unser <a href="/imprint">Impressum</a> und unsere <a href="/data-privacy">Datenschutzerklärung</a>.'
