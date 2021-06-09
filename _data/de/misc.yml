@@ -8,6 +8,6 @@ newsletter:
   input: "E-Mail Adresse"
   submit: "Anmelden"
   supertext: "Jetzt zum Newsletter anmelden und Neuigkeiten erfahren!"
-  subtext: 'Wir senden wahrscheinlich drei bis fünf E-Mails pro Jahr. Der Newsletter kann jederzeit mit einer kurzen Nachricht an <a href="newsletter@semanux.com">newsletter@semanux.com</a> abbestellt werden. Weitere Details sind in unserer <a href="/data-privacy">Datenschutzerklärung</a> zu finden.'
+  subtext: 'Wir senden ungefähr drei bis fünf E-Mails pro Jahr. Der Newsletter kann jederzeit mit einer kurzen Nachricht an <a href="newsletter@semanux.com">newsletter@semanux.com</a> abbestellt werden. Weitere Details sind in unserer <a href="/data-privacy">Datenschutzerklärung</a> zu finden.'
 scroll-top: "Zum Anfang scrollen."
 footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. Hier ist unser <a href="/imprint">Impressum</a> und unsere <a href="/data-privacy">Datenschutzerklärung</a>.'
