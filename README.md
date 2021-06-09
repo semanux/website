@@ -12,6 +12,7 @@ This is the repository of the Semanux Website. We are using [Jekyll](https://jek
 1. Go into the directory of the repository with `cd semanux-website`.
 1. Install the dependencies into a local `vendor` directory with `bundle install --path vendor`.
 1. Generate and serve the Website with `bundle exec jekyll serve --livereload`.
+1. Go to <http://localhost:4000> in the Web browser of your choice to view the generated site.
 
 ### Optional
 
