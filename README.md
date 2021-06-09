@@ -38,6 +38,10 @@ The repository is structured as following:
 
 Before contribution, please read following guide about CSS grids: <https://css-tricks.com/snippets/css/complete-guide-grid>
 
+## Guidelines
+
+- In German translation, use "Imperativ" (without "du" or "Sie")
+
 ## Third-party content
 
 - jekyll-polyglot, used as gem: <https://github.com/untra/polyglot>
@@ -47,15 +51,15 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 
 ## TODO
 
-* Raphael: Check and repair autoformatting on Windows and macOS.
-* Raphael: Move "post previews" (like on the bottom of each post) into includes directory and reuse it e.g. on the 404 page.
-* Raphael: Social media links.
-* Ramin: Visitor tracker (with respect to privacy laws).
-* Florian: Check imprint and data privacy statement.
-* Raphael: Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version).
-* Raphael: Create Email addresses as listed on the page.
-* Lukas: Design landing page.
-* Raphael: Past news about submitting the proposal.
+- Raphael: Check and repair autoformatting on Windows and macOS.
+- Raphael: Move "post previews" (like on the bottom of each post) into includes directory and reuse it e.g. on the 404 page.
+- Raphael: Social media links.
+- Ramin: Visitor tracker (with respect to privacy laws).
+- Florian: Check imprint and data privacy statement.
+- Raphael: Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version).
+- Raphael: Create Email addresses as listed on the page.
+- Lukas: Design landing page.
+- Raphael: Past news about submitting the proposal.
 
 ## Issues
 
