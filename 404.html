@@ -3,4 +3,22 @@ layout: base
 title: Page not found
 ---
 
-TODO: make something fancy like list of news? or search within page?
+<p class="fourofour-message">
+  {{ site.data.misc.fourofour.message }}
+</p>
+
+{%- comment -%} Simplistic setup to display the latest two posts. {%- endcomment -%}
+<h3 class="fourofour-posts-title">{{ site.data.misc.fourofour.posts }}</h3>
+<div class="fourofour-posts-cards">
+  {%- assign posts = site.posts -%}
+  {%- assign counter = 0 -%}
+  {%- for post in posts -%}
+    {%- if post.url != page.url -%}
+      {%- include post-card.html post=post -%}
+      {%- assign counter = counter | plus: 1 -%}
+    {%- endif -%}
+    {%- if counter > 1 -%}
+      {% break %}
+    {%- endif -%}
+  {%- endfor -%}
+</div>

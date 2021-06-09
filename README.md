@@ -57,7 +57,6 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 - Florian: Check imprint and data privacy statement.
 - Raphael: Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version).
 - Raphael: Create Email addresses as listed on the page.
-- Raphael: Design 404 page.
 - Lukas: Design landing page.
 - Raphael: Past news about submitting the proposal.
 - Raphael: Replace \<div>'s with covering background images in blog and post with actual \<img>

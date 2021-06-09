@@ -2,13 +2,14 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 10rem auto;
-  justify-self: center;
+  justify-self: stretch;
+  margin-left: 1rem;
+  margin-right: 1rem;
 
   // Space for transform of the title.
   padding-left: 0.5rem;
 
   > .post-card-title {
-    text-align: center;
     color: $color-white;
     background-color: $color-black;
     padding: 0.5rem;
