@@ -49,7 +49,6 @@
 
   // Title of the other post.
   > .page-post-other-title {
-    
     text-align: center;
     color: $color-white;
     background-color: $color-black;
@@ -66,7 +65,7 @@
   }
 
   // Preview image of the other post.
-  > .page-post-other-preview  {
+  > .page-post-other-preview {
     background-size: cover;
     background-position: center center;
 
@@ -80,4 +79,3 @@
     }
   }
 }
-

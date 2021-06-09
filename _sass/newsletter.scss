@@ -10,19 +10,19 @@
 
     > input {
       padding: 0.5rem;
-      border: 0;
       background-color: $color-lightest-gray;
+      border: 0;
     }
 
     // TODO: very similar to the titles of selectable posts in blog and post layout!
     > button {
       padding: 0.5rem;
-      padding-left: 1rem;
       padding-right: 1rem;
-      cursor: pointer;
-      border: none;
-      background-color: $color-black;
+      padding-left: 1rem;
       color: $color-white;
+      cursor: pointer;
+      background-color: $color-black;
+      border: none;
       // font-weight: bold;
 
       &:hover {
