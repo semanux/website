@@ -16,9 +16,7 @@ layout: base
 
 {{ page.content | remove: page.excerpt }}
 
-<hr>
-TODO: Include Newsletter Subscription Form from Index Page here
-<hr>
+{%- include newsletter.html -%}
 
 <div id="page-post-other-container">
     {% if page.previous %}
