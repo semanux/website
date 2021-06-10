@@ -11,7 +11,7 @@ body > header {
   padding: 1rem 0;
   font-size: 2rem;
   line-height: 1;
-  border-bottom: 2px solid $color-black;
+  border-bottom: 2px solid $color-light-gray;
 
   @media (max-width: 50rem) {
     grid-template:
