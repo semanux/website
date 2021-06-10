@@ -99,5 +99,6 @@ blockquote {
   padding-left: 1rem;
   padding-right: 1rem;
   z-index: 1;
+
   @include fill-hover;
 }

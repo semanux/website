@@ -20,15 +20,11 @@
       padding: 0.5rem;
       padding-right: 1rem;
       padding-left: 1rem;
-      color: $color-white;
       cursor: pointer;
-      background-color: $color-black;
       border: none;
       // font-weight: bold;
 
-      &:hover {
-        color: $color-accent-1;
-      }
+      @include fill-hover;
     }
   }
 
