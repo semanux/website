@@ -9,6 +9,10 @@
   display: grid;
   grid-template-columns: 40% 60%;
   column-gap: 0.5rem;
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 0 100%; // TODO: Hotfix to hide too-small preview image on phone.
+  }
 }
 
 .page-blog-post-image {
@@ -26,12 +30,12 @@
   @include post-card-title;
   font-size: 125%;
   font-weight: bold;
-  transform: translateX(-1.75rem) translateY(-0.6rem);
+  transform: translateX(-1.25rem) translateY(-0.6rem);
 }
 
 .page-blog-post-date {
   justify-self: end;
-  transform: translateX(-1.75rem) translateY(-0.6rem); // TODO: same transform as title, maybe put into container?
+  transform: translateX(-1.25rem) translateY(-0.6rem); // TODO: same transform as title, maybe put into container?
   margin-top: 0.25rem;
   line-height: 1em;
   font-size: 0.75em;
@@ -43,4 +47,7 @@
 
 .page-blog-post-excerpt {
   // font-size: medium;
+
+  // Compensate for transform of title.
+  padding-right: 1.25rem;
 }
