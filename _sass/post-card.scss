@@ -10,20 +10,11 @@
   padding-left: 0.5rem;
 
   > .post-card-title {
-    color: $color-white;
-    background-color: $color-black;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    @include post-card-title;
     align-self: start;
-    z-index: 1;
     margin-left: 1rem;
     margin-right: 1rem;
     transform: translateX(-0.5rem) translateY(-0.5rem);
-
-    &:hover {
-      color: $color-accent-1;
-    }
   }
 
   // Preview image of the other post.
