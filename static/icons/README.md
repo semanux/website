@@ -12,8 +12,8 @@ Phosphor Icons from <https://github.com/phosphor-icons/phosphor-icons>. Last upd
   font-family: "Phosphor";
   src: url("./phosphor.ttf")
       format("truetype"),
-    url("./Phosphor.woff")
+    url("./phosphor.woff")
       format("woff"),
-    url("./Phosphor.svg")
+    url("./phosphor.svg")
       format("svg");
 ```
