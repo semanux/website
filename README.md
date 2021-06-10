@@ -60,6 +60,7 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 - Lukas: Design landing page.
 - Raphael: Past news about submitting the proposal.
 - Raphael: Replace \<div>'s with covering background images in blog and post with actual \<img>
+- Raphael: Larger favicon version should be redone.
 
 ## Issues
 
