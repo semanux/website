@@ -8,7 +8,7 @@ title: Blog
 {% for post in site.posts %}
   <div class="page-blog-post">
     {%- capture preview_path -%}/assets/blog/{{ post.path | split:"/" | last | split:"." | first}}/preview{%- endcapture -%}
-    <a href="{{ post.url }}" class="page-blog-post-image" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" title="{{ post.title }}" aria-hidden="true"></a>
+    <a href="{{ post.url }}" class="page-blog-post-preview" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" title="{{ post.title }}" aria-hidden="true"></a>
     <div class="page-blog-post-date">
       {%- include icon.html class='calendar-blank' -%}
       {%- include func/local_date.html page=post -%}
