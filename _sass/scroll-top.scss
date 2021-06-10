@@ -8,12 +8,12 @@
   height: 3rem;
   font-size: 2rem;
   line-height: 0; // Centers the icon.
-  color: $color-white;
   cursor: pointer;
-  background-color: $color-black;
   border: none;
   border-radius: 100%;
   outline: none;
   opacity: 0;
   transition: opacity 0.125s ease-in-out;
+
+  @include fill-hover;
 }

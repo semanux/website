@@ -6,8 +6,22 @@ footer {
   text-align: center;
   border-top: 2px solid $color-light-gray;
 
-  > p {
+  p {
     padding: 0;
     margin: 0;
+  }
+
+  div {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.25rem;
+
+    .icon {
+      margin: 0.5rem;
+      font-size: 150%;
+      border-radius: 100%;
+      padding: 0.5rem;
+      @include fill-hover;
+    }
   }
 }
