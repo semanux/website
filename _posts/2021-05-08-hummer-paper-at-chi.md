@@ -12,6 +12,4 @@ In many situations, touchless text input may be necessary - whether it is cookin
 
 > Ramin Hedeshy, Chandan Kumar, Raphael Menges, and Steffen Staab. 2021. Hummer: Text Entry by Gaze and Hum. In Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems (CHI '21). Association for Computing Machinery, New York, NY, USA, Article 741, 1–11. DOI:<https://doi.org/10.1145/3411764.3445501>
 
-We are planning to integrate this innovative way of text input into Semanux as well, thus **providing our customers with faster, simpler and more reliable hands-free interaction based on the latest research findings.**
-
-Ramin's presentation can be watched on YouTube: <https://www.youtube.com/watch?v=_eu91g5fTaw>
+We are planning to integrate this innovative way of text input into Semanux as well, thus **providing our customers with faster, simpler and more reliable hands-free interaction based on the latest research findings.** Ramin's presentation can be watched on YouTube: <https://www.youtube.com/watch?v=_eu91g5fTaw>
