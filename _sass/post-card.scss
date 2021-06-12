@@ -9,16 +9,17 @@
   // Space for transform of the title.
   padding-left: 0.5rem;
 
-  > .post-card-title {
+  .post-card-title {
     @include post-card-title;
     align-self: start;
     margin-left: 1rem;
     margin-right: 1rem;
+    border-radius: $roundness;
     transform: translateX(-0.5rem) translateY(-0.5rem);
   }
 
   // Preview image of the other post.
-  > .post-card-preview {
+  .post-card-preview {
     background-color: $color-light-gray;
     background-size: cover;
     background-position: center center;
