@@ -23,8 +23,28 @@ footer {
       font-size: 1.5rem;
       border-radius: 100%;
       padding: 0.5rem;
+      color: $color-white;
 
-      @include fill-a-hover;
+      &:hover {
+        color: $color-black;
+      }
+
+      // Using Phosphor icon classes for addressing.
+      &.ph-facebook-logo-fill {
+        background-image: $gradient-facebook;
+      }
+      &.ph-instagram-logo-fill  {
+        background-image: $gradient-instagram;
+      }
+      &.ph-twitter-logo-fill  {
+        background-image: $gradient-twitter;
+      }
+      &.ph-youtube-logo-fill  {
+        background-image: $gradient-youtube;
+      }
+      &.ph-github-logo-fill  {
+        background-image: $gradient-github;
+      }
     }
   }
 }
