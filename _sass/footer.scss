@@ -9,12 +9,14 @@ footer {
     padding: 0;
     padding-bottom: 0.75rem;
     margin: 0;
-    border-bottom: 2px solid $color-light-gray;
   }
 
   div {
     padding: 0;
     margin: 0;
+    background-color: $color-light-gray;
+    background-image: $gradient-lightest-gray;
+    border-radius: $roundness;
 
     .icon {
       width: 1.5rem;
