@@ -1,9 +1,5 @@
 body > header {
 
-  a {
-    @include reverse-a-hover;
-  }
-
   display: grid;
   grid-template: // Size logo and languages with 1 fr to keep sections centered.
 
@@ -14,7 +10,6 @@ body > header {
   padding: 1rem 0;
   font-size: 2rem;
   line-height: 1;
-  border-bottom: 2px solid $color-light-gray;
 
   @media (max-width: 50rem) {
     grid-template:
@@ -71,4 +66,8 @@ body > header {
 #header-nav-languages {
   grid-area: languages;
   justify-self: end;
+
+  a {
+    @include reverse-a-hover;
+  }
 }
