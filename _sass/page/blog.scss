@@ -12,6 +12,7 @@
 
   @media (max-width: 40rem) {
     grid-template-columns: 0% auto;
+  }
 
   .page-blog-post-preview {
     min-height: 10rem;
@@ -21,7 +22,7 @@
     background-position: center center;
 
     @include preview-animation;
-    }
+
   }
 
   .page-blog-post-description {
