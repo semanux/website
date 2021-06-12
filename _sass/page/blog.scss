@@ -7,48 +7,51 @@
 
 .page-blog-post {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% auto;
   column-gap: 0.5rem;
 
   @media (max-width: 40rem) {
-    grid-template-columns: 0 100%; // TODO: Hotfix to hide too-small preview image on phone.
+    grid-template-columns: 0% auto;
+
+  .page-blog-post-preview {
+    min-height: 10rem;
+    box-sizing: border-box;
+    background-color: $color-light-gray;
+    background-size: cover;
+    background-position: center center;
+
+    @include preview-animation;
+    }
   }
-}
 
-.page-blog-post-preview {
-  grid-row-start: 1;
-  grid-row-end: span 4; // TODO: Why does -1 not work?
-  background-color: $color-light-gray;
-  background-size: cover;
-  background-position: center center;
-  min-height: 10rem;
-  box-sizing: border-box;
-
-  @include preview-animation;
-}
-
-.page-blog-post-title {
-  @include post-card-title;
-  font-size: 125%;
-  font-weight: bold;
-  transform: translateX(-1.25rem) translateY(-0.6rem);
-}
-
-.page-blog-post-date {
-  justify-self: end;
-  transform: translateX(-1.25rem) translateY(-0.6rem); // TODO: same transform as title, maybe put into container?
-  margin-top: 0.25rem;
-  line-height: 1em;
-  font-size: 0.75em;
-  i {
-    margin-right: 0.1rem;
-    vertical-align: bottom;
+  .page-blog-post-description {
+    .page-blog-post-title {
+      display: block;
+      @include post-card-title;
+      font-size: 125%;
+      font-weight: bold;
+      transform: translateX(-1.25rem) translateY(-0.6rem);
+    }
+    
+    .page-blog-post-date {
+      display: block;
+      text-align: right;
+      transform: translateX(-1.25rem) translateY(-0.6rem); // TODO: same transform as title, maybe put into container?
+      margin-top: 0.25rem;
+      line-height: 1em;
+      font-size: 0.75em;
+      i {
+        margin-right: 0.1rem;
+        vertical-align: bottom;
+      }
+    }
+    
+    .page-blog-post-excerpt {
+      // font-size: medium;
+      display: block;
+    
+      // Compensate for transform of title.
+      padding-right: 1.25rem;
+    }
   }
-}
-
-.page-blog-post-excerpt {
-  // font-size: medium;
-
-  // Compensate for transform of title.
-  padding-right: 1.25rem;
 }
