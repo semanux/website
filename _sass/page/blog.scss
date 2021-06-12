@@ -28,16 +28,18 @@
   .page-blog-post-description {
     .page-blog-post-title {
       display: block;
-      @include post-card-title;
       font-size: 125%;
       font-weight: bold;
+      border-radius: $roundness;
       transform: translateX(-1.25rem) translateY(-0.6rem);
+
+      @include post-card-title;
     }
     
     .page-blog-post-date {
       display: block;
       text-align: right;
-      transform: translateX(-1.25rem) translateY(-0.6rem); // TODO: same transform as title, maybe put into container?
+      transform: translateX(-1.25rem - $roundness) translateY(-0.6rem); // TODO: same transform as title, maybe put into container?
       margin-top: 0.25rem;
       line-height: 1em;
       font-size: 0.75em;

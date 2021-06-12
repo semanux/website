@@ -61,11 +61,13 @@ a {
 
 @mixin fill-a-hover {
   color: $color-white;
-  background-color: $color-black;
+  background-color: $color-accent-1;
+  background-image: $gradient-accent-1;
 
   &:hover {
     color: $color-accent-1;
     background-color: $color-lightest-gray;
+    background-image: $gradient-lightest-gray;
   }
 }
 
