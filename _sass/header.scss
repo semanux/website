@@ -1,5 +1,8 @@
 body > header {
-  @include reverse-a-hover;
+
+  a {
+    @include reverse-a-hover;
+  }
 
   display: grid;
   grid-template: // Size logo and languages with 1 fr to keep sections centered.

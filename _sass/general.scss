@@ -52,17 +52,14 @@ a {
 }
 
 @mixin reverse-a-hover {
-  a {
-    color: $color-black;
+  color: $color-black;
 
-    &:hover {
-      color: $color-accent-1;
-    }
+  &:hover {
+    color: $color-accent-1;
   }
 }
 
-// TODO: This is different to above style, as <a> tag is not used as separator.
-@mixin fill-hover {
+@mixin fill-a-hover {
   color: $color-white;
   background-color: $color-black;
 
@@ -106,5 +103,5 @@ blockquote {
   padding-right: 1rem;
   z-index: 1;
 
-  @include fill-hover;
+  @include fill-a-hover;
 }
