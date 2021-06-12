@@ -41,6 +41,7 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 ## Guidelines
 
 - In German translation, use "Imperativ" (without "du" or "Sie")
+- To be discussed: "Web site" or "web site?" (glossar would be preferable in general)
 
 ## Third-party content
 
@@ -48,19 +49,6 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 - jekyll-file-exists, see `_plugins` directory: <https://github.com/Wolfr/jekyll_file_exists>
 - Inter Font, see `static` directory: <https://rsms.me/inter/>
 - Phosphor Icons, see `static` directory: <https://github.com/phosphor-icons/phosphor-icons>
-
-## TODO
-
-- Raphael: Check and repair autoformatting on Windows and macOS.
-- Raphael: Social media links.
-- Ramin: Visitor tracker (with respect to privacy laws).
-- Florian: Check imprint and data privacy statement.
-- Raphael: Redirect of semanux.de to semanux.com/de (similar to approach in Hugo version).
-- Raphael: Create Email addresses as listed on the page.
-- Lukas: Design landing page.
-- Raphael: Past news about submitting the proposal.
-- Raphael: Replace \<div>'s with covering background images in blog and post with actual \<img>
-- Raphael: Larger favicon version should be redone.
 
 ## Issues
 
