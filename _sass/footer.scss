@@ -28,15 +28,7 @@ footer {
       color: $color-white;
 
       &:hover {
-        color: $color-accent-1;
-      }
-
-      // TODO: Below is a bit hackish, might be improved.
-      &.ph-facebook-logo-fill, &.ph-instagram-logo-fill, &.ph-twitter-logo-fill, &.ph-youtube-logo-fill, &.ph-github-logo-fill {
-        background-color: $color-black; // Fallback
-        &:hover {
-          background-image: $gradient-lightest-gray;
-        }
+        color: $color-black;
       }
 
       // Using Phosphor icon classes for addressing.
