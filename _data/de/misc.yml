@@ -11,7 +11,7 @@ newsletter:
   subtext: 'Wir senden ungefähr drei bis fünf E-Mails pro Jahr. Der Newsletter kann jederzeit mit einer kurzen Nachricht an <a href="mailto:newsletter@semanux.com">newsletter@semanux.com</a> abbestellt werden. Weitere Details sind in unserer <a href="/data-privacy">Datenschutzerklärung</a> zu finden.'
 post:
   further-reading: "Folgendes Posts könnten ebenfalls interessant sein:"
-fourofour:
+error-not-found:
   message: "Seite nicht gefunden :("
   posts: "Eventuell sind folgende Posts stattdessen interessant?"
 scroll-top: "Zum Anfang scrollen."

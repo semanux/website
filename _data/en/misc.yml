@@ -11,7 +11,7 @@ newsletter:
   subtext: 'We send about three to five E-mails per year. The newsletter can be unsubscribed at every time by sending a short message to <a href="mailto:newsletter@semanux.com">newsletter@semanux.com</a>. Further details can be found in our statement about <a href="/data-privacy">data privacy</a>.'
 post:
   further-reading: "Following posts could be also of interest:"
-fourofour:
+error-not-found:
   message: "Page not found :("
   posts: "Perhaps one of these posts can be of interest?"
 scroll-top: "Scroll to the top."

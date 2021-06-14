@@ -1,5 +1,5 @@
 # 404 error page
-ErrorDocument 404 /404/
+ErrorDocument 404 /error-not-found/
 
 # Disable caching
 #<IfModule mod_headers.c>
