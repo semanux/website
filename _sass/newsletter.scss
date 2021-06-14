@@ -9,11 +9,15 @@
     display: grid;
     grid-template-columns: auto min-content;
 
-    > input {
+    input {
       padding: 0.5rem;
+      padding-left:  0.5rem + ($roundness / 2);
       background-color: $color-lightest-gray;
       background-image: $gradient-lightest-gray;
       border: 0;
+      border-right: none;
+      border-top-left-radius: $roundness;
+      border-bottom-left-radius: $roundness;
     }
 
     // TODO: very similar to the titles of selectable posts in blog and post layout!
@@ -24,6 +28,9 @@
       cursor: pointer;
       border: none;
       // font-weight: bold;
+      border-left: none;
+      border-top-right-radius: $roundness;
+      border-bottom-right-radius: $roundness;
 
       @include fill-a-hover;
     }
