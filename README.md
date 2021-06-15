@@ -40,8 +40,9 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 
 ## Guidelines
 
-- In German translation, use "Imperativ" (without "du" or "Sie")
-- To be discussed: "Web site" or "web site?" (glossar would be preferable in general)
+- In German translation, use "Imperativ" (without "du" or "Sie").
+- For `padding` and `margin`, either use the shorthand form (`padding`) or the subproperties (`padding-top`, `padding-right`, `padding-bottom`, and `padding-left`). Do not mix them, as then the ordering of properties influences the visuals.
+- To be discussed: "Web site" or "web site?" (glossar would be preferable in general).
 
 ## Third-party content
 
