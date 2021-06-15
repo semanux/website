@@ -13,6 +13,6 @@ post:
   further-reading: "Weitere Neuigkeiten über Semanux in unserem Blog"
 error-not-found:
   message: "Seite nicht gefunden :("
-  posts: "Stattdessen Neuigkeiten über Semanux in unserem Blog?"
+  posts: "Neuigkeiten über Semanux in unserem Blog"
 scroll-top: "Zum Anfang scrollen."
 footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. Hier ist unser <a href="/imprint">Impressum</a> und unsere <a href="/data-privacy">Datenschutzerklärung</a>.'
