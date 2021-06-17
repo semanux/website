@@ -1,8 +1,7 @@
 .newsletter {
 
   h3 {
-    margin: 0;
-    margin-bottom: 0.5rem;
+    margin: 0 0 0.5rem 0;
   }
 
   div {
@@ -10,8 +9,11 @@
     grid-template-columns: auto min-content;
 
     input {
-      padding: 0.5rem;
-      padding-left:  0.5rem + ($roundness / 2);
+      padding-top: 0.5rem;
+      padding-left: 0.5rem + ($roundness / 2);
+      padding-bottom: 0.5rem;
+      padding-right: 0.5rem;
+      min-width: 0;
       background-color: $color-white;
       background-image: $gradient-white;
       border: 1px solid $color-light-gray;
@@ -22,9 +24,7 @@
 
     // TODO: very similar to the titles of selectable posts in blog and post layout!
     button {
-      padding: 0.5rem;
-      padding-right: 1rem;
-      padding-left: 1rem;
+      padding: 0.5rem 1rem 0.5rem 1rem;
       cursor: pointer;
       border: none;
       // font-weight: bold;
@@ -37,8 +37,7 @@
   }
 
   p {
-    margin: 0;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0 0 0;
     font-size: 75%;
   }
 }

@@ -34,7 +34,7 @@ body {
   margin: 0 auto;
   overflow-y: scroll; // force visible vertical scrollbar
 
-  @media (min-width: 25em) {
+  @media (min-width: $body-min-width) {
     // Values of the breakpoint and the padding calculation are chosen so that
     // they have a smooth transition to the fixed padding value on smaller
     // screens defined above.
@@ -73,8 +73,14 @@ a {
 }
 
 blockquote {
-  padding-left: 0.5rem;
+  padding: 0 0 0 1.0rem;
+  padding: 0 0 0 0.5rem;
   border-left: 1rem solid $color-light-gray;
+  @media (max-width: $media-phone-width) {
+    margin: 0 0 0 0.5rem;
+    padding: 0 0 0 0.25rem;
+    border-left: 0.5rem solid $color-light-gray;
+  }
 }
 
 .ordinals {

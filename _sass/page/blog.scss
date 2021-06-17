@@ -13,7 +13,7 @@ $page-blog-post-title-y-offset: -0.25rem;
   grid-template-columns: 40% auto;
   column-gap: 0.5rem;
 
-  @media (max-width: 40rem) {
+  @media (max-width: $media-phone-width) {
     grid-template-columns: 0% auto;
   }
 
@@ -26,7 +26,6 @@ $page-blog-post-title-y-offset: -0.25rem;
     border-radius: $roundness/2;
 
     @include preview-animation;
-
   }
 
   .page-blog-post-description {
@@ -36,6 +35,9 @@ $page-blog-post-title-y-offset: -0.25rem;
       font-weight: bold;
       border-radius: $roundness;
       transform: translateX($page-blog-post-title-x-offset) translateY($page-blog-post-title-y-offset);
+      @media (max-width: $media-phone-width) {
+        transform: none;
+      }
 
       @include post-card-title;
     }
@@ -43,7 +45,6 @@ $page-blog-post-title-y-offset: -0.25rem;
     .page-blog-post-date {
       display: block;
       text-align: right;
-      transform: translateX($page-blog-post-title-x-offset - $roundness) translateY($page-blog-post-title-y-offset);
       line-height: 1em;
       font-size: 0.75em;
       padding: 0 0 0.15rem 0;
@@ -51,14 +52,28 @@ $page-blog-post-title-y-offset: -0.25rem;
         margin-right: 0.1rem;
         vertical-align: bottom;
       }
+
+      transform: translateX($page-blog-post-title-x-offset - $roundness) translateY($page-blog-post-title-y-offset);
+      @media (max-width: $media-phone-width) {
+        transform: translateX(-$roundness);
+      }
     }
     
     .page-blog-post-excerpt {
       // font-size: medium;
       display: block;
     
-      // Compensate for transform of title.
+      // Compensate for transform and roundness of title.
+      padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 0;
       padding-right: -$page-blog-post-title-x-offset;
+      @media (max-width: $media-phone-width) {
+        padding-top: 0.5rem;
+        padding-left: $roundness;
+        padding-bottom: 0;
+        padding-right: $roundness;
+      }
     }
   }
 }
