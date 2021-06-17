@@ -14,10 +14,10 @@ title: Blog
         {%- include icon.html class='calendar-blank' -%}
         {%- include func/local_date.html page=post -%}
       </div>
-      <a class="page-blog-post-title" href="{{ post.url }}">{{ post.title }}</a>
+      <a class="page-blog-post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       <div class="page-blog-post-excerpt">
         {{ page.excerpt | markdownify | strip_html | markdownify | remove: '<p>' | remove: '</p>' }}
-        <a href="{{ post.url }}"> {{ site.data.misc.blog.more }} </a>
+        <a href="{{ post.url }}" title="{{ post.title }}"> {{ site.data.misc.blog.more }} </a>
       </div>
     </div>
   </div>

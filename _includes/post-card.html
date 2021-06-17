@@ -2,5 +2,5 @@
 <div class="post-card">
   {%- capture preview_path -%}/assets/blog/{{ include.post.path | split:"/" | last | split:"." | first}}/preview{% endcapture %}
   <a class="post-card-preview" href="{{ include.post.url }}" style='background-image: url("{%- include func/get_image.html path=preview_path -%}");' role="img" title="{{ include.post.title }}" aria-hidden="true"></a>
-  <a class="post-card-title" href="{{ include.post.url }}">{{ include.post.title }}</a>
+  <a class="post-card-title" href="{{ include.post.url }}" title="{{ include.post.title }}">{{ include.post.title }}</a>
 </div>
