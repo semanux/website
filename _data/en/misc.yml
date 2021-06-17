@@ -14,7 +14,7 @@ post:
   duration:
     less-one-minute: "Less than one minute to read"
     one-minute: "One minute to read"
-    more-than-minute: "minutes to read"
+    more-than-minute: " minutes to read"
 error-not-found:
   message: "Page not found :("
   posts: "News about Semanux in our Blog"
