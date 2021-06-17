@@ -11,6 +11,10 @@ newsletter:
   subtext: 'We send about three to five E-mails per year. The newsletter can be unsubscribed at every time by sending a short message to <a href="mailto:newsletter@semanux.com">newsletter@semanux.com</a>. Further details can be found in our statement about <a href="/data-privacy">data privacy</a>.'
 post:
   further-reading: "Further News about Semanux in our Blog"
+  duration:
+    less-one-minute: "Less than one minute to read"
+    one-minute: "One minute to read"
+    more-than-minute: "minutes to read"
 error-not-found:
   message: "Page not found :("
   posts: "News about Semanux in our Blog"

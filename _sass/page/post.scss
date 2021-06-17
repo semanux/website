@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.page-post-date {
+.page-post-date-and-duration-container {
   // Div can be centered only in container
-  div {
+  .page-post-date-and-duration {
     margin: auto;
     padding: 0.5rem;
     width: max-content;
@@ -19,6 +19,12 @@
     i {
       margin-right: 0.1rem;
       vertical-align: bottom;
+    }
+
+    .page-post-duration {
+      margin-left: 0.25rem;
+      padding-left: 0.25rem;
+      border-left: 1px solid $color-light-gray;
     }
   }
 }

@@ -48,6 +48,7 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 
 - jekyll-polyglot, used as gem: <https://github.com/untra/polyglot>
 - jekyll-file-exists, see `_plugins` directory: <https://github.com/Wolfr/jekyll_file_exists>
+- jekyll-readtime, see `_plugins` directory: <https://gist.github.com/tohuw/cbcc8653321b9a3fb230>
 - Inter Font, see `static` directory: <https://rsms.me/inter/>
 - Phosphor Icons, see `static` directory: <https://github.com/phosphor-icons/phosphor-icons>
 

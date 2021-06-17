@@ -3,10 +3,23 @@ layout: base
 ---
 <h1 class="page-post-heading">{{ page.title }}</h1>
 
-<div class="page-post-date">
-  <div>
-    {%- include icon.html class="calendar-blank" -%}{%- include func/local_date.html page=page -%}
+<div class="page-post-date-and-duration-container ">
+  <div class="page-post-date-and-duration">
+    <span>
+      {%- include icon.html class="calendar-blank" -%}{%- include func/local_date.html page=page -%}
+    </span>
+    <span class="page-post-duration">
+      {%- assign minutes = page.content | readtime -%}
+      {%- if minutes < 1 -%}
+        {{ site.data.misc.post.duration.less-one-minute }}
+      {%- elsif minutes == 1 -%}
+        {{ site.data.misc.post.duration.one-minute }}
+      {%- else -%}
+        {{ minutes }} {{ site.data.misc.post.duration.more-than-minute }}
+      {%- endif -%}
+    </span>
   </div>
+  
 </div>
 
 {{ page.excerpt }}
