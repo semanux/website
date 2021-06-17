@@ -23,6 +23,7 @@
     background-color: $color-image-preload;
     background-size: cover;
     background-position: center center;
+    border-radius: $roundness/2;
 
     @include preview-animation;
   }

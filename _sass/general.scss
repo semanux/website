@@ -7,8 +7,8 @@
   text-rendering: optimizeLegibility;
 
   // TODO: Testing a slightly colored background.
-  background-color: rgb(252, 255, 255);
-  background-image: linear-gradient(rgb(238, 246, 246),rgb(252, 255, 255));
+  background-color: $color-background;
+  background-image: linear-gradient($color-white, $color-background);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 100% 5rem;
@@ -66,8 +66,9 @@ a {
 
   &:hover {
     color: $color-accent-1;
-    background-color: $color-lightest-gray;
-    background-image: $gradient-lightest-gray;
+    background-color: $color-white;
+    background-image: $gradient-white;
+    box-shadow: $box-shadow-backdrop;
   }
 }
 

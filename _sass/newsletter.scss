@@ -12,9 +12,9 @@
     input {
       padding: 0.5rem;
       padding-left:  0.5rem + ($roundness / 2);
-      background-color: $color-lightest-gray;
-      background-image: $gradient-lightest-gray;
-      border: 0;
+      background-color: $color-white;
+      background-image: $gradient-white;
+      border: 1px solid $color-light-gray;
       border-right: none;
       border-top-left-radius: $roundness;
       border-bottom-left-radius: $roundness;

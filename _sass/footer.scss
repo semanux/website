@@ -14,8 +14,9 @@ footer {
   div {
     padding: 0;
     margin: 0;
-    background-color: $color-lightest-gray;
-    background-image: $gradient-lightest-gray;
+    background-color: $color-white;
+    background-image: $gradient-white;
+    box-shadow: $box-shadow-backdrop;
     border-radius: $roundness;
 
     .icon {
