@@ -66,6 +66,6 @@ plugins:
 # Plugin: Polyglot
 languages: ["en", "de"]
 default_lang: "en"
-exclude_from_localization: ["static", "css", "assets"]
+exclude_from_localization: ["static"]
 parallel_localization: false # Must be false for Windows.
 lang_from_path: true

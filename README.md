@@ -31,8 +31,7 @@ The repository is structured as following:
 - `_plugins`: Plugins that are not available as gem.
 - `_posts`: Posts of the blog.
 - `_sass`: Files that can be included in sass/scss.
-- `assets`: Pictures that might be put into an asset pipeline in the future.
-- `static`: Static files. Might be still processed by a minifier.
+- `static`: Assets for the site.
 
 ## Contribution
 
@@ -60,7 +59,7 @@ Before contribution, please read following guide about CSS grids: <https://css-t
 
 - List our relevant publications?
 - Minify the generated site.
-- Process images in assets to webp?
+- Process png and jpg images in `static` to webp?
 
 ## Tipps
 
