@@ -33,18 +33,43 @@ layout: base
   {%- include newsletter.html -%}
 </div>
 
-{%- comment -%} Simplistic setup to display the latest two posts. {%- endcomment -%}
 <h3 class="page-post-further-reading-title">{{ site.data.misc.post.further-reading }}</h3>
 <div class="page-post-further-reading-cards">
   {%- assign posts = site.posts -%}
-  {%- assign counter = 0 -%}
+  {%- comment -%} Find index of this post in all posts. {%- endcomment -%}
+  {%- assign idx = 0 -%}
   {%- for post in posts -%}
-    {%- if post.url != page.url -%}
+    {%- if post.url == page.url -%}
+      {%- break -%}
+    {%- else -%}
+      {%- assign idx = idx | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- comment -%} Get surrounding posts (a bit hacky but working). {%- endcomment -%}
+  {%- assign count = 0 -%}
+  {%- assign scope = 1 -%}
+  {%- for i in (1..2) -%}
+    {%- comment -%} Check earlier posts. {%- endcomment -%}
+    {%- assign candidate = idx | plus: scope -%}
+    {%- if candidate < site.posts.size -%}
+      {%- assign count = count | plus: 1 -%}
+      {%- assign post = site.posts[candidate] -%}
       {%- include post-card.html post=post -%}
-      {%- assign counter = counter | plus: 1 -%}
     {%- endif -%}
-    {%- if counter > 1 -%}
-      {% break %}
+    {%- if count > 1 -%}
+      {%- break -%}
     {%- endif -%}
+    {%- comment -%} Check later posts. {%- endcomment -%}
+    {%- assign candidate = idx | minus: scope -%}
+    {%- if candidate >= 0 -%}
+      {%- assign count = count | plus: 1 -%}
+      {%- assign post = site.posts[candidate] -%}
+      {%- include post-card.html post=post -%}
+    {%- endif -%}
+    {%- if count > 1 -%}
+      {%- break -%}
+    {%- endif -%}
+    {%- comment -%} Increase scope. {%- endcomment -%}
+    {%- assign scope = scope | plus: 1 -%}
   {%- endfor -%}
 </div>
