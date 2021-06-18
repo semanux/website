@@ -52,9 +52,9 @@ layout: base
     {%- comment -%} Check earlier posts. {%- endcomment -%}
     {%- assign candidate = idx | plus: scope -%}
     {%- if candidate < site.posts.size -%}
-      {%- assign count = count | plus: 1 -%}
       {%- assign post = site.posts[candidate] -%}
       {%- include post-card.html post=post -%}
+      {%- assign count = count | plus: 1 -%}
     {%- endif -%}
     {%- if count > 1 -%}
       {%- break -%}
@@ -62,9 +62,9 @@ layout: base
     {%- comment -%} Check later posts. {%- endcomment -%}
     {%- assign candidate = idx | minus: scope -%}
     {%- if candidate >= 0 -%}
-      {%- assign count = count | plus: 1 -%}
       {%- assign post = site.posts[candidate] -%}
       {%- include post-card.html post=post -%}
+      {%- assign count = count | plus: 1 -%}
     {%- endif -%}
     {%- if count > 1 -%}
       {%- break -%}
