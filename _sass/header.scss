@@ -60,6 +60,11 @@ body > header {
     display: grid;
     grid-auto-flow: column;
     gap: $header-gap;
+
+    // TODO: Feels a bit weird to define this here. Maybe make global a-tag styling classes that can be included here instead?
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 

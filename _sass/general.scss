@@ -48,6 +48,25 @@ a {
 
   &:hover {
     color: $color-black;
+    text-decoration: underline;
+  }
+}
+
+a, input, button, button[type="submit"] {
+
+  // TODO: Not required since :focus-visible is implemented?
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 5px solid $color-complement-1;
+    outline-offset: 5px;
+  }
+
+  // TODO: How to make good looking?
+  &:active {
+    outline: none;
   }
 }
 
@@ -56,6 +75,7 @@ a {
 
   &:hover {
     color: $color-accent-1;
+    text-decoration: none;
   }
 }
 
@@ -69,6 +89,7 @@ a {
     background-color: $color-white;
     background-image: $gradient-white;
     box-shadow: $box-shadow-backdrop;
+    text-decoration: none;
   }
 }
 
