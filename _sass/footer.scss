@@ -17,37 +17,33 @@ footer {
     box-shadow: $box-shadow-backdrop;
     border-radius: $roundness;
 
-    .icon {
+    a {
+      display: inline-block;
       width: 1.5rem;
       height: 1.5rem;
-      font-size: 1.5rem;
-      border-radius: 100%;
       padding: 0.5rem;
-      color: $color-white;
-
       margin: 0.5rem 1.0rem 0.5rem 1.0rem;
       @media (max-width: $media-phone-width) {
         margin: 0.5rem 0.25rem 0.5rem 0.25rem;
       }
+      font-size: 1.5rem;
+      border-radius: 100%;
+      color: $color-white;
 
-      &:hover {
-        color: $color-black;
-      }
-
-      // Using Phosphor icon classes for addressing.
-      &.ph-facebook-logo-fill {
+      // Overwrite with specific gradient in background.
+      &.facebook {
         background-image: $gradient-facebook;
       }
-      &.ph-instagram-logo-fill {
+      &.instagram {
         background-image: $gradient-instagram;
       }
-      &.ph-twitter-logo-fill {
+      &.twitter {
         background-image: $gradient-twitter;
       }
-      &.ph-youtube-logo-fill {
+      &.youtube {
         background-image: $gradient-youtube;
       }
-      &.ph-github-logo-fill {
+      &.github {
         background-image: $gradient-github;
       }
     }
