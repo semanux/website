@@ -1,4 +1,4 @@
-.newsletter {
+.newsletter { // Is a form.
 
   h3 {
     margin: 0 0 0.5rem 0;
@@ -40,4 +40,12 @@
     margin: 0.5rem 0 0 0;
     font-size: 75%;
   }
+
+  /*
+  // TODO: Testing focus-within selector.
+  transition: transform 1s;
+  &:focus-within {
+    transform: scale(1.05);
+  }
+  */
 }
