@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: auto min-content;
 
-    input {
+    input[type="email"] {
       padding-top: 0.5rem;
       padding-left: 0.5rem + ($roundness / 2);
       padding-bottom: 0.5rem;
@@ -23,7 +23,7 @@
     }
 
     // TODO: very similar to the titles of selectable posts in blog and post layout!
-    button {
+    input[type="submit"] {
       padding: 0.5rem 1rem 0.5rem 1rem;
       cursor: pointer;
       border: none;

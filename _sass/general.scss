@@ -52,7 +52,7 @@ a {
   }
 }
 
-a, input, button, button[type="submit"] {
+a, input, input[type="submit"], button {
 
   // TODO: Not required since :focus-visible is implemented?
   &:focus {
@@ -72,6 +72,7 @@ a, input, button, button[type="submit"] {
 
 // Make outline of links have an offset. Assumption is that
 // a link has often no padding, but inputs and others have
+// TODO: Perhaps couple to the hover text decoration?
 a:focus-visible {
   outline-offset: 3px;
 }
