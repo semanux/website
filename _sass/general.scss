@@ -60,14 +60,20 @@ a, input, button, button[type="submit"] {
   }
 
   &:focus-visible {
-    outline: 5px solid $color-complement-1;
-    outline-offset: 5px;
+    outline: 3px solid $color-complement-1;
+    // outline-offset: 5px;
   }
 
   // TODO: How to make good looking?
   &:active {
     outline: none;
   }
+}
+
+// Make outline of links have an offset. Assumption is that
+// a link has often no padding, but inputs and others have
+a:focus-visible {
+  outline-offset: 3px;
 }
 
 @mixin reverse-a-hover {
