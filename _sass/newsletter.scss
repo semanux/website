@@ -25,11 +25,10 @@
 
     // TODO: very similar to the titles of selectable posts in blog and post layout!
     input[type="submit"] {
-      padding: 0.5rem 1rem 0.5rem 1rem;
+      padding: 0.5rem 1rem;
       cursor: pointer;
       border: none;
       // font-weight: bold;
-      border-left: none;
       border-top-right-radius: $roundness;
       border-bottom-right-radius: $roundness;
 

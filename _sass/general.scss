@@ -54,7 +54,6 @@ a {
 
 a,
 input,
-input[type="submit"],
 button {
   // TODO: Not required since :focus-visible is implemented?
   &:focus {
@@ -103,7 +102,6 @@ a:focus-visible {
 }
 
 blockquote {
-  padding: 0 0 0 1rem;
   padding: 0 0 0 0.5rem;
   border-left: 1rem solid $color-light-gray;
 
@@ -140,9 +138,7 @@ blockquote {
 
 @mixin post-card-title {
   z-index: 1;
-  padding: 0.5rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0.5rem 1rem;
 
   @include fill-a-hover;
 }
