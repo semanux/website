@@ -1,10 +1,14 @@
 <head>
 
 <meta charset="utf-8">
+
+<!-- The URL parameter to the stylesheet implements a simple cache-busting
+strategy. Whenever Jekyll regenerates this, the current timestamp is appending,
+forcing browsers to fetch the updated version of the stylesheet. -->
 <link href="/static/style/main.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Choose page title -->
 <title>{{ site.title }} | {{ page.title }}</title>
 
 <!-- Favicon -->
