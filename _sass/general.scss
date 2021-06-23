@@ -1,6 +1,6 @@
 :root {
   font-family: $font-sans;
-  font-size: $font-base-size-min / 1em * 16px;
+  font-size: $fluid-scaling-min / 1em * 16px;
   font-feature-settings: $font-feature-settings;
   line-height: 1.4;
   color: $color-black;
@@ -13,12 +13,17 @@
   background-attachment: scroll;
   background-size: 100% 5rem;
 
-  @media (min-width: $breakpoint-font-base-size-min) {
-    font-size: 1em / $breakpoint-font-base-size-min * 100vw;
+  // The `font-size` properties of :root (both media queries below, and the base
+  // font-size) implement fluid typography:
+  // https://css-tricks.com/snippets/css/fluid-typography/
+  // Only change this, if you know what you are doing!
+
+  @media (min-width: $breakpoint-fluid-scaling-min) {
+    font-size: $fluid-scaling-min / $breakpoint-fluid-scaling-min * 100vw;
   }
 
-  @media (min-width: $breakpoint-font-base-size-max) {
-    font-size: $font-base-size-max;
+  @media (min-width: $breakpoint-fluid-scaling-max) {
+    font-size: $fluid-scaling-max;
   }
 }
 

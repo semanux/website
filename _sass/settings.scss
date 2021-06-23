@@ -20,7 +20,7 @@ $color-gray: gray;
 $color-light-gray: lightgray;
 $color-accent-1: $color-name-cg-blue;
 $color-complement-1: #ff6424;
-$color-background: rgb(238, 246, 246);
+$color-background: #eef6f6;
 $color-image-preload: $color-light-gray; // Displayed beneath images, visible at loading
 $gradient-white: linear-gradient(to bottom right, #fafafa, #ffffff);
 $gradient-accent-1: linear-gradient(to bottom right, #2c5d72, #4b98b9);
@@ -56,11 +56,15 @@ $box-shadow-backdrop: 0 0 1rem rgba(0, 0, 0, 0.125);
 
 // -- Sizing -------------------------------------------------------------------
 
-$font-base-size-min: 1em;
-$font-base-size-max: 1.5em;
-$breakpoint-font-base-size-min: 48em;
-$breakpoint-font-base-size-max: $font-base-size-max/$font-base-size-min *
-  $breakpoint-font-base-size-min;
+// Implements fluid typography scaling:
+// https://css-tricks.com/snippets/css/fluid-typography/
+// Only change these values, if you know what you are doing!
+$fluid-scaling-min: 1em;
+$fluid-scaling-max: 1.5em;
+$breakpoint-fluid-scaling-min: 48em;
+$breakpoint-fluid-scaling-max: (
+  $fluid-scaling-max/$fluid-scaling-min * $breakpoint-fluid-scaling-min
+);
 
 $header-gap: 2rem; // Gap between items in the header.
 $roundness: 1.5rem;
