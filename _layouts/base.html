@@ -13,8 +13,11 @@
 
 {%- include footer.html -%}
 
-{% include scroll-top.html %}
-{% include foot.html %}
+{% comment %}
+<!-- TODO: These cause a bug that always resets scroll-position when reloading the page. -->
+{%- include scroll-top.html -%}
+{%- include foot.html -%}
+{% endcomment %}
 
 </body>
 </html>
