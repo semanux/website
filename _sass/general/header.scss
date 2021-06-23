@@ -1,4 +1,6 @@
-body > header {
+#header-wrapper header {
+  @include main-column;
+
   display: grid;
   // Size logo and languages with 1 fr to keep sections centered.
   grid-template:
@@ -6,29 +8,22 @@ body > header {
     / 1fr auto 1fr;
   gap: $header-gap;
   justify-content: space-between;
-  padding: 1rem 0;
-  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   line-height: 1;
 
-  @media (max-width: 50rem) {
+  // TODO: I don't really like the style of the navigation on small screen sizes. (Lukas)
+  @media (max-width: 30rem) {
     grid-template:
       "logo languages" auto
       "sections sections" auto
       / 1fr 1fr;
   }
 
-  nav {
-    padding: 0;
-    margin: 0;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-
+  ul,
   li {
+    padding: 0;
+    margin: 0;
     list-style-type: none;
   }
 }
@@ -44,10 +39,6 @@ body > header {
     height: 1.3em;
     margin-top: -0.15em;
   }
-
-  &:hover svg {
-    fill: $color-accent-1;
-  }
 }
 
 #header-nav-sections {
@@ -59,10 +50,27 @@ body > header {
     display: grid;
     grid-auto-flow: column;
     gap: $header-gap;
+  }
 
-    // TODO: Feels a bit weird to define this here. Maybe make global a-tag styling classes that can be included here instead?
-    a:hover {
-      text-decoration: none;
+  a {
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -0.5rem;
+      left: 0;
+      right: 0;
+      height: 0.2rem;
+      border-radius: 0.1rem;
+      background: $color-black;
+      transition: width 0.25s ease-in-out;
+      width: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 }
@@ -70,8 +78,4 @@ body > header {
 #header-nav-languages {
   grid-area: languages;
   justify-self: end;
-
-  a {
-    @include reverse-a-hover;
-  }
 }

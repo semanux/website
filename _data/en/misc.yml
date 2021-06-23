@@ -19,4 +19,7 @@ error-not-found:
   message: "Page not found :("
   posts: "News about Semanux in our Blog"
 scroll-top: "Scroll to the top."
-footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. See our <a href="/imprint">imprint</a> and our statement about <a href="/data-privacy">data privacy</a>.'
+#footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. See our <a href="/imprint">imprint</a> and our statement about <a href="/data-privacy">data privacy</a>.'
+footer:
+  imprint: Imprint
+  data-privacy: Data Privacy

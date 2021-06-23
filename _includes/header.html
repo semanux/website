@@ -1,20 +1,22 @@
-<header>
-  <a id="header-logo" href="/">
-    {%- include svg/logo.min.svg -%}
-  </a>
+<div id="header-wrapper">
+  <header>
+    <a id="header-logo" href="/">
+      {%- include svg/logo.min.svg -%}
+    </a>
 
-  <nav id="header-nav-sections">
-    <ul>
-      {%- comment -%} Blog link must be in double quotes to be properly localized. {%- endcomment -%}
-      <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#about">{{ site.data.misc.header.about }}</a></li>
-      <li><a href="/blog">{{ site.data.misc.header.blog }}</a></li>
-      <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#team">{{ site.data.misc.header.team }}</a></li>
-    </ul>
-  </nav>
+    <nav id="header-nav-sections">
+      <ul>
+        {%- comment -%} Blog link must be in double quotes to be properly localized. {%- endcomment -%}
+        <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#about">{{ site.data.misc.header.about }}</a></li>
+        <li><a href="/blog">{{ site.data.misc.header.blog }}</a></li>
+        <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#team">{{ site.data.misc.header.team }}</a></li>
+      </ul>
+    </nav>
 
-  <nav id="header-nav-languages">
-    <ul>
-      <li>{%- if site.active_lang == "en" -%}<a {% static_href %}href="/de{{ page.url }}"{% endstatic_href %}>Deutsch</a>{%- else -%}<a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>English</a>{%- endif -%}</li>
-    </ul>
-  </nav>
-</header>
+    <nav id="header-nav-languages">
+      <ul>
+        <li>{%- if site.active_lang == "en" -%}<a {% static_href %}href="/de{{ page.url }}"{% endstatic_href %}>Deutsch</a>{%- else -%}<a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>English</a>{%- endif -%}</li>
+      </ul>
+    </nav>
+  </header>
+</div>
