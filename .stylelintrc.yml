@@ -7,6 +7,11 @@ rules:
   # Personal preference.
   color-hex-length: long
 
+  # Forcing selectors of lower specificity to come later breaks many of the
+  # benefits of SCSS, as some nested blocks would need to be needlessly split
+  # up to satisfy this. There we disable this check.
+  no-descending-specificity:
+
   # Replace standard at-rule-no-unknown with SCSS-aware implementation.
   at-rule-no-unknown:
   scss/at-rule-no-unknown: true
