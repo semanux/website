@@ -1,19 +1,19 @@
 ---
 ---
 
-
 @import "settings";
 
 @import "normalize";
 @import "static/font/inter";
 @import "static/icons/phosphor";
 
-@import "general";
-@import "header";
-@import "footer";
-@import "scroll-top";
-@import "newsletter";
-@import "post-card";
+@import "general/misc";
+@import "general/header";
+@import "general/footer";
+
+@import "element/scroll-top";
+@import "element/newsletter";
+@import "element/post-card";
 
 @import "page/index";
 @import "page/post";

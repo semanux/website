@@ -1,13 +1,13 @@
 body > header {
   display: grid;
-  grid-template: // Size logo and languages with 1 fr to keep sections centered.
-
+  // Size logo and languages with 1 fr to keep sections centered.
+  grid-template:
     "logo sections languages" auto
     / 1fr auto 1fr;
   gap: $header-gap;
   justify-content: space-between;
   padding: 1rem 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1;
 
   @media (max-width: 50rem) {
