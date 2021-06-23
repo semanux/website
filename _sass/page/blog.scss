@@ -34,14 +34,15 @@ $page-blog-post-title-y-offset: -0.25rem;
       font-size: 125%;
       font-weight: bold;
       border-radius: $roundness;
-      transform: translateX($page-blog-post-title-x-offset) translateY($page-blog-post-title-y-offset);
+      transform: translateX($page-blog-post-title-x-offset)
+        translateY($page-blog-post-title-y-offset);
       @media (max-width: $media-phone-width) {
         transform: none;
       }
 
       @include post-card-title;
     }
-    
+
     .page-blog-post-date {
       display: block;
       text-align: right;
@@ -53,16 +54,17 @@ $page-blog-post-title-y-offset: -0.25rem;
         vertical-align: bottom;
       }
 
-      transform: translateX($page-blog-post-title-x-offset - $roundness) translateY($page-blog-post-title-y-offset);
+      transform: translateX($page-blog-post-title-x-offset - $roundness)
+        translateY($page-blog-post-title-y-offset);
       @media (max-width: $media-phone-width) {
         transform: translateX(-$roundness);
       }
     }
-    
+
     .page-blog-post-excerpt {
       // font-size: medium;
       display: block;
-    
+
       // Compensate for transform and roundness of title.
       padding-top: 0;
       padding-left: 0;

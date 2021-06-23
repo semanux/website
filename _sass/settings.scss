@@ -19,20 +19,40 @@ $color-white: white;
 $color-gray: gray;
 $color-light-gray: lightgray;
 $color-accent-1: $color-name-cg-blue;
-$color-complement-1: #FF6424;
+$color-complement-1: #ff6424;
 $color-background: rgb(238, 246, 246);
 $color-image-preload: $color-light-gray; // Displayed beneath images, visible at loading
 $gradient-white: linear-gradient(to bottom right, #fafafa, #ffffff);
-$gradient-accent-1: linear-gradient(to bottom right, #2C5D72, #4B98B9);
-$gradient-facebook: linear-gradient(to bottom right, rgb(0,97,227), rgb(0,174,255));
-$gradient-instagram: linear-gradient(to bottom right, rgb(121, 0, 207), rgb(255, 142, 67));
-$gradient-twitter: linear-gradient(to bottom right, rgb(0,117,178), rgb(0,155,235));
-$gradient-youtube: linear-gradient(to bottom right, rgb(211,26,20), rgb(255,0,0));
-$gradient-github: linear-gradient(to bottom right, rgb(68,36,116), rgb(142,30,150));
+$gradient-accent-1: linear-gradient(to bottom right, #2c5d72, #4b98b9);
+$gradient-facebook: linear-gradient(
+  to bottom right,
+  rgb(0, 97, 227),
+  rgb(0, 174, 255)
+);
+$gradient-instagram: linear-gradient(
+  to bottom right,
+  rgb(121, 0, 207),
+  rgb(255, 142, 67)
+);
+$gradient-twitter: linear-gradient(
+  to bottom right,
+  rgb(0, 117, 178),
+  rgb(0, 155, 235)
+);
+$gradient-youtube: linear-gradient(
+  to bottom right,
+  rgb(211, 26, 20),
+  rgb(255, 0, 0)
+);
+$gradient-github: linear-gradient(
+  to bottom right,
+  rgb(68, 36, 116),
+  rgb(142, 30, 150)
+);
 
 // -- Shadows ------------------------------------------------------------------
 
-$box-shadow-backdrop: 0 0 1rem rgba(0,0,0,0.125);
+$box-shadow-backdrop: 0 0 1rem rgba(0, 0, 0, 0.125);
 
 // -- Sizing -------------------------------------------------------------------
 

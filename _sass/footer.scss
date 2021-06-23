@@ -14,35 +14,40 @@ footer {
     margin: 0;
     background-color: $color-white;
     background-image: $gradient-white;
-    box-shadow: $box-shadow-backdrop;
     border-radius: $roundness;
+    box-shadow: $box-shadow-backdrop;
 
     a {
       display: inline-block;
       width: 1.5rem;
       height: 1.5rem;
       padding: 0.5rem;
-      margin: 0.5rem 1.0rem 0.5rem 1.0rem;
+      margin: 0.5rem 1rem 0.5rem 1rem;
+      font-size: 1.5rem;
+      color: $color-white;
+      border-radius: 100%;
+
       @media (max-width: $media-phone-width) {
         margin: 0.5rem 0.25rem 0.5rem 0.25rem;
       }
-      font-size: 1.5rem;
-      border-radius: 100%;
-      color: $color-white;
 
       // Overwrite with specific gradient in background.
       &.facebook {
         background-image: $gradient-facebook;
       }
+
       &.instagram {
         background-image: $gradient-instagram;
       }
+
       &.twitter {
         background-image: $gradient-twitter;
       }
+
       &.youtube {
         background-image: $gradient-youtube;
       }
+
       &.github {
         background-image: $gradient-github;
       }

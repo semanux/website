@@ -1,19 +1,20 @@
 .post-card {
   display: grid;
-  grid-template-columns: 100%;
   grid-template-rows: 10rem auto;
+  grid-template-columns: 100%;
   justify-self: stretch;
-  margin-left: 1rem;
-  margin-right: 1rem;
 
   // Space for transform of the title.
   padding-left: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 
   .post-card-title {
     @include post-card-title;
+
     align-self: start;
-    margin-left: 1rem;
     margin-right: 1rem;
+    margin-left: 1rem;
     border-radius: $roundness;
     transform: translateX(-0.5rem) translateY(-0.5rem);
   }
@@ -21,8 +22,8 @@
   // Preview image of the other post.
   .post-card-preview {
     background-color: $color-image-preload;
-    background-size: cover;
     background-position: center center;
+    background-size: cover;
     border-radius: $roundness/2;
 
     @include preview-animation;
