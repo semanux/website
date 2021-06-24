@@ -1,13 +1,13 @@
 <head>
 
 <meta charset="utf-8">
+<meta http-equiv="Content-Language" content="{{site.active_lang}}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- The URL parameter to the stylesheet implements a simple cache-busting
 strategy. Whenever Jekyll regenerates this, the current timestamp is appending,
 forcing browsers to fetch the updated version of the stylesheet. -->
 <link href="/static/style/main.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{ site.title }} | {{ page.title }}</title>
 
@@ -21,5 +21,14 @@ forcing browsers to fetch the updated version of the stylesheet. -->
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="/static/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+
+<!-- Multi-language SEO using hreflang alternate tags. TODO: Use URL parameter. site.url seems to be localized and is thus not feasible. -->
+<link rel="alternate" hreflang="{{site.default_lang}}" href="https://semanux.com{{page.permalink}}"/>
+{%- for lang in site.languages -%}
+  {%- if lang == site.default_lang -%}
+    {%- continue -%}
+  {%- endif -%}
+  <link rel="alternate" hreflang="{{lang}}" href="https://semanux.com/{{lang}}{{page.permalink}}"/>
+{%- endfor -%}
 
 </head>
