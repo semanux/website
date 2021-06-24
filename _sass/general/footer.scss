@@ -42,7 +42,7 @@
     i {
       position: relative;
       top: 0.3rem;
-      margin-right: 0.2rem;
+      margin-right: 0.25rem;
       display: inline-block;
       text-align: center;
       line-height: 2.1rem; // Used to center the icons in the boxes.
@@ -50,8 +50,13 @@
       color: white;
       width: 1.75rem;
       height: 1.75rem;
-      border-radius: 0.5rem;
-      background: black;
+      border-radius: 100%;
+      opacity: 75%;
+    }
+
+    &:hover i {
+      opacity: 100%;
+      transition: opacity 0.15s ease-out;
     }
 
     &.facebook i {
