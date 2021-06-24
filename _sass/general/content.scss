@@ -1,32 +1,46 @@
 main {
   font-size: 0.875em;
 
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 
   background: $color-background;
 
-  > * {
+  > *:not(#h1-wrapper) {
+    // TODO: Quick hack. Replace this with list of elements that we actaully mean here.
     @include main-column;
   }
 
   a:hover {
     text-decoration: underline;
   }
-}
 
-blockquote {
-  padding: 0 0 0 0.5rem;
-  border-left: 1rem solid $color-light-gray;
+  #h1-wrapper {
+    background: $gradient-accent-1;
 
-  @media (max-width: $media-phone-width) {
-    padding: 0 0 0 0.25rem;
-    margin: 0 0 0 0.5rem;
-    border-left: 0.5rem solid $color-light-gray;
+    h1 {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+      color: white;
+      font-size: 2rem;
+      @include main-column;
+    }
   }
-}
 
-.ordinals {
-  font-size: 75%;
-  vertical-align: top;
+  blockquote {
+    padding: 0 0 0 0.5rem;
+    border-left: 1rem solid $color-light-gray;
+
+    @media (max-width: $media-phone-width) {
+      padding: 0 0 0 0.25rem;
+      margin: 0 0 0 0.5rem;
+      border-left: 0.5rem solid $color-light-gray;
+    }
+  }
+
+  .ordinals {
+    font-size: 75%;
+    vertical-align: top;
+  }
 }
