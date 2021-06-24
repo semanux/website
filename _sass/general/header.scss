@@ -30,16 +30,45 @@
 }
 
 #header-logo {
+  $header-logo-height: 1.3em;
+  $header-logo-ratio: 4.156300568;
+  $header-logo-width: $header-logo-height *  $header-logo-ratio;
+  $gradient-scale: 7;
+  height: $header-logo-height;
+  width: $header-logo-width;
   grid-area: logo;
   justify-self: start;
+  display: block;
+  margin-top: -0.15em;
 
-  svg {
-    // Sized and moved so that the lowercase "semanux" word of the logo is the
-    // exact same size as the x-height and baseline of the other header content.
+  // Additional div because clip otherwise also clips the clickable area.
+  div {
     display: block;
-    height: 1.3em;
-    margin-top: -0.15em;
+    height: $header-logo-height;
+    width: $header-logo-width;
+    clip-path: url(#logo.clip);
+    background-image: linear-gradient(
+      to bottom right,
+      $color-black,
+      $color-black,
+      $color-complement-1,
+      $color-white,
+      $color-accent-1,
+      $color-accent-1);
+    background-size: ($gradient-scale * $header-logo-width) ($gradient-scale * $header-logo-height);
+    background-position-x: 0;
+    background-position-y: 0;
+    transition: background-position 1.5s ease;
+
+    &:hover {
+      background-position-x: -(($gradient-scale * $header-logo-width) - $header-logo-width);
+      background-position-y: -(($gradient-scale * $header-logo-height) - $header-logo-height);
+    }
   }
+
+  // Sized and moved so that the lowercase "semanux" word of the logo is the
+  // exact same size as the x-height and baseline of the other header content.
+
 }
 
 #header-nav-sections {

@@ -1,9 +1,8 @@
 <div id="header-wrapper">
   <header>
-    <a id="header-logo" href="/">
-      {%- include svg/logo.min.svg -%}
+    <a id="header-logo" href="/" tabindex="-1">
+      <div></div>
     </a>
-
     <nav id="header-nav-sections">
       <ul>
         {%- comment -%} Blog link must be in double quotes to be properly localized. {%- endcomment -%}
@@ -20,3 +19,5 @@
     </nav>
   </header>
 </div>
+
+{%- include svg/logo.clip.min.svg -%}
