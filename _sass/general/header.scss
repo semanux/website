@@ -60,18 +60,18 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -0.5rem;
-      left: 0;
-      right: 0;
-      height: 0.2rem;
+      bottom: -0.3rem;
+      left: 50%;
+      right: 50%;
+      height: 0.1666rem;
       border-radius: 0.1rem;
       background: $color-black;
-      transition: width 0.25s ease-in-out;
-      width: 0;
+      transition: right 0.25s ease-in-out, left 0.25s ease-in-out;
     }
 
     &:hover::after {
-      width: 100%;
+      left: 0;
+      right: 0;
     }
   }
 }
