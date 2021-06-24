@@ -45,18 +45,18 @@
       margin-right: 0.25rem;
       display: inline-block;
       text-align: center;
-      line-height: 2.1rem; // Used to center the icons in the boxes.
+      line-height: 2.275rem; // Used to center the icons in the boxes.
       font-size: 1.25rem;
       color: white;
-      width: 1.75rem;
-      height: 1.75rem;
+      width: 2rem;
+      height: 2rem;
       border-radius: 100%;
-      opacity: 75%;
+      opacity: 65%;
+      transition: opacity 0.15s ease-out;
     }
 
     &:hover i {
       opacity: 100%;
-      transition: opacity 0.15s ease-out;
     }
 
     &.facebook i {
