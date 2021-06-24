@@ -8,10 +8,10 @@
     / 1fr auto 1fr;
   gap: $header-gap;
   justify-content: space-between;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
   line-height: 1;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 
   // TODO: I don't really like the style of the navigation on small screen sizes. (Lukas)
   @media (max-width: 30rem) {
