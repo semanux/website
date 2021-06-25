@@ -1,7 +1,10 @@
 <div id="header-wrapper">
   <header>
     <a id="header-logo" href="/">
-      <div></div>
+      <div>
+        <!-- Even so the svg has a width and a height of zero, it takes space on the page. Setting display to none makes it no more work as clipping path. Putting it here seems to work, though. -->
+        {%- include svg/logo.clip.min.svg -%}
+      </div>
     </a>
     <nav id="header-nav-sections">
       <ul>
@@ -19,5 +22,3 @@
     </nav>
   </header>
 </div>
-
-{%- include svg/logo.clip.min.svg -%}
