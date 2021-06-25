@@ -11,7 +11,7 @@
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 
   // TODO: I don't really like the style of the navigation on small screen sizes. (Lukas)
   @media (max-width: 30rem) {
@@ -51,19 +51,20 @@
       to bottom right,
       $color-black,
       $color-black,
-      $color-complement-1,
+      #ff8a1c,
       $color-white,
       $color-accent-1,
       $color-accent-1);
     background-size: ($gradient-scale * $header-logo-width) ($gradient-scale * $header-logo-height);
     background-position-x: 0;
     background-position-y: 0;
-    transition: background-position 1.5s ease;
+    transition: background-position 0.5s linear;
+  }
 
-    &:hover {
-      background-position-x: -(($gradient-scale * $header-logo-width) - $header-logo-width);
-      background-position-y: -(($gradient-scale * $header-logo-height) - $header-logo-height);
-    }
+  // Logo animation should be triggered by hover over the parent element.
+  &:hover div {
+    background-position-x: -(($gradient-scale * $header-logo-width) - $header-logo-width);
+    background-position-y: -(($gradient-scale * $header-logo-height) - $header-logo-height);
   }
 
   // Sized and moved so that the lowercase "semanux" word of the logo is the
