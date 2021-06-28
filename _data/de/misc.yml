@@ -20,8 +20,7 @@ error-not-found:
   message: "Seite nicht gefunden :("
   posts: "Neuigkeiten über Semanux in unserem Blog"
 scroll-top: "Zum Anfang scrollen."
-#footer: 'Made with <span style="color: red;">♥</span> in Stuttgart. Hier ist unser <a href="/imprint">Impressum</a> und unsere <a href="/data-privacy">Datenschutzerklärung</a>.'
 footer:
   imprint: Impressum
   data-privacy: Datenschutzerklärung
-  motto: 'Made with <span style="color: red;">♥</span> in Stuttgart'
+  motto: 'Made with <span class="heart">♥</span> in Stuttgart'

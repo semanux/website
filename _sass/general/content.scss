@@ -3,7 +3,7 @@ main {
 
   padding-bottom: 2rem;
 
-  background: $color-background;
+  background: $color-main-background;
 
   > *:not(#h1-wrapper) {
     // TODO: Quick hack. Replace this with list of elements that we actaully mean here.
@@ -32,7 +32,7 @@ main {
     padding: 0.125rem 0 0.125rem 0.5rem;
     border-left: 1rem solid $color-light-gray;
     font-style: italic;
-    background-color: $color-light-background;
+    background-color: $color-main-light-background;
 
     @media (max-width: $media-phone-width) {
       padding:  0.1rem 0 0.1rem 0.25rem;

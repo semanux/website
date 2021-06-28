@@ -101,6 +101,10 @@
   padding: 0;
   grid-area: motto;
   color: $color-dark-gray;
+
+  .heart {
+    color: $color-heart-red;
+  }
 }
 
 #footer-copyright {

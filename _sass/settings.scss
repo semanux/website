@@ -20,12 +20,14 @@ $color-nearly-white: #fafafa;
 $color-gray: gray;
 $color-light-gray: lightgray;
 $color-dark-gray: rgb(87, 87, 87);
+$color-heart-red: #ee5151;
+$color-main-background: #eef6f6;
+$color-main-light-background: #f9fefe;
+$color-background: $color-nearly-white;
 $color-accent-1: $color-name-cg-blue;
 $color-accent-1-lighter: #4b98b9;
 $color-accent-1-darker: #2c5d72;
 $color-complement-1: #ff6424;
-$color-background: #eef6f6;
-$color-light-background: #f9fefe;
 $color-image-preload: $color-light-gray; // Displayed beneath images, visible at loading.
 
 // -- Gradients ----------------------------------------------------------------

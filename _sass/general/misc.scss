@@ -5,15 +5,8 @@
   line-height: 1.4;
   color: $color-black;
   text-rendering: optimizeLegibility;
-  overflow-y: scroll; // force visible vertical scrollbar
-
-  // TODO: Testing a slightly colored background.
-  background: $color-nearly-white;
-  //background-color: $color-background;
-  //background-image: linear-gradient($color-white, $color-background);
-  //background-repeat: no-repeat;
-  //background-attachment: scroll;
-  //background-size: 100% 5rem;
+  overflow-y: scroll; // Force visible vertical scrollbar.
+  background: $color-background;
 
   // The `font-size` properties of :root (both media queries below, and the base
   // font-size) implement fluid typography:
