@@ -96,6 +96,10 @@
     display: inline;
     margin-left: 0;
     margin-right: 1rem;
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
 
