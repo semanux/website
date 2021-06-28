@@ -16,22 +16,45 @@ $color-name-electric-purple: #bb00ff; // Electric Purple
 
 $color-black: black;
 $color-white: white;
+$color-nearly-white: #fafafa;
 $color-gray: gray;
 $color-light-gray: lightgray;
 $color-dark-gray: rgb(87, 87, 87);
 $color-accent-1: $color-name-cg-blue;
+$color-accent-1-lighter: #4b98b9;
+$color-accent-1-darker: #2c5d72;
 $color-complement-1: #ff6424;
 $color-background: #eef6f6;
 $color-light-background: #f9fefe;
-$color-image-preload: $color-light-gray; // Displayed beneath images, visible at loading
-$gradient-white: linear-gradient(to bottom right, #fafafa, #ffffff);
-$gradient-accent-1: linear-gradient(to bottom right, #2c5d72, #4b98b9);
+$color-image-preload: $color-light-gray; // Displayed beneath images, visible at loading.
+
+// -- Gradients ----------------------------------------------------------------
+
+$gradient-white: linear-gradient(
+  to bottom right,
+  $color-nearly-white,
+  $color-white
+);
+$gradient-accent-1: linear-gradient(
+  to bottom right,
+  $color-accent-1-darker,
+  $color-accent-1-lighter
+);
 $gradient-hover-accent-1: linear-gradient(
   to bottom right,
-  #2c5d72,
-  #4b98b9,
-  #fafafa,
-  #ffffff);
+  $color-accent-1-darker,
+  $color-accent-1-lighter,
+  $color-nearly-white,
+  $color-white
+);
+$gradient-header: linear-gradient(
+  $color-nearly-white,
+  $color-white
+);
+$gradient-footer: linear-gradient(
+  $color-white,
+  $color-nearly-white
+);
 $gradient-facebook: linear-gradient(
   to bottom right,
   rgb(0, 97, 227),
