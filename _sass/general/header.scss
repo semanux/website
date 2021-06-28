@@ -37,10 +37,8 @@
 #header-logo {
   $header-logo-height: 1.3em;
   $header-logo-ratio: 4.156300568;
-  $header-logo-width: $header-logo-height *  $header-logo-ratio;
-  $gradient-scale: 7;
+  width: $header-logo-height * $header-logo-ratio;
   height: $header-logo-height;
-  width: $header-logo-width;
   grid-area: logo;
   justify-self: start;
   display: block;
@@ -48,9 +46,10 @@
 
   // Additional div because clip otherwise also clips the clickable area.
   div {
+    $gradient-scale: 7;
     display: block;
-    height: $header-logo-height;
-    width: $header-logo-width;
+    width: 100%;
+    height: 100%;
     clip-path: url(#logo.clip);
     background-image: linear-gradient(
       to bottom right,
@@ -60,16 +59,14 @@
       $color-white,
       $color-accent-1,
       $color-accent-1);
-    background-size: ($gradient-scale * $header-logo-width) ($gradient-scale * $header-logo-height);
-    background-position-x: 0;
-    background-position-y: 0;
+    background-size: (100% * $gradient-scale) (100% * $gradient-scale);
+    background-position: 0 0;
     transition: background-position 0.5s linear;
   }
 
   // Logo animation should be triggered by hover over the parent element.
   &:hover div {
-    background-position-x: -(($gradient-scale * $header-logo-width) - $header-logo-width);
-    background-position-y: -(($gradient-scale * $header-logo-height) - $header-logo-height);
+    background-position: 100% 100%;
   }
 
   // Sized and moved so that the lowercase "semanux" word of the logo is the
