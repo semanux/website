@@ -4,7 +4,7 @@ lang: de
 preview_alt: 'Nahaufnahme eines Dokuments mit der Überschrift "Anlage I.1 zum Antrag auf EXIST-Forschungstransfer. Semanux: Inklusion im Web. Projektbeschreibung."'
 ---
 
-Wir haben uns um die Förderung durch einen *"EXIST-Forschungstransfer"* beworben. Das Programm wird vom [Bundesministerium für Wirtschaft und Energie](https://www.bmwi.de/Navigation/DE/Home/home.html) angeboten und teilweise über den [Europäischer Sozialfonds für Deutschland](https://www.esf.de/portal/DE/Startseite/inhalt.html) finanziert.
+Wir haben uns um die Förderung durch einen *"EXIST-Forschungstransfer"* beworben. Das Programm wird vom [Bundesministerium für Wirtschaft und Energie](https://www.bmwi.de/Navigation/DE/Home/home.html) angeboten und teilweise mit den [Europäischen Sozialfonds](https://www.esf.de/portal/DE/Startseite/inhalt.html) finanziert.
 
 Die Förderung durch [EXIST](https://www.exist.de/DE/Programm/Exist-Forschungstransfer/inhalt.html) würde es uns ermöglichen, **18 Monate lang an dem Prototypen von Semanux zu arbeiten**, während wir weiterhin Teil unserer Forschungsgruppe [Analytic Computing](https://www.ipvs.uni-stuttgart.de/departments/ac) an der Universität Stuttgart blieben. Wir haben eine über **47 Seiten lange Beschreibung über Semanux eingereicht**, die die angestrebte Innovation, unsere bisherige Forschung, unser Team, unseren Arbeitsplan, die Marktsituation, einen ersten Geschäftsplan und elf Unterstützungschreiben enthält.
 
