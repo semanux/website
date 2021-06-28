@@ -111,6 +111,8 @@ a:focus-visible {
 @mixin responsive-post-card-container {
   display: grid;
   grid-template-columns: 50% 50%;
+  column-gap: 0;
+  row-gap: 1rem;
 
   @media (max-width: 32rem) {
     grid-template-columns: 100%;

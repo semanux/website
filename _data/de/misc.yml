@@ -18,7 +18,7 @@ post:
     more-than-minute: " Minuten Lesedauer"
 error-not-found:
   message: "Seite nicht gefunden :("
-  posts: "Neuigkeiten über Semanux in unserem Blog"
+  posts: "Eventuell besteht stattdessen Interesse an Neuigkeiten aus unserem Blog?"
 scroll-top: "Zum Anfang scrollen."
 footer:
   imprint: Impressum

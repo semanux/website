@@ -8,7 +8,7 @@ title: Page not found
 </p>
 
 {%- comment -%} Simplistic setup to display the latest two posts. {%- endcomment -%}
-<h3 class="error-not-found-posts-title">{{ site.data.misc.error-not-found.posts }}</h3>
+<span class="error-not-found-posts-title">{{ site.data.misc.error-not-found.posts }}</span>
 <div class="error-not-found-posts-cards">
   {%- assign posts = site.posts -%}
   {%- assign counter = 0 -%}
@@ -17,7 +17,7 @@ title: Page not found
       {%- include post-card.html post=post -%}
       {%- assign counter = counter | plus: 1 -%}
     {%- endif -%}
-    {%- if counter > 1 -%}
+    {%- if counter > 3 -%}
       {% break %}
     {%- endif -%}
   {%- endfor -%}
