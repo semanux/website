@@ -89,6 +89,7 @@
 
     &::after {
       content: "";
+      opacity: 0;
       position: absolute;
       bottom: -0.3rem;
       left: 50%;
@@ -96,10 +97,11 @@
       height: 0.1666rem;
       border-radius: 0.1rem;
       background: $color-black;
-      transition: right 0.25s ease-in-out, left 0.25s ease-in-out;
+      transition: right 0.25s ease-in-out, left 0.25s ease-in-out, opacity 0.1s ease-in-out;
     }
 
     &:hover::after {
+      opacity: 1;
       left: 0;
       right: 0;
     }
