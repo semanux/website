@@ -17,7 +17,13 @@
 
     <nav id="header-nav-languages">
       <ul>
-        <li>{%- if site.active_lang == "en" -%}<a {% static_href %}href="/de{{ page.url }}"{% endstatic_href %}>Deutsch</a>{%- else -%}<a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>English</a>{%- endif -%}</li>
+        <li>
+          {%- if site.active_lang == "en" -%}
+            <a {% static_href %}href="/de{{ page.url }}"{% endstatic_href %} title="{{ site.data.misc.header.tongue }}">Deutsch</a>
+          {%- else -%}
+            <a {% static_href %}href="{{ page.url }}"{% endstatic_href %} title="{{ site.data.misc.header.tongue }}">English</a>
+          {%- endif -%}
+        </li>
       </ul>
     </nav>
   </header>
