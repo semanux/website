@@ -29,11 +29,13 @@ main {
   }
 
   blockquote {
-    padding: 0 0 0 0.5rem;
+    padding: 0.125rem 0 0.125rem 0.5rem;
     border-left: 1rem solid $color-light-gray;
+    font-style: italic;
+    background-color: $color-light-background;
 
     @media (max-width: $media-phone-width) {
-      padding: 0 0 0 0.25rem;
+      padding:  0.1rem 0 0.1rem 0.25rem;
       margin: 0 0 0 0.5rem;
       border-left: 0.5rem solid $color-light-gray;
     }
