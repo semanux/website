@@ -3,8 +3,8 @@
 
   display: grid;
   grid-template:
-    "socials socials" auto
-    "legal copyright" auto
+    "socials socials socials" auto
+    "legal motto copyright" auto
     / auto auto;
   font-size: 0.875em;
   padding-top: 2rem;
@@ -89,6 +89,13 @@
     margin-left: 0;
     margin-right: 1rem;
   }
+}
+
+#footer-motto {
+  margin: 0;
+  padding: 0;
+  grid-area: motto;
+  color: $color-dark-gray;
 }
 
 #footer-copyright {
