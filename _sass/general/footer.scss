@@ -8,7 +8,7 @@
     / auto auto;
   font-size: 0.875em;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 
   ul,
   li {
@@ -22,7 +22,7 @@
 #footer-nav-socials {
   grid-area: socials;
   justify-self: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   // TODO: use flex instead of inline-block childs here (to get rid of whitespace between elements).
 
   // TODO: make responsive.
@@ -45,7 +45,7 @@
       margin-right: 0.25rem;
       display: inline-block;
       text-align: center;
-      line-height: 2.3rem; // Used to center the icons in the boxes.
+      line-height: 2.375rem; // Used to center the icons in the boxes.
       font-size: 1.25rem;
       color: white;
       width: 2rem;
