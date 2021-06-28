@@ -90,13 +90,16 @@ a:focus-visible {
 @mixin fill-a-hover {
   color: $color-white;
   background-color: $color-accent-1;
-  background-image: $gradient-accent-1;
+  background-image: $gradient-hover-accent-1;
+  background-size: 400% 400%;
+  background-position: 0 0;
+  transition: background-position 0.5s ease-out;
 
   &:hover {
     color: $color-accent-1;
     text-decoration: none;
     background-color: $color-white;
-    background-image: $gradient-white;
+    background-position: 100% 100%;
     box-shadow: $box-shadow-backdrop;
   }
 }
