@@ -4,8 +4,11 @@ $page-blog-post-title-y-offset: -0.25rem;
 #page-blog-container {
   display: grid;
   grid-template-columns: auto;
-  row-gap: 3.5rem;
   padding: 2.0rem 0 0.5rem 0;
+  row-gap: 3.5rem;
+  @media (max-width: $media-phone-width) {
+    row-gap: 1.0rem;
+  }
 }
 
 .page-blog-post {
