@@ -1,3 +1,8 @@
+#header-wrapper {
+  background-color: $color-white;
+  background-image: $gradient-header;
+}
+
 #header-wrapper header {
   @include main-column;
 
@@ -12,8 +17,6 @@
   padding-bottom: 1.75rem;
   line-height: 1;
   font-size: 1.6rem;
-  background-color: $color-white;
-  background-image: $gradient-header;
 
   // TODO: I don't really like the style of the navigation on small screen sizes. (Lukas)
   @media (max-width: 30rem) {
