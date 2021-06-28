@@ -1,6 +1,9 @@
 #footer-wrapper {
   background-color: $color-white;
   background-image: $gradient-footer;
+  box-shadow: $box-shadow-footer;
+  position: relative;
+  z-index: 10;
 }
 
 #footer-wrapper footer {

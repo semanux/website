@@ -1,6 +1,9 @@
 #header-wrapper {
   background-color: $color-white;
   background-image: $gradient-header;
+  box-shadow: $box-shadow-header;
+  position: relative;
+  z-index: 10;
 }
 
 #header-wrapper header {
