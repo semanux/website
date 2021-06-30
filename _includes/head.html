@@ -9,7 +9,7 @@ strategy. Whenever Jekyll regenerates this, the current timestamp is appending,
 forcing browsers to fetch the updated version of the stylesheet. -->
 <link href="/static/style/main.css?v={{ site.time | date: '%Y%m%d%H%M%S' }}" rel="stylesheet">
 
-<title>{{ site.title }} | {{ page.title }}</title>
+<title>{{ site.title }}&nbsp;|&nbsp;{%- include func/get_title.html item=page -%}</title>
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">

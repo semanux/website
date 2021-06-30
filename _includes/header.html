@@ -8,10 +8,9 @@
     </a>
     <nav id="header-nav-sections">
       <ul>
-        {%- comment -%} Blog link must be in double quotes to be properly localized. {%- endcomment -%}
-        <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#about">{{ site.data.misc.header.about }}</a></li>
+        <li><a href="/innovation">{{ site.data.misc.header.innovation }}</a></li>
         <li><a href="/blog">{{ site.data.misc.header.blog }}</a></li>
-        <li><a href="/{%- if site.active_lang != site.default_lang -%}{{ site.active_lang }}/{%- endif -%}#team">{{ site.data.misc.header.team }}</a></li>
+        <li><a href="/about">{{ site.data.misc.header.about }}</a></li>
       </ul>
     </nav>
 
