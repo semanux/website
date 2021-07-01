@@ -27,6 +27,11 @@ future: false
 permalink: pretty
 markdown: kramdown
 defaults:
+  -
+    scope:
+      path: "" # An empty string here means all files in the project.
+    values:
+      title: "" # Required as fallback before checkinog for localized title.
   # Posts
   - scope:
       path: ""
