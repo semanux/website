@@ -2,16 +2,14 @@
 {%- assign title = "" -%}
 {%- assign title_default_lang = "title_" | append:site.default_lang -%}
 {%- assign title_current_lang = "title_" | append:site.active_lang -%}
-{%- for prop in include.item -%}
-  {%- assign key = prop | slice: 0 -%} {%- comment -%} TODO: Unclear to me why this extracts the key {%- endcomment -%}
-  {%- if key contains "title" -%}
-    {%- assign title = include.item.title -%}
-  {%- endif -%}
-  {%- if key contains title_default_lang -%}
-    {%- assign title = include.item[title_default_lang] -%}
-  {%- endif %}
-  {%- if key contains title_current_lang -%}
-    {%- assign title = include.item[title_current_lang] -%}
-  {%- endif -%}
-{%- endfor -%}
+
+{%- if include.item contains "title" -%}
+  {%- assign title = include.item.title -%}
+{%- endif -%}
+{%- if include.item contains title_default_lang -%}
+  {%- assign title = include.item[title_default_lang] -%}
+{%- endif -%}
+{%- if include.item contains title_current_lang -%}
+  {%- assign title = include.item[title_current_lang] -%}
+{%- endif -%}
 {{ title }}
