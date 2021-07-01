@@ -91,24 +91,58 @@
   a {
     text-decoration: none;
     position: relative;
+    $underline-thickness: 0.1666rem;
+    $underline-distance: 0.3rem;
 
     &::after {
       content: "";
-      opacity: 0;
       position: absolute;
-      bottom: -0.3rem;
+      border-radius: $underline-thickness;
+
+      height: $underline-thickness;
+      bottom: -$underline-distance;
       left: 50%;
       right: 50%;
-      height: 0.1666rem;
-      border-radius: 0.1rem;
       background: $color-black;
-      transition: right 0.25s ease-in-out, left 0.25s ease-in-out, opacity 0.1s ease-in-out;
+      opacity: 0;
+
+      transition:
+        height 0.25s ease-in-out,
+        bottom 0.25s ease-in-out,
+        right 0.25s ease-in-out,
+        left 0.25s ease-in-out,
+        background-color 0.1s ease-in-out,
+        opacity 0.1s ease-in-out;
     }
 
     &:hover::after {
-      opacity: 1;
       left: 0;
       right: 0;
+      opacity: 1;
+    }
+
+    // Highlight.
+    &.highlight {
+      color: $color-black;
+    }
+    &:hover.highlight {
+      color: $color-accent-1;
+    }
+
+    &.highlight::after {
+      height: 2*$underline-thickness;
+      bottom: -($underline-distance + $underline-thickness/2);
+      left: calc(50% - #{$underline-thickness});
+      right: calc(50% - #{$underline-thickness});
+      opacity: 1;
+    }
+
+    &:hover.highlight::after {
+      height: $underline-thickness;
+      bottom: -$underline-distance;
+      left: 0;
+      right: 0;
+      background: $color-accent-1;
     }
   }
 }

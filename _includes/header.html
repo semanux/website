@@ -8,9 +8,21 @@
     </a>
     <nav id="header-nav-sections">
       <ul>
-        <li><a href="/innovation">{{ site.data.misc.header.innovation }}</a></li>
-        <li><a href="/blog">{{ site.data.misc.header.blog }}</a></li>
-        <li><a href="/about">{{ site.data.misc.header.about }}</a></li>
+        <li>
+          <a href="/innovation" {%- if page.nav == "innovation" -%}class='highlight'{%- endif -%}>
+            {{ site.data.misc.header.innovation }}
+          </a>
+        </li>
+        <li>
+          <a href="/blog" {%- if page.nav == "blog" -%}class='highlight'{%- endif -%}>
+            {{ site.data.misc.header.blog }}
+          </a>
+        </li>
+        <li>
+          <a href="/about" {%- if page.nav == "about" -%}class='highlight'{%- endif -%}>
+            {{ site.data.misc.header.about }}
+          </a>
+        </li>
       </ul>
     </nav>
 

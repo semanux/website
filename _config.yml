@@ -32,6 +32,7 @@ defaults:
       path: "" # An empty string here means all files in the project.
     values:
       title: "" # Required as fallback before checkinog for localized title.
+      nav: "" # Normally, do not highlight one of the nav entries.
   # Posts
   - scope:
       path: ""
