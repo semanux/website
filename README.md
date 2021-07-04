@@ -1,6 +1,6 @@
 # Website of Semanux
 
-This is the repository of the Semanux Website. We are using [Jekyll](https://jekyllrb.com) for generating the site, [Node.js](https://nodejs.org/en) for processing the code and the generated site, and [Github Actions](https://github.com/features/actions) for automatic deployment of the site. All changes on the site originate from changes in this code repository. Please see the [license file](./LICENSE) for details about the licensing of our code.
+This is the repository of the Semanux website. We are using [Jekyll](https://jekyllrb.com) for generating the site, [Node.js](https://nodejs.org/en) for processing the code and the generated site, and [Github Actions](https://github.com/features/actions) for automatic deployment of the site. All changes on the site originate from changes in this code repository. Please see the [license file](./LICENSE) for details about the licensing of our code.
 
 ## Local Setup
 
