@@ -133,7 +133,7 @@
     &.highlight::after {
       $height: $highlight-scale * $underline-thickness;
       height: $height;
-      bottom: -($underline-distance + $height / 2);
+      bottom: -($underline-distance + ($height / 2));
       left: calc(50% - #{($highlight-scale / 2) * $underline-thickness});
       right: calc(50% - #{($highlight-scale / 2) * $underline-thickness});
       opacity: 1;
@@ -141,7 +141,7 @@
 
     &:hover.highlight::after {
       height: $underline-thickness;
-      bottom: -$underline-distance;
+      bottom: -($underline-distance + ($underline-thickness / 2));
       left: 0;
       right: 0;
       background: $color-accent-1;
