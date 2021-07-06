@@ -30,6 +30,6 @@ An der Veranstaltungen nehmen fünf Vortragende teil, wobei zu **jedem Vortrag d
 > CEO und Mitgründer von eye2you
 >
 > **Zhijing Jin** (<https://zhijing-jin.com/fantasy>)\
-> Doktorand am MPI-IS, arbeitet im Bereich der empirischen Inferenz
+> Doktorand am MPI-IS im Bereich der empirischen Inferenz
 
 Weitere Details und die Anmeldung finden Sie in der Ankündigung des Cyber Valley: <https://cyber-valley.de/de/events/ai-in-social-innovation-impact>

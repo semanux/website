@@ -30,6 +30,6 @@ There will be five speakers in the event, **including time for questions and ans
 > CEO and Co-Founder of eye2you
 >
 > **Zhijing Jin** (<https://zhijing-jin.com/fantasy>)\
-> Ph.D. student MPI-IS who is working in empirical inference
+> Ph.D. student MPI-IS about in empirical inference
 
 For further details and registration, see the announcement by Cyber Valley: <https://cyber-valley.de/en/events/ai-in-social-innovation-impact>
