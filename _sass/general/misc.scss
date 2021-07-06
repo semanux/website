@@ -85,8 +85,9 @@ a:focus-visible {
   background-color: $color-accent-1;
   background-image: $gradient-hover-accent-1;
   background-size: 400% 400%;
+  transition: background-position 0.5s ease-out, box-shadow 0.5s ease-out ;
   background-position: 0 0;
-  transition: background-position 0.5s ease-out;
+  box-shadow: $box-shadow-none;
 
   &:hover {
     color: $color-accent-1;
@@ -99,8 +100,9 @@ a:focus-visible {
 
 @mixin preview-animation {
   box-sizing: border-box;
-  transition: transform 1s ease 0s;
+  transition: transform 1s ease 0s, box-shadow 0.5s ease-out ;
   transform: translateZ(-3.0rem) perspective(1500px) rotateY(10deg);
+  box-shadow: $box-shadow-none;
 
   &:hover {
     transform: translateZ(-3.0rem) perspective(3000px) rotateY(5deg) scale(1.03);
