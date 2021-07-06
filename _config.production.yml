@@ -1,7 +1,7 @@
 environment: production
 url: "https://semanux.com"
 parallel_localization: true # polyglot setting
-future: false
+draft: false # Disable draft posts.
 
 sass:
   style: compressed

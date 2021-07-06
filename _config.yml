@@ -22,8 +22,8 @@ host: 0.0.0.0 # Means that local development server is accesible from home netwo
 port: 4000
 
 # Content
-draft: false # TODO: Why do we set draft and future to false in development?
-future: false
+draft: false # Enable draft posts.
+future: true # Include posts with a future date.
 permalink: pretty
 markdown: kramdown
 defaults:
