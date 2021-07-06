@@ -1,7 +1,7 @@
 ---
 title: Raphael defends his PHD Thesis
 lang: en
-preview_alt: 'Photo from the defense showing a screen and Raphael in the front.'
+preview_alt: "Photo from the defense showing a screen and Raphael in the front."
 ---
 
 Raphael has successfully defended his dissertation *"Improving Usability and Accessibility of the Web with Eye Tracking"* at the University of Koblenz-Landau. In his dissertation, Raphael introduces innovative methods for using eye tracking **to improve usability and accessibility on the Web**, discusses their implementation as prototypes, and reports on the evaluation with users of the new methods.

@@ -1,7 +1,7 @@
 ---
 title: Gaze and Hum for Text Entry
 lang: en
-preview_alt: 'A woman looks at a laptop with a virtual keyboard. A microphone is attached in front of the laptop, and an eye tracker is attached under the screen.'
+preview_alt: "A woman looks at a laptop with a virtual keyboard. A microphone is attached in front of the laptop, and an eye tracker is attached under the screen."
 ---
 
 In our research paper *"Hummer: Text Entry by Gaze and Hum"*, we have combined gaze control with humming sounds in a novel, hands-free text entry system. Our results were accepted for detailed publication and presentation **at the most important international conference on human-computer interaction**, CHI.

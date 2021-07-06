@@ -1,7 +1,7 @@
 ---
 title: Feature in the PARAplegiker Magazine
 lang: en
-preview_alt: 'The cover of the PARAplegiker magazine displays a home robot.'
+preview_alt: "The cover of the PARAplegiker magazine displays a home robot."
 ---
 
 A special section was dedicated to us in the current issue of *"PARAplegiker"* for spring 2021. PARAplegiker magazine is the **most important German-language magazine focusing on paraplegia.** It currently has a circulation of over 12,000 copies.

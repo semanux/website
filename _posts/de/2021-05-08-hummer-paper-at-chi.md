@@ -1,7 +1,7 @@
 ---
 title: Texteingabe mit Blick und Summen
 lang: de
-preview_alt: 'Eine Frau schaut auf einen Laptop mit virtueller Tastatur. Vor dem Laptop ist ein Mikrofon befestigt, unter dem Bildschirm ist ein Eyetracker angebracht.'
+preview_alt: "Eine Frau schaut auf einen Laptop mit virtueller Tastatur. Vor dem Laptop ist ein Mikrofon befestigt, unter dem Bildschirm ist ein Eyetracker angebracht."
 ---
 
 In der Forschungsarbeit *"Hummer: Text Entry by Gaze and Hum"* haben wir in einer neuartigen, berührungslosen Texteingabe die Blicksteuerung mit Summgeräuschen kombiniert. Unsere Ergebnisse wurden auf **der wichtigsten internationalen Konferenz zur Mensch-Computer Interaktion**, der CHI, für eine ausführliche Veröffentlichung und Präsentation angenommen.

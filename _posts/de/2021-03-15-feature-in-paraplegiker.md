@@ -1,7 +1,7 @@
 ---
 title: Bericht im PARAplegiker Magazin
 lang: de
-preview_alt: 'Das Cover des PARAplegiker zeigt einen Haushaltsroboter.'
+preview_alt: "Das Cover des PARAplegiker zeigt einen Haushaltsroboter."
 ---
 
 Uns wurde in der aktuellen Ausgabe des *"PARAplegiker"* für das Frühjahr 2021 ein eigener Abschnitt gewidmet. Das PARAplegiker Magazin ist **das wichtigste deutschsprachige Magazin mit dem Fokus auf Querschnittlähmung.** Es hat eine Auflage von über 12.000 Exemplaren.

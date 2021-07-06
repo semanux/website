@@ -1,7 +1,7 @@
 ---
 title: Raphael verteidigt seine Dissertation
 lang: de
-preview_alt: 'Foto der Verteidigung. Raphael steht vor einer Projektionswand.'
+preview_alt: "Foto der Verteidigung. Raphael steht vor einer Projektionswand."
 ---
 
 Raphael hat erfolgreich seine Dissertation *"Improving Usability and Accessibility of the Web with Eye Tracking"* an der Universität Koblenz-Landau verteidigt. Er führt in seiner Dissertation innovative Methoden zum Einsatz von Eyetracking für die **Verbesserung der Nutzerfreundlichkeit und Zugänglichkeit** im Internet ein, bespricht deren Umsetzung als Prototypen und berichtet von der Evaluation mit den Nutzern der neuen Methoden.
